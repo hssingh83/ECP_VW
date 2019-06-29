@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 5, Errors: 0, Skipped: 9, Time elapsed: 58,128.578 s <<< FAILURE! - in TestSuite
+applicationLaunch(VW_TC.TC0002_login_With_Exmpirix_Admin)  Time elapsed: 1,032.976 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/div[1]/nav/div[1]/a/img"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:62475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2453d32fbf12bf2a2b007ba57a1640c9
+*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div[1]/nav/div[1]/a/img}
+	at VW_TC.TC0002_login_With_Exmpirix_Admin.applicationLaunch(TC0002_login_With_Exmpirix_Admin.java:33)
+
+applicationLaunch(VW_TC.TC0006_login_With_Partner_Enhanced_User)  Time elapsed: 3,044.279 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/div[1]/nav/div[1]/a/img"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c0c835c45c13e791808c1d0a89a3c94
+*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div[1]/nav/div[1]/a/img}
+	at VW_TC.TC0006_login_With_Partner_Enhanced_User.applicationLaunch(TC0006_login_With_Partner_Enhanced_User.java:33)
+
+logInWithPartnerUser(VW_TC.TC0007_login_With_Partner_User)  Time elapsed: 0.041 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at VW_TC.TC0007_login_With_Partner_User.logInWithPartnerUser(TC0007_login_With_Partner_User.java:43)
+
+TabValidation(VW_TC.TC0007_login_With_Partner_User)  Time elapsed: 35,743.72 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Dashboard"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:53992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 38ab64ffcc4d84c9d8c04433a655f2c9
+*** Element info: {Using=link text, value=Dashboard}
+	at VW_TC.TC0007_login_With_Partner_User.TabValidation(TC0007_login_With_Partner_User.java:57)
+
+applicationLaunch(VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin)  Time elapsed: 36,757.551 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/div[1]/nav/div[1]/a/img"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:54226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 55104f03c01f6df83a746d73108dfcef
+*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div[1]/nav/div[1]/a/img}
+	at VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin.applicationLaunch(TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin.java:32)
+

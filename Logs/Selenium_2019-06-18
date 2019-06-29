@@ -1,0 +1,41 @@
+[INFO ] 2019-06-18 23:57:18,487 TC0004_loginWithPARTNER_CUSTOMER_ADMIN.applicationLaunch() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-06-18 23:57:21,208 baseProperties.intializeDriver() - ChromeDriver intilized successfully
+[INFO ] 2019-06-18 23:57:21,209 baseProperties.intializeDriver() - Chrome Browser selected & Launch
+[INFO ] 2019-06-18 23:57:44,919 TC0004_loginWithPARTNER_CUSTOMER_ADMIN.applicationLaunch() - VoiceWatch Application Launched successfully
+[INFO ] 2019-06-18 23:57:45,317 pom001_logInPage.getUsername() - Start inserting User Credetials
+[INFO ] 2019-06-18 23:57:45,321 pom001_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-06-18 23:57:45,409 pom001_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-06-18 23:57:45,481 pom001_logInPage.getSignButton() - Sigin button Clicked Successfully
+[INFO ] 2019-06-18 23:58:12,270 TC0004_loginWithPARTNER_CUSTOMER_ADMIN.logInScreen() - Verified that VoiceWatch Application login successfully with admin creadetial
+[INFO ] 2019-06-18 23:58:13,289 pom002_dashboard.dashboard() - Dashboard Page verification Started
+[INFO ] 2019-06-18 23:58:13,362 pom002_dashboard.dashboard() - Verified that 'Dashboard Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,398 pom002_dashboard.dashboard() - Verified that 'Dashboard Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:13,402 pom002_dashboard.dashboard() - Verified that 'Dashboard Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,438 pom002_dashboard.dashboard() - Verified that 'Alert Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,462 pom002_dashboard.dashboard() - Verified that 'Alert Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:13,470 pom002_dashboard.dashboard() - Verified that 'Alert Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,502 pom002_dashboard.dashboard() - Verified that 'Test Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,530 pom002_dashboard.dashboard() - Verified that 'Alert Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:13,538 pom002_dashboard.dashboard() - Verified that 'Test Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,622 pom002_dashboard.dashboard() - Verified that 'Tag Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,662 pom002_dashboard.dashboard() - Verified that 'Tag Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,666 pom002_dashboard.dashboard() - Verified that 'Tag Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,718 pom002_dashboard.dashboard() - Verified that 'Script Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,742 pom002_dashboard.dashboard() - Verified that 'Script Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:13,746 pom002_dashboard.dashboard() - Verified that 'Script Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,786 pom002_dashboard.dashboard() - Verified that 'Variables Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,814 pom002_dashboard.dashboard() - Verified that 'Variables Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:13,818 pom002_dashboard.dashboard() - Verified that 'Variable Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,854 pom002_dashboard.dashboard() - Verified that 'Notification Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,882 pom002_dashboard.dashboard() - Verified that 'Notification Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:13,886 pom002_dashboard.dashboard() - Verified that 'Notification Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,918 pom002_dashboard.dashboard() - Verified that 'Notification Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,946 pom002_dashboard.dashboard() - Verified that 'Notification Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:13,950 pom002_dashboard.dashboard() - Verified that 'Notification Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:13,986 pom002_dashboard.dashboard() - Verified that 'Clients Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:14,074 pom002_dashboard.dashboard() - Verified that 'Clients Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:14,078 pom002_dashboard.dashboard() - Verified that 'Clients Tab' not selected on the dashoboard
+[INFO ] 2019-06-18 23:58:14,118 pom002_dashboard.dashboard() - Verified that 'Admin Tab' appeared on the dashoboard
+[INFO ] 2019-06-18 23:58:14,146 pom002_dashboard.dashboard() - Verified that 'Admin Tab' enabled on the dashoboard
+[INFO ] 2019-06-18 23:58:14,150 pom002_dashboard.dashboard() - Verified that 'Admin Tab' selected on the dashoboard
+[INFO ] 2019-06-18 23:59:54,316 TC0004_loginWithPARTNER_CUSTOMER_ADMIN.applicationClose() - Application closed successfully

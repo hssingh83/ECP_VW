@@ -1,0 +1,3 @@
+[INFO ] 2019-06-07 17:14:21,913 pom001_logInPage.initializer() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-06-07 17:14:24,957 baseProperties.intializeDriver() - Chrome Browser selected
+[INFO ] 2019-06-07 17:14:24,962 pom001_logInPage.initializer() - Driver intilized successfully

@@ -1,0 +1,10 @@
+[INFO ] 2019-06-15 11:54:09,353 baseProperties.intializeDriver() - ChromeDriver intilized successfully
+[INFO ] 2019-06-15 11:54:09,368 baseProperties.intializeDriver() - Chrome Browser selected & Launch
+[INFO ] 2019-06-15 11:54:25,009 pom001_logInPage.applicationVoiceWatchLaunch() - VoiceWatch loginPageAccess Successfully
+[INFO ] 2019-06-15 11:54:36,193 pom001_logInPage.applicationVoiceWatchLaunch() - Maximise the Page successfully
+[INFO ] 2019-06-15 11:54:36,193 pom001_logInPage.applicationVoiceWatchLaunch() - VoiceWatch Application Launched successfully
+[INFO ] 2019-06-15 11:54:36,196 pom001_logInPage.loginCredetials() - Inserting Credentials
+[INFO ] 2019-06-15 11:54:36,532 pom001_logInPage.getUsername() - Start inserting User Credetials
+[INFO ] 2019-06-15 11:54:36,532 pom001_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-06-15 11:54:36,702 pom001_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-06-15 11:54:36,809 pom001_logInPage.getSignButton() - Sigin button Clicked Successfully

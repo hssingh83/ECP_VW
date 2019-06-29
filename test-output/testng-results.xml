@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30790" started-at="2019-06-27T07:12:31Z" finished-at="2019-06-27T07:13:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30790" started-at="2019-06-27T07:12:31Z" finished-at="2019-06-27T07:13:02Z">
+      <class name="VW_TC.linktest">
+        <test-method status="PASS" signature="navigateToAllLinks()[pri:0, instance:VW_TC.linktest@73a1e9a9]" name="navigateToAllLinks" is-config="true" duration-ms="18665" started-at="2019-06-27T07:12:31Z" finished-at="2019-06-27T07:12:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAllLinks -->
+        <test-method status="PASS" signature="logInWithExpirixAdmin()[pri:1, instance:VW_TC.linktest@73a1e9a9]" name="logInWithExpirixAdmin" duration-ms="11725" started-at="2019-06-27T07:12:50Z" finished-at="2019-06-27T07:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInWithExpirixAdmin -->
+        <test-method status="PASS" signature="linktest()[pri:2, instance:VW_TC.linktest@73a1e9a9]" name="linktest" duration-ms="381" started-at="2019-06-27T07:13:02Z" finished-at="2019-06-27T07:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linktest -->
+      </class> <!-- VW_TC.linktest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

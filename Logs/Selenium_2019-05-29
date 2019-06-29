@@ -1,0 +1,13 @@
+[INFO ] 2019-05-29 11:25:53,653 TC0001_login.initializer() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-05-29 11:25:56,099 baseProperties.intializeDriver() - Chrome Browser selected
+[INFO ] 2019-05-29 11:25:56,104 TC0001_login.initializer() - Driver intilized successfully
+[INFO ] 2019-05-29 11:26:26,587 TC0001_login.basePageLoginValidation() - VoiceWatch Application Launched successfully
+[INFO ] 2019-05-29 11:26:26,599 TC0001_login.basePageLoginValidation() - Start inserting User Credetials
+[INFO ] 2019-05-29 11:26:26,957 pom001_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-05-29 11:26:27,026 TC0001_login.basePageLoginValidation() - UserName inserting Successfully
+[INFO ] 2019-05-29 11:26:27,027 pom001_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-05-29 11:26:27,085 TC0001_login.basePageLoginValidation() - Password inserting Successfully
+[INFO ] 2019-05-29 11:26:27,085 pom001_logInPage.getSignButton() - Sigin button Clicked Successfully
+[INFO ] 2019-05-29 11:26:27,142 TC0001_login.basePageLoginValidation() - Sigin button Clicked Successfully
+[INFO ] 2019-05-29 11:26:37,143 TC0001_login.basePageLoginValidation() - Trying to access application
+[INFO ] 2019-05-29 11:26:37,143 TC0001_login.basePageLoginValidation() - Validation Result

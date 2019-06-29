@@ -1,0 +1,20 @@
+[INFO ] 2019-06-02 22:04:11,158 TC0001_login.initializer() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-06-02 22:04:14,271 baseProperties.intializeDriver() - Chrome Browser selected
+[INFO ] 2019-06-02 22:04:14,279 TC0001_login.initializer() - Driver intilized successfully
+[INFO ] 2019-06-02 22:04:38,319 TC0001_login.basePageLoginValidation() - VoiceWatch Application Launched successfully
+[INFO ] 2019-06-02 22:04:38,323 pom001_logInPage.logIn() - LogIn Page Label verification Started
+[INFO ] 2019-06-02 22:04:38,377 pom001_logInPage.logIn() - Verified that 'Sign in to continue label' appeared on Login page
+[INFO ] 2019-06-02 22:04:38,422 pom001_logInPage.logIn() - Verified that 'User Name' label' appeared on Login page
+[INFO ] 2019-06-02 22:04:38,460 pom001_logInPage.logIn() - Verified that 'Password: label' appeared on Login page
+[INFO ] 2019-06-02 22:04:38,509 pom001_logInPage.logIn() - Verified that 'renUserNameCheckbox' appeared on Login page
+[INFO ] 2019-06-02 22:04:38,535 pom001_logInPage.logIn() - Verified that 'renUserNameCheckbox' is clickable on Login page
+[INFO ] 2019-06-02 22:04:38,569 pom001_logInPage.logIn() - Verified that Sign In button is displayed
+[INFO ] 2019-06-02 22:04:38,592 pom001_logInPage.logIn() - Verified that Save button is enabled
+[INFO ] 2019-06-02 22:04:38,625 pom001_logInPage.logIn() - Verified that 'Copyright' label is appearing on the page
+[INFO ] 2019-06-02 22:04:38,660 pom001_logInPage.logIn() - expected [Copyright © 2000-2015 Empirix Inc. Additional Copyright Information] but found [Copyright © 2000-2018 Empirix Inc. Additional Copyright Information]
+[INFO ] 2019-06-02 22:04:38,660 pom001_logInPage.getCopyRightLink() - Verified that additional copy right link clickable
+[INFO ] 2019-06-02 22:04:38,724 pom001_logInPage.additional_copy() - LogIn Page Label verification Started
+[INFO ] 2019-06-02 22:04:39,180 pom001_logInPage.getUsername() - Start inserting User Credetials
+[INFO ] 2019-06-02 22:04:39,181 pom001_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-06-02 22:04:39,250 pom001_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-06-02 22:04:39,319 pom001_logInPage.getSignButton() - Sigin button Clicked Successfully

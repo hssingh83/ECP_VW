@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="002: Test Case Login with &#039;Empirix Admin&#039; Credetials&#039;and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin">
+        <methods>
+          <include name="applicationLaunch"/>
+          <include name="applicationClose"/>
+          <include name="TabAvailabilityValidation"/>
+          <include name="logInWithExpirixAdmin"/>
+        </methods>
+      </class> <!-- VW_TC.TC0002_login_With_Exmpirix_Admin -->
+    </classes>
+  </test> <!-- 002: Test Case Login with 'Empirix Admin' Credetials'and verify TabAvailablity(failed) -->
+  <test thread-count="5" verbose="0" name="006: Test Case Login with &#039;Partner Enhanced User Credetials&#039;and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0006_login_With_Partner_Enhanced_User">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+          <include name="logInWithPartnerEnhancedUser"/>
+        </methods>
+      </class> <!-- VW_TC.TC0006_login_With_Partner_Enhanced_User -->
+    </classes>
+  </test> <!-- 006: Test Case Login with 'Partner Enhanced User Credetials'and verify TabAvailablity(failed) -->
+  <test thread-count="5" verbose="0" name="007: Test Case Login with &#039;Partner Use&#039; Credetials and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0007_login_With_Partner_User">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="logInWithPartnerUser"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
+    </classes>
+  </test> <!-- 007: Test Case Login with 'Partner Use' Credetials and verify TabAvailablity(failed) -->
+  <test thread-count="5" verbose="0" name="008: Test Case &#039;Login with &#039;Client or Partner Client Customer Admin&#039;and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="logInWithPartnerClient_CustomerAdmin"/>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin -->
+    </classes>
+  </test> <!-- 008: Test Case 'Login with 'Client or Partner Client Customer Admin'and verify TabAvailablity(failed) -->
+</suite> <!-- Failed suite [Suite] -->

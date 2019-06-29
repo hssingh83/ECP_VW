@@ -1,0 +1,17 @@
+[INFO ] 2019-06-03 16:44:31,858 TC0001_login.initializer() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-06-03 16:44:34,546 baseProperties.intializeDriver() - Chrome Browser selected
+[INFO ] 2019-06-03 16:44:34,551 TC0001_login.initializer() - Driver intilized successfully
+[INFO ] 2019-06-03 16:44:57,727 TC0001_login.basePageLoginValidation() - VoiceWatch Application Launched successfully
+[INFO ] 2019-06-03 16:44:57,731 pom001_logInPage.logIn() - LogIn Page Label verification Started
+[INFO ] 2019-06-03 16:44:57,771 pom001_logInPage.logIn() - Verified that 'Sign in to continue label' appeared on Login page
+[INFO ] 2019-06-03 16:44:57,806 pom001_logInPage.logIn() - Verified that 'User Name' label' appeared on Login page
+[INFO ] 2019-06-03 16:44:57,838 pom001_logInPage.logIn() - Verified that 'Password: label' appeared on Login page
+[INFO ] 2019-06-03 16:44:57,867 pom001_logInPage.logIn() - Verified that 'renUserNameCheckbox' appeared on Login page
+[INFO ] 2019-06-03 16:44:57,889 pom001_logInPage.logIn() - Verified that 'renUserNameCheckbox' is clickable on Login page
+[INFO ] 2019-06-03 16:44:57,923 pom001_logInPage.logIn() - Verified that Sign In button is displayed
+[INFO ] 2019-06-03 16:44:57,943 pom001_logInPage.logIn() - Verified that Save button is enabled
+[INFO ] 2019-06-03 16:44:57,971 pom001_logInPage.logIn() - Verified that 'Copyright' label is appearing on the page
+[INFO ] 2019-06-03 16:44:58,365 pom001_logInPage.getUsername() - Start inserting User Credetials
+[INFO ] 2019-06-03 16:44:58,366 pom001_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-06-03 16:44:58,417 pom001_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-06-03 16:44:58,473 pom001_logInPage.getSignButton() - Sigin button Clicked Successfully

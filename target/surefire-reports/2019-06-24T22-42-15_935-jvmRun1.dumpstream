@@ -1,0 +1,56 @@
+# Created at 2019-06-24T22:42:41.127
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2019-06-24T22:42:50.475
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:50,475 baseProperties.intializeDriver() - URL provided
+
+
+# Created at 2019-06-24T22:42:51.622
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:51,622 baseProperties.intializeDriver() - Screen maximized successfully
+
+
+# Created at 2019-06-24T22:42:51.626
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:51,622 baseProperties.intializeDriver() - Waiting to access above URL
+
+
+# Created at 2019-06-24T22:42:58.554
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:58,554 baseProperties.intializeDriver() -  Verified that VoiceWatch login screen appeared successfully
+
+
+# Created at 2019-06-24T22:42:58.562
+Unexpected IOException: 5,1,VW_TC.TC0002_login_With_Exmpirix_Admin,logIn(VW_TC.TC0002_login_With_Exmpirix_Admin),VW_TC.TC0002_login_With_Exmpirix_Admin,null,null
+
+
+# Created at 2019-06-24T22:42:58.910
+Unexpected IOException with stream: 0
+
+# Created at 2019-06-24T22:42:58.910
+Unexpected IOException with stream: 
+
+
+# Created at 2019-06-24T22:42:58.914
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:58,914 pom001_VoiceWatch_logIn_Page.getUsername() - Start inserting User Credetials
+
+
+# Created at 2019-06-24T22:42:58.914
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:58,914 pom001_VoiceWatch_logIn_Page.getUsername() - UserName inserted Successfully
+
+
+# Created at 2019-06-24T22:42:58.974
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:58,974 pom001_VoiceWatch_logIn_Page.getPassword() - Password inserted Successfully
+
+
+# Created at 2019-06-24T22:42:59.038
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:42:59,038 pom001_VoiceWatch_logIn_Page.getSignButton() - Sigin button Clicked Successfully
+
+
+# Created at 2019-06-24T22:43:00.105
+Unexpected IOException with stream: [DEBUG] 2019-06-24 22:43:00,105 TC0002_login_With_Exmpirix_Admin.logIn() - Waiting for launch VoiceWatch application using above creadetails
+
+

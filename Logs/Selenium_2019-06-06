@@ -1,0 +1,21 @@
+[INFO ] 2019-06-06 19:41:35,066 TC0002_Dashboard.initializer() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-06-06 19:41:37,609 baseProperties.intializeDriver() - Chrome Browser selected
+[INFO ] 2019-06-06 19:41:37,614 TC0002_Dashboard.initializer() - Driver intilized successfully
+[INFO ] 2019-06-06 19:42:01,123 TC0002_Dashboard.basePageLoginValidation() - VoiceWatch Application Launched successfully
+[INFO ] 2019-06-06 19:42:01,497 pom001_logInPage.getUsername() - Start inserting User Credetials
+[INFO ] 2019-06-06 19:42:01,497 pom001_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-06-06 19:42:01,554 pom001_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-06-06 19:42:01,605 pom001_logInPage.getSignButton() - Sigin button Clicked Successfully
+[INFO ] 2019-06-06 19:42:01,659 pom002_dashboard.dashboard() - Dashboard Page verification Started
+[INFO ] 2019-06-06 19:42:23,669 pom002_dashboard.dashboard() - Verified that 'Dashboard Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:23,724 pom002_dashboard.dashboard() - Verified that 'Alert Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:23,775 pom002_dashboard.dashboard() - Verified that 'Test Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:23,831 pom002_dashboard.dashboard() - Verified that 'Tag Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:23,892 pom002_dashboard.dashboard() - Verified that 'Script Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:23,945 pom002_dashboard.dashboard() - Verified that 'Variables Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:23,999 pom002_dashboard.dashboard() - Verified that 'Hammer Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:24,053 pom002_dashboard.dashboard() - Verified that 'Notification Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:24,105 pom002_dashboard.dashboard() - Verified that 'Notification Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:24,161 pom002_dashboard.dashboard() - Verified that 'Clients Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:24,218 pom002_dashboard.dashboard() - Verified that 'Audit Tab' appeared on the dashoboard
+[INFO ] 2019-06-06 19:42:24,275 pom002_dashboard.dashboard() - Verified that 'Admin Tab' appeared on the dashoboard

@@ -1,0 +1,61 @@
+[DEBUG] 2019-06-25 00:08:39,951 baseProperties.intializeDriver() - Chrome Driver intilized successfully
+[DEBUG] 2019-06-25 00:08:39,966 baseProperties.intializeDriver() - Chrome Browser selected & Launching in few second
+[DEBUG] 2019-06-25 00:08:55,729 baseProperties.intializeDriver() - URL provided
+[DEBUG] 2019-06-25 00:08:56,930 baseProperties.intializeDriver() - Screen maximized successfully
+[DEBUG] 2019-06-25 00:08:56,932 baseProperties.intializeDriver() - Waiting to access above URL
+[DEBUG] 2019-06-25 00:09:05,722 baseProperties.intializeDriver() -  Verified that VoiceWatch login screen appeared successfully
+[DEBUG] 2019-06-25 00:09:05,749 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - LogIn Page Label verification Started
+[DEBUG] 2019-06-25 00:09:05,781 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'Empirix Logo Present on login Page
+[DEBUG] 2019-06-25 00:09:05,809 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'Empirix Logo Enabled on login Page
+[DEBUG] 2019-06-25 00:09:05,841 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'Sign in to continue label' appeared on Login page
+[DEBUG] 2019-06-25 00:09:05,865 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'User Name' label' appeared on Login page
+[DEBUG] 2019-06-25 00:09:05,904 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'Password: label' appeared on Login page
+[DEBUG] 2019-06-25 00:09:05,940 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'remUserNameCheckbox' appeared on Login page
+[DEBUG] 2019-06-25 00:09:05,948 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'remUserNameCheckbox' is clickable on Login page
+[DEBUG] 2019-06-25 00:09:05,980 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'remUserNameCheckbox' is not selected on Login page
+[DEBUG] 2019-06-25 00:09:06,020 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that Sign In button is displayed
+[DEBUG] 2019-06-25 00:09:06,040 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that Save button is enabled
+[DEBUG] 2019-06-25 00:09:06,076 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'Remember my User Name' appeared on login page
+[DEBUG] 2019-06-25 00:09:06,096 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that 'Copyright' label is appearing on the page
+[DEBUG] 2019-06-25 00:09:06,132 pom001_VoiceWatch_logIn_Page.logPageLabelVerification() - Verified that Additional CopyRight Info present on the page
+[DEBUG] 2019-06-25 00:09:06,132 pom001_VoiceWatch_logIn_Page.getCopyRightLink() - Verified that additional copy right link clickable
+[INFO ] 2019-06-25 00:09:06,198 TC0001_login_Page_Verification.logInScreenVerification() - Verified that 'Additional Copy Right' Link clickable
+[INFO ] 2019-06-25 00:09:06,227 TC0001_login_Page_Verification.logInScreenVerification() - Verified that additinal infomation'Copyright © 2010-14 ForgeRock AS, all rights reserved.' appered after click link
+[INFO ] 2019-06-25 00:09:06,323 TC0001_login_Page_Verification.applicationClose() - Application closed successfully
+[DEBUG] 2019-06-25 00:09:08,505 baseProperties.intializeDriver() - Chrome Driver intilized successfully
+[DEBUG] 2019-06-25 00:09:08,508 baseProperties.intializeDriver() - Chrome Browser selected & Launching in few second
+[DEBUG] 2019-06-25 00:09:24,787 baseProperties.intializeDriver() - URL provided
+[DEBUG] 2019-06-25 00:09:25,924 baseProperties.intializeDriver() - Screen maximized successfully
+[DEBUG] 2019-06-25 00:09:25,924 baseProperties.intializeDriver() - Waiting to access above URL
+[DEBUG] 2019-06-25 00:09:34,003 baseProperties.intializeDriver() -  Verified that VoiceWatch login screen appeared successfully
+[DEBUG] 2019-06-25 00:09:34,401 pom001_VoiceWatch_logIn_Page.getUsername() - Start inserting User Credetials
+[DEBUG] 2019-06-25 00:09:34,401 pom001_VoiceWatch_logIn_Page.getUsername() - UserName inserted Successfully
+[DEBUG] 2019-06-25 00:09:34,461 pom001_VoiceWatch_logIn_Page.getPassword() - Password inserted Successfully
+[DEBUG] 2019-06-25 00:09:34,525 pom001_VoiceWatch_logIn_Page.getSignButton() - Sigin button Clicked Successfully
+[DEBUG] 2019-06-25 00:09:35,590 TC0002_login_With_Exmpirix_Admin.logInWithExpirixAdmin() - Waiting for launch VoiceWatch application using above creadetails
+[DEBUG] 2019-06-25 00:10:03,970 TC0002_login_With_Exmpirix_Admin.logInWithExpirixAdmin() - Verified that VoiceWatch Application login successfully with Empirix Admin creadetial
+[DEBUG] 2019-06-25 00:10:03,970 TC0002_login_With_Exmpirix_Admin.logInWithExpirixAdmin() - Validate the requiment as Aceess Level= Empirix & Role=Empirix Admin
+[DEBUG] 2019-06-25 00:10:03,973 pom002_VoiceWatch_Home_Page.dashboard_screen() - VoiceWatch Dashboard Page verification Started
+[DEBUG] 2019-06-25 00:10:04,009 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Dashboard Tab' appeared on the VoiceWatch dashoboard
+[DEBUG] 2019-06-25 00:10:04,041 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Dashboard Tab' enabled on the VoiceWatch dashoboard
+[DEBUG] 2019-06-25 00:10:04,101 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Alerts Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,125 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Alerts Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,125 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Alerts Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,180 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Tests Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,204 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Tests Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,208 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Tests Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,240 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Variables Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,272 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Variables Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,272 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Variable Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,323 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Notifications Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,357 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Notifications Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,361 pom002_VoiceWatch_Home_Page.dashboard_screen() - Verified that 'Notifications Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,389 pom002_VoiceWatch_Home_Page.tagTab() - Verified that 'Tags Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,413 pom002_VoiceWatch_Home_Page.scriptsTab() - Verified that 'Scripts Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,437 pom002_VoiceWatch_Home_Page.hammersTab() - Verified that 'Hammers Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,457 pom002_VoiceWatch_Home_Page.usersTab() - Verified that 'Users Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,497 pom002_VoiceWatch_Home_Page.clientsTab() - Verified that 'Clients Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,521 pom002_VoiceWatch_Home_Page.auditTab() - Verified that 'Audit Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,541 pom002_VoiceWatch_Home_Page.adminTab() - Verified that 'Admin Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-06-25 00:10:04,541 pom002_VoiceWatch_Home_Page.selectedTab() - Verified that 'Admin Tab' selected on the VoiceWatch application
+[DEBUG] 2019-06-25 00:10:04,629 TC0002_login_With_Exmpirix_Admin.applicationClose() - Application closed successfully

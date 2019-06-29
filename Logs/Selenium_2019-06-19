@@ -1,0 +1,13 @@
+[INFO ] 2019-06-19 23:54:13,684 TC0010_login_With_Client_OR_Partner_Client_Enhanced_User.applicationLaunch() - VoiceWatch loginPageAccess TestCase Validation Started
+[INFO ] 2019-06-19 23:54:16,327 baseProperties.intializeDriver() - Chrome Driver intilized successfully
+[INFO ] 2019-06-19 23:54:16,327 baseProperties.intializeDriver() - Chrome Browser selected & Launch
+[INFO ] 2019-06-19 23:54:45,612 TC0010_login_With_Client_OR_Partner_Client_Enhanced_User.applicationLaunch() - VoiceWatch Application Launched successfully
+[INFO ] 2019-06-19 23:54:46,035 pom001_VoiceWatch_logInPage.getUsername() - Start inserting User Credetials
+[INFO ] 2019-06-19 23:54:46,035 pom001_VoiceWatch_logInPage.getUsername() - UserName inserting Successfully
+[INFO ] 2019-06-19 23:54:46,131 pom001_VoiceWatch_logInPage.getPassword() - Password inserting Successfully
+[INFO ] 2019-06-19 23:54:46,199 pom001_VoiceWatch_logInPage.getSignButton() - Sigin button Clicked Successfully
+[INFO ] 2019-06-19 23:55:06,192 pom002_VoiceWatch_App_Dashboard.hammersTab() - Verified that 'Hammers Tab' is not appearing on the VoiceWatch dashboard
+[INFO ] 2019-06-19 23:55:06,220 pom002_VoiceWatch_App_Dashboard.usersTab() - Verified that 'Users Tab' appeared on the VoiceWatch dashboard
+[INFO ] 2019-06-19 23:55:19,195 pom002_VoiceWatch_App_Dashboard.dashboard() - VoiceWatch Dashboard Page verification Started
+[INFO ] 2019-06-19 23:56:46,227 pom002_VoiceWatch_App_Dashboard.clientsTab() - Verified that 'Clients Tab' is not appearing on the VoiceWatch dashboard
+[INFO ] 2019-06-19 23:58:26,290 pom002_VoiceWatch_App_Dashboard.auditTab() - Verified that 'Audit Tab' is not appearing on the VoiceWatch dashboard

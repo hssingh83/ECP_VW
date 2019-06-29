@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test Login with Admin Credetials Page and verify Tab(failed)">
+    <classes>
+      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin">
+        <methods>
+          <include name="logInWithCredetials"/>
+          <include name="applicationLaunch"/>
+          <include name="applicationClose"/>
+          <include name="TabAvailabilityValidation"/>
+        </methods>
+      </class> <!-- VW_TC.TC0002_login_With_Exmpirix_Admin -->
+    </classes>
+  </test> <!-- Test Login with Admin Credetials Page and verify Tab(failed) -->
+  <test thread-count="5" name="Test Login with Empirix_Business_Analyst Credetials Page(failed)">
+    <classes>
+      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst">
+        <methods>
+          <include name="logInScreen"/>
+          <include name="applicationLaunch"/>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+        </methods>
+      </class> <!-- VW_TC.TC0003_login_With_Empirix_Business_Analyst -->
+    </classes>
+  </test> <!-- Test Login with Empirix_Business_Analyst Credetials Page(failed) -->
+  <test thread-count="5" name="Test Login with CUSTOMER_ADMIN Credetials Page(failed)">
+    <classes>
+      <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin">
+        <methods>
+          <include name="logInScreen"/>
+          <include name="applicationLaunch"/>
+          <include name="TabValidation"/>
+          <include name="applicationClose"/>
+        </methods>
+      </class> <!-- VW_TC.TC0004_login_With_Partner_Customer_Admin -->
+    </classes>
+  </test> <!-- Test Login with CUSTOMER_ADMIN Credetials Page(failed) -->
+  <test thread-count="5" name="Test Login with PARTNER_DEVELOPER Credetials Page(failed)">
+    <classes>
+      <class name="VW_TC.TC0005_login_With_Partner_Developer">
+        <methods>
+          <include name="logInScreen"/>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0005_login_With_Partner_Developer -->
+    </classes>
+  </test> <!-- Test Login with PARTNER_DEVELOPER Credetials Page(failed) -->
+  <test thread-count="5" name="Test Login with Partner Enhanced Page(failed)">
+    <classes>
+      <class name="VW_TC.TC0006_login_With_Partner_Enhanced_User">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="logInScreen"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0006_login_With_Partner_Enhanced_User -->
+    </classes>
+  </test> <!-- Test Login with Partner Enhanced Page(failed) -->
+  <test thread-count="5" name="Test Login with Partner User Page(failed)">
+    <classes>
+      <class name="VW_TC.TC0007_login_With_Partner_User">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="logInScreen"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
+    </classes>
+  </test> <!-- Test Login with Partner User Page(failed) -->
+  <test thread-count="5" name="Test Login with Clinet or Partner_Client_Custmer_Admin(failed)">
+    <classes>
+      <class name="VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+          <include name="logInScreen"/>
+        </methods>
+      </class> <!-- VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin -->
+    </classes>
+  </test> <!-- Test Login with Clinet or Partner_Client_Custmer_Admin(failed) -->
+  <test thread-count="5" name="Test Login with Clinet or Partner_Client_Devloper(failed)">
+    <classes>
+      <class name="VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="logInScreen"/>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer -->
+    </classes>
+  </test> <!-- Test Login with Clinet or Partner_Client_Devloper(failed) -->
+  <test thread-count="5" name="Test Login with Clinet or Partner_Client_Enhanced_User(failed)">
+    <classes>
+      <class name="VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User">
+        <methods>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+          <include name="logInScreen"/>
+          <include name="applicationClose"/>
+        </methods>
+      </class> <!-- VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User -->
+    </classes>
+  </test> <!-- Test Login with Clinet or Partner_Client_Enhanced_User(failed) -->
+  <test thread-count="5" name="Test Login with Clinet or Partner_Client_User(failed)">
+    <classes>
+      <class name="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User">
+        <methods>
+          <include name="TabValidation"/>
+          <include name="logInScreen"/>
+          <include name="applicationClose"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0011_login_With_Client_OR_Partner_Client_User -->
+    </classes>
+  </test> <!-- Test Login with Clinet or Partner_Client_User(failed) -->
+</suite> <!-- Failed suite [Suite] -->
