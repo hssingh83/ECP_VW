@@ -40,15 +40,8 @@
      </classes> 
      </test>
      
-     
-          
-        <test  name="Test Case: 005 - Login with 'Partner Developer' Credetials and verify TabAvailablity">
-    <classes>
-     
-      <class name="VW_TC.TC0005_login_With_Partner_Developer"/>
-      
-     </classes> 
-     </test>
+        
+
      
      
      
