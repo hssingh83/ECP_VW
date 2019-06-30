@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34087" started-at="2019-06-30T14:54:47Z" finished-at="2019-06-30T14:55:21Z">
+  <suite name="Default suite" duration-ms="38843" started-at="2019-06-30T21:20:09Z" finished-at="2019-06-30T21:20:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34087" started-at="2019-06-30T14:54:47Z" finished-at="2019-06-30T14:55:21Z">
-      <class name="VW_TC.linktest">
-        <test-method status="PASS" signature="navigateToAllLinks()[pri:0, instance:VW_TC.linktest@10e41621]" name="navigateToAllLinks" is-config="true" duration-ms="20034" started-at="2019-06-30T14:54:47Z" finished-at="2019-06-30T14:55:07Z">
+    <test name="Default test" duration-ms="38843" started-at="2019-06-30T21:20:09Z" finished-at="2019-06-30T21:20:47Z">
+      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst">
+        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0003_login_With_Empirix_Business_Analyst@1aafa419]" name="applicationLaunch" is-config="true" duration-ms="21195" started-at="2019-06-30T21:20:09Z" finished-at="2019-06-30T21:20:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToAllLinks -->
-        <test-method status="PASS" signature="logInWithExpirixAdmin()[pri:1, instance:VW_TC.linktest@10e41621]" name="logInWithExpirixAdmin" duration-ms="12984" started-at="2019-06-30T14:55:07Z" finished-at="2019-06-30T14:55:20Z">
+        </test-method> <!-- applicationLaunch -->
+        <test-method status="PASS" signature="logInWithExpirixBusinessAnalyst()[pri:1, instance:VW_TC.TC0003_login_With_Empirix_Business_Analyst@1aafa419]" name="logInWithExpirixBusinessAnalyst" duration-ms="14505" started-at="2019-06-30T21:20:30Z" finished-at="2019-06-30T21:20:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInWithExpirixAdmin -->
-        <test-method status="PASS" signature="linktest()[pri:2, instance:VW_TC.linktest@10e41621]" name="linktest" duration-ms="1013" started-at="2019-06-30T14:55:20Z" finished-at="2019-06-30T14:55:21Z">
+        </test-method> <!-- logInWithExpirixBusinessAnalyst -->
+        <test-method status="PASS" signature="headerMandatoryDetails()[pri:2, instance:VW_TC.TC0003_login_With_Empirix_Business_Analyst@1aafa419]" name="headerMandatoryDetails" duration-ms="448" started-at="2019-06-30T21:20:44Z" finished-at="2019-06-30T21:20:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linktest -->
-      </class> <!-- VW_TC.linktest -->
+        </test-method> <!-- headerMandatoryDetails -->
+        <test-method status="PASS" signature="footerMandatoryDetails()[pri:3, instance:VW_TC.TC0003_login_With_Empirix_Business_Analyst@1aafa419]" name="footerMandatoryDetails" duration-ms="223" started-at="2019-06-30T21:20:45Z" finished-at="2019-06-30T21:20:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerMandatoryDetails -->
+        <test-method status="PASS" signature="TabValidation()[pri:4, instance:VW_TC.TC0003_login_With_Empirix_Business_Analyst@1aafa419]" name="TabValidation" duration-ms="1174" started-at="2019-06-30T21:20:45Z" finished-at="2019-06-30T21:20:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TabValidation -->
+        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0003_login_With_Empirix_Business_Analyst@1aafa419]" name="applicationClose" is-config="true" duration-ms="1271" started-at="2019-06-30T21:20:46Z" finished-at="2019-06-30T21:20:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationClose -->
+      </class> <!-- VW_TC.TC0003_login_With_Empirix_Business_Analyst -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

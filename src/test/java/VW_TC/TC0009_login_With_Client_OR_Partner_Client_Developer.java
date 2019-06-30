@@ -52,8 +52,23 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 		
 		
 	}	
-	
+
 	@Test(priority=2)
+	public void headerMandatoryDetails () throws IOException, InterruptedException {
+		
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	    d.header();
+	
+	}
+	
+	@Test(priority=3)
+	public void footerMandatoryDetails () throws IOException, InterruptedException {
+		
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	    d.footer();
+	
+	}
+	@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	

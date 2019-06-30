@@ -50,7 +50,24 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 	    log.debug("Validate the requiment as Aceess Level= Partner & Role=User");
 	  	}	
 	
+
 	@Test(priority=2)
+	public void headerMandatoryDetails () throws IOException, InterruptedException {
+		
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	    d.header();
+	
+	}
+	
+	@Test(priority=3)
+	public void footerMandatoryDetails () throws IOException, InterruptedException {
+		
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	    d.footer();
+	
+	}
+	
+	@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
