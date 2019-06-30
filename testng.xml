@@ -6,7 +6,7 @@
 <listener class-name="resources.ExtentReporterNG"/>
 </listeners>
 
-  <test  name="Test Case:001 Login Page Verification ">
+       <test  name="Test Case: 001- Login Page Verification ">
     <classes>
      
       <class name="VW_TC.TC0001_login_Page_Verification"/>
@@ -14,7 +14,7 @@
      </classes> 
      </test>
      
-     <test  name="002: Test Case Login with 'Empirix Admin' Credetials'and verify TabAvailablity">
+     <test  name="Test Case: 002 - Login with 'Empirix Admin' Credetials'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0002_login_With_Exmpirix_Admin"/>
@@ -22,7 +22,7 @@
      </classes> 
      </test>
      
-      <test  name="003:Test Case Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity">
+    <test  name="Test Case: 003 - Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst"/>
@@ -31,7 +31,7 @@
      </test>
      
      
-        <test  name="004: Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity">
+        <test name="Test Case: 004 - Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin"/>
@@ -41,7 +41,7 @@
      
      
           
-        <test  name="005: Test Case Login with 'Partner Developer' Credetials and verify TabAvailablity">
+        <test  name="Test Case: 005 - Login with 'Partner Developer' Credetials and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0005_login_With_Partner_Developer"/>
@@ -49,7 +49,7 @@
      </classes> 
      </test>
      
-          <test  name="006: Test Case Login with 'Partner Enhanced User Credetials'and verify TabAvailablity">
+          <test name="Test Case:006 - Login with 'Partner Enhanced User Credetials'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0006_login_With_Partner_Enhanced_User"/>
@@ -58,7 +58,7 @@
      </test>
      
          
-      <test  name="007: Test Case Login with 'Partner Use' Credetials and verify TabAvailablity">
+      <test  name="Test Case: 007 - Login with 'Partner Use' Credetials and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0007_login_With_Partner_User"/>
@@ -68,7 +68,7 @@
        
    
      
-      <test  name="008: Test Case 'Login with 'Client or Partner Client Customer Admin'and verify TabAvailablity">
+      <test  name="Test Case: 008 - 'Login with 'Client or Partner Client Customer Admin'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin"/>
@@ -76,7 +76,7 @@
      </classes> 
      </test>
      
-           <test  name="009: Test Case 'Login with 'Client or Partner Client Developer'and verify TabAvailablity">
+           <test  name="Test Case: 009 'Login with 'Client or Partner Client Developer'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer"/>
@@ -84,7 +84,7 @@
      </classes> 
      </test>
      
-               <test  name="010: Test Case 'Login with 'Client or Partner Client Enhanced User'and verify TabAvailablity">
+               <test  name="Test Case: 010 'Login with 'Client or Partner Client Enhanced User'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User"/>
@@ -92,7 +92,7 @@
      </classes> 
      </test>
      
-               <test  name="011: Test Case 'Login with 'Client or Partner Client User'and verify TabAvailablity">
+               <test  name="Test Case: 011 'Login with 'Client or Partner Client User'and verify TabAvailablity">
     <classes>
      
       <class name="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User"/>
