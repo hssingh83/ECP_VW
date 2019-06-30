@@ -13,8 +13,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import PageActions.pom001_VoiceWatch_logIn_Page;
-import PageActions.pom002_VoiceWatch_Home_Page;
-import PageActions.pom004_VoiceWatch_Home_Page_location;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -67,6 +65,7 @@ public class location extends baseProperties {
 		System.out.println("Total no of link: " + linksCount);
 		
 		
+		@SuppressWarnings("unused")
 		String[] links = new String[linksCount];
 		System.out.println("List of links avaiablity: ");
 		
