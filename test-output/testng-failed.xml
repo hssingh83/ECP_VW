@@ -5,8 +5,8 @@
     <classes>
       <class name="VW_TC.linktest">
         <methods>
-          <include name="logInWithExpirixAdmin"/>
           <include name="navigateToAllLinks"/>
+          <include name="linktest"/>
         </methods>
       </class> <!-- VW_TC.linktest -->
     </classes>

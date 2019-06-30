@@ -23,7 +23,32 @@
      </classes> 
      </test>
      
-   
+    <test  name="003:Test Case Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst"/>
+      
+     </classes> 
+     </test>
+     
+     
+        <test  name="004: Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin"/>
+      
+     </classes> 
+     </test>
+     
+     
+          
+        <test  name="005: Test Case Login with 'Partner Developer' Credetials and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0005_login_With_Partner_Developer"/>
+      
+     </classes> 
+     </test>
      
      
      

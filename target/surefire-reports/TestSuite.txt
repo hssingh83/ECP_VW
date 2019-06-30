@@ -1,60 +1,85 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 27, Failures: 5, Errors: 0, Skipped: 9, Time elapsed: 58,128.578 s <<< FAILURE! - in TestSuite
-applicationLaunch(VW_TC.TC0002_login_With_Exmpirix_Admin)  Time elapsed: 1,032.976 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/div[1]/nav/div[1]/a/img"}
-  (Session info: chrome=75.0.3770.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Tests run: 34, Failures: 8, Errors: 0, Skipped: 18, Time elapsed: 2,536.454 s <<< FAILURE! - in TestSuite
+TabValidation(VW_TC.TC0004_login_With_Partner_Customer_Admin)  Time elapsed: 324.637 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to interpret value as array
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:62475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2453d32fbf12bf2a2b007ba57a1640c9
-*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div[1]/nav/div[1]/a/img}
-	at VW_TC.TC0002_login_With_Exmpirix_Admin.applicationLaunch(TC0002_login_With_Exmpirix_Admin.java:33)
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 23120, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6b592e8-6ae6-42fd-8369-5f51040c720a
+*** Element info: {Using=link text, value=Hammers}
+	at VW_TC.TC0004_login_With_Partner_Customer_Admin.TabValidation(TC0004_login_With_Partner_Customer_Admin.java:65)
 
-applicationLaunch(VW_TC.TC0006_login_With_Partner_Enhanced_User)  Time elapsed: 3,044.279 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/div[1]/nav/div[1]/a/img"}
-  (Session info: chrome=75.0.3770.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+applicationClose(VW_TC.TC0004_login_With_Partner_Customer_Admin)  Time elapsed: 325.184 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:64850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5c0c835c45c13e791808c1d0a89a3c94
-*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div[1]/nav/div[1]/a/img}
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 23120, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6b592e8-6ae6-42fd-8369-5f51040c720a
+	at VW_TC.TC0004_login_With_Partner_Customer_Admin.applicationClose(TC0004_login_With_Partner_Customer_Admin.java:72)
+
+applicationLaunch(VW_TC.TC0006_login_With_Partner_Enhanced_User)  Time elapsed: 2,004.97 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=https%3A//os-2k12-vm279.empirix.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20os-2k12-vm279.empirix.com.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 22736, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d513c5eb-8272-47a7-a3e0-643f44aeba1d
 	at VW_TC.TC0006_login_With_Partner_Enhanced_User.applicationLaunch(TC0006_login_With_Partner_Enhanced_User.java:33)
 
-logInWithPartnerUser(VW_TC.TC0007_login_With_Partner_User)  Time elapsed: 0.041 s  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
-	at VW_TC.TC0007_login_With_Partner_User.logInWithPartnerUser(TC0007_login_With_Partner_User.java:43)
-
-TabValidation(VW_TC.TC0007_login_With_Partner_User)  Time elapsed: 35,743.72 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"link text","selector":"Dashboard"}
-  (Session info: chrome=75.0.3770.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+applicationLaunch(VW_TC.TC0007_login_With_Partner_User)  Time elapsed: 2,008.378 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=https%3A//os-2k12-vm279.empirix.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20os-2k12-vm279.empirix.com.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:53992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 38ab64ffcc4d84c9d8c04433a655f2c9
-*** Element info: {Using=link text, value=Dashboard}
-	at VW_TC.TC0007_login_With_Partner_User.TabValidation(TC0007_login_With_Partner_User.java:57)
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 24076, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e73c09e-2ffe-4d1a-923e-73021f0fbc77
+	at VW_TC.TC0007_login_With_Partner_User.applicationLaunch(TC0007_login_With_Partner_User.java:33)
 
-applicationLaunch(VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin)  Time elapsed: 36,757.551 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/div[1]/nav/div[1]/a/img"}
-  (Session info: chrome=75.0.3770.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+applicationLaunch(VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin)  Time elapsed: 2,011.831 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=https%3A//os-2k12-vm279.empirix.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20os-2k12-vm279.empirix.com.
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'REM-L-SINGHH', ip: '10.12.60.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Windows\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:54226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 55104f03c01f6df83a746d73108dfcef
-*** Element info: {Using=xpath, value=//*[@id="wrapper"]/div[1]/nav/div[1]/a/img}
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 23064, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f1cb52-f74b-4514-8678-d14eccf7a641
 	at VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin.applicationLaunch(TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin.java:32)
+
+applicationLaunch(VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer)  Time elapsed: 2,015.22 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=https%3A//os-2k12-vm279.empirix.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20os-2k12-vm279.empirix.com.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12624, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4225add0-6820-4da7-8c83-782a11d150e9
+	at VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer.applicationLaunch(TC0009_login_With_Client_OR_Partner_Client_Developer.java:33)
+
+applicationLaunch(VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User)  Time elapsed: 2,019.151 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=https%3A//os-2k12-vm279.empirix.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20os-2k12-vm279.empirix.com.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 21788, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ca9182b-13d9-41b0-be95-054d68675ea3
+	at VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User.applicationLaunch(TC0010_login_With_Client_OR_Partner_Client_Enhanced_User.java:32)
+
+applicationLaunch(VW_TC.TC0011_login_With_Client_OR_Partner_Client_User)  Time elapsed: 2,023.05 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=https%3A//os-2k12-vm279.empirix.com/&c=UTF-8&f=regular&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20os-2k12-vm279.empirix.com.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'REM-L-SINGHH', ip: '10.12.60.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8136, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2dd13fb9-3816-4b4f-b777-9e24d9e31c95
+	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:34)
 

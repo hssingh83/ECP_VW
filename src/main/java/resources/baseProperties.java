@@ -35,7 +35,12 @@ prop=new Properties();
 
 //  FileInputStream fis=new FileInputStream("C:\\perforce_workspace\\Preempt\\DevOps\\VoiceWatch\\AutomationTest\\VoiceWatchAutomation\\VoiceWatchAutomation\\src\\main\\java\\resources\\data.properties");
 
-FileInputStream fis=new FileInputStream("C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\data.properties");
+//FileInputStream fis=new FileInputStream("C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\data.properties");
+
+FileInputStream fis=new FileInputStream("C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\data.properties");
+
+
+
 prop.load(fis);
 String browserName=prop.getProperty("browser");
 if(browserName.equals("chrome"))

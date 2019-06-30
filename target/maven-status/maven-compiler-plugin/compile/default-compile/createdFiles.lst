@@ -4,4 +4,6 @@ resources\baseProperties.class
 resources\ExtentReporterNG.class
 PageActions\pom001_VoiceWatch_logIn_Page.class
 PageActions\pom002_VoiceWatch_Home_Page.class
+PageActions\pom003_VoiceWatch_Home_Page_Hidden.class
+PageActions\pom004_VoiceWatch_Home_Page_location.class
 resources\listeners.class

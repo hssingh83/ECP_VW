@@ -5,18 +5,17 @@
     <listener class-name="resources.listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="002: Test Case Login with &#039;Empirix Admin&#039; Credetials&#039;and verify TabAvailablity(failed)">
+  <test thread-count="5" verbose="0" name="004: Test Case Login with &#039;Partner Customer Admin&#039; Credetials and verify TabAvailablity(failed)">
     <classes>
-      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin">
+      <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin">
         <methods>
           <include name="applicationLaunch"/>
+          <include name="TabValidation"/>
           <include name="applicationClose"/>
-          <include name="TabAvailabilityValidation"/>
-          <include name="logInWithExpirixAdmin"/>
         </methods>
-      </class> <!-- VW_TC.TC0002_login_With_Exmpirix_Admin -->
+      </class> <!-- VW_TC.TC0004_login_With_Partner_Customer_Admin -->
     </classes>
-  </test> <!-- 002: Test Case Login with 'Empirix Admin' Credetials'and verify TabAvailablity(failed) -->
+  </test> <!-- 004: Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity(failed) -->
   <test thread-count="5" verbose="0" name="006: Test Case Login with &#039;Partner Enhanced User Credetials&#039;and verify TabAvailablity(failed)">
     <classes>
       <class name="VW_TC.TC0006_login_With_Partner_Enhanced_User">
@@ -53,4 +52,40 @@
       </class> <!-- VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin -->
     </classes>
   </test> <!-- 008: Test Case 'Login with 'Client or Partner Client Customer Admin'and verify TabAvailablity(failed) -->
+  <test thread-count="5" verbose="0" name="009: Test Case &#039;Login with &#039;Client or Partner Client Developer&#039;and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer">
+        <methods>
+          <include name="applicationClose"/>
+          <include name="TabValidation"/>
+          <include name="applicationLaunch"/>
+          <include name="logInWithPartnerClient_Development"/>
+        </methods>
+      </class> <!-- VW_TC.TC0009_login_With_Client_OR_Partner_Client_Developer -->
+    </classes>
+  </test> <!-- 009: Test Case 'Login with 'Client or Partner Client Developer'and verify TabAvailablity(failed) -->
+  <test thread-count="5" verbose="0" name="010: Test Case &#039;Login with &#039;Client or Partner Client Enhanced User&#039;and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User">
+        <methods>
+          <include name="TabValidation"/>
+          <include name="logInWithPartnerClient_EnhancedUser"/>
+          <include name="applicationLaunch"/>
+          <include name="applicationClose"/>
+        </methods>
+      </class> <!-- VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User -->
+    </classes>
+  </test> <!-- 010: Test Case 'Login with 'Client or Partner Client Enhanced User'and verify TabAvailablity(failed) -->
+  <test thread-count="5" verbose="0" name="011: Test Case &#039;Login with &#039;Client or Partner Client User&#039;and verify TabAvailablity(failed)">
+    <classes>
+      <class name="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User">
+        <methods>
+          <include name="TabValidation"/>
+          <include name="logInWithPartnerClient_User"/>
+          <include name="applicationClose"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- VW_TC.TC0011_login_With_Client_OR_Partner_Client_User -->
+    </classes>
+  </test> <!-- 011: Test Case 'Login with 'Client or Partner Client User'and verify TabAvailablity(failed) -->
 </suite> <!-- Failed suite [Suite] -->

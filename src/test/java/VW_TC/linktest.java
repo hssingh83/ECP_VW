@@ -2,6 +2,7 @@ package VW_TC;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -52,29 +53,20 @@ public class linktest extends baseProperties {
 		@Test(priority=2)	
 	public void linktest() {
 	
-		List<WebElement> linksize = driver.findElements(By.tagName("a"));
-		int linksCount = linksize.size();
-		System.out.println("Total no of link: " + linksCount);
-		String[] links = new String[linksCount];
-		System.out.println("List of links avaiablity: ");
-
-		// print all the links from webpage
-		for (int i = 0; i < linksCount; i++) {
-			WebElement ele=linksize.get(i);
-			int x= ele.getLocation().getX();
+			List<WebElement> linksize = driver.findElements(By.tagName("a"));
+			int linksCount = linksize.size();
+			System.out.println("Total no of links Available: " + linksCount);
+			String[] links = new String[linksCount];
+			System.out.println("List of links available:");
 			
-			System.out.println (x);
-			/*if ()
-			{
-				System.out.println (ele.getAttribute("herf"));
-				
+	//		System.out.println (“List of links Available: ");
+			// print all the links from webpage
+			for (int i = 0; i < linksCount; i++) {
+			links[i] = linksize.get(i).getAttribute("href");
+			System.out.println(linksize.get(i).getAttribute("href"));
 			}
-			*/
 			
-		/*links[i] = linksize.get(i).getAttribute("href");
-		System.out.println(linksize.get(i).getAttribute("href"));*/
-		}
-		
-		
-}
-}
+						 
+			 }
+			 
+			}
