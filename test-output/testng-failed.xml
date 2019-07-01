@@ -7,7 +7,7 @@
         <methods>
           <include name="applicationLaunch"/>
           <include name="applicationClose"/>
-          <include name="footerMandatoryDetails"/>
+          <include name="dashBoardTabValidation"/>
         </methods>
       </class> <!-- VW_TC.TC0002_login_With_Exmpirix_Admin -->
     </classes>

@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import PageActions.pom001_VoiceWatch_logIn_Page;
 import PageActions.pom002_VoiceWatch_Home_Page;
+import PageActions.pom003_VoiceWatch_Dashboard_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -71,7 +72,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 	    d.footer();
 	
 	}
-	@Test(priority=4)
+/*	@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -86,7 +87,19 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 	    d.adminTab();
 	    d.selectedTab();
 	
+	}*/
+	@Test(priority=5)
+	public void dashBoardTabValidation () throws IOException, InterruptedException {
+		
+		pom003_VoiceWatch_Dashboard_Tab db=new pom003_VoiceWatch_Dashboard_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+				
+		db.OverallPerfomance_section_dashboard();
+		db.activetest_section_dashboard();
+		d.header();
+		d.footer();
 	}
+	
 	@AfterTest
 	public void applicationClose() {
 	

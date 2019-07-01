@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class pom003_VoiceWatch_Home_Page_Hidden {
-	private static Logger log =LogManager.getLogger(pom003_VoiceWatch_Home_Page_Hidden.class.getName());
+public class unused_Hidden {
+	private static Logger log =LogManager.getLogger(unused_Hidden.class.getName());
 
 	public static WebDriver driver;
 	
@@ -29,7 +29,7 @@ public class pom003_VoiceWatch_Home_Page_Hidden {
 
 	//ContractorA
 	
-	public pom003_VoiceWatch_Home_Page_Hidden(WebDriver driver) {
+	public unused_Hidden(WebDriver driver) {
 		this.driver=driver;
 	}
 	

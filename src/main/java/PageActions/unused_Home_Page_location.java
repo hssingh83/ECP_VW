@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class pom004_VoiceWatch_Home_Page_location {
-	private static Logger log =LogManager.getLogger(pom004_VoiceWatch_Home_Page_location.class.getName());
+public class unused_Home_Page_location {
+	private static Logger log =LogManager.getLogger(unused_Home_Page_location.class.getName());
 
 	public static WebDriver driver;
 	
@@ -29,7 +29,7 @@ public class pom004_VoiceWatch_Home_Page_location {
 
 	//ContractorA
 	
-	public pom004_VoiceWatch_Home_Page_location(WebDriver driver) {
+	public unused_Home_Page_location(WebDriver driver) {
 		this.driver=driver;
 	}
 	
