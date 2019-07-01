@@ -7,37 +7,13 @@
 </listeners>
 
 
-     <test  name="Test Case: 001- Login Page Verification ">
+     <test  name="Test Case: 007 - Login with 'Partner Use' Credetials and verify TabAvailablity">
     <classes>
      
-      <class name="VW_TC.TC0001_login_Page_Verification"/>
-         
-     </classes> 
-     </test>
-     
-     <test  name="Test Case: 002 - Login with 'Empirix Admin' Credetials'and verify TabAvailablity">
-    <classes>
-     
-      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin"/>
+      <class name="VW_TC.TC0007_login_With_Partner_User"/>
       
      </classes> 
-     </test>
      
-    <test  name="Test Case: 003 - Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity">
-    <classes>
-     
-      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst"/>
-      
-     </classes> 
-     </test>
-     
-     
-        <test name="Test Case: 004 - Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity">
-    <classes>
-     
-      <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin"/>
-      
-     </classes> 
      </test>
      
         
