@@ -159,28 +159,48 @@ public class pom002_VoiceWatch_Home_Page {
 		
 		Assert.assertTrue(driver.findElement(headerEmpirixLogo).isDisplayed());
 		log.debug("Verified that 'Empirix Logo' appeared on top left corner VoiceWatch dashboard");
+		
 		Assert.assertTrue(driver.findElement(headerEmpirixLogo).isEnabled());
 		log.debug("Verified that 'Empirix Logo' enabled on top left corner VoiceWatch dashboard");
+		
 		Assert.assertTrue(driver.findElement(headerEmpirixLebel).isDisplayed());
 		log.debug("Verified that 'Empirix Lebel' appeared on top left corner VoiceWatch dashboard");
+		
+		Assert.assertEquals(driver.findElement(headerEmpirixLebel).getText(), "EMPIRIX");		
+		log.debug("Verified that 'EMPIRIX' Text appeared on top left corner VoiceWatch dashboard");	
+		
 		Assert.assertTrue(driver.findElement(headerEmpirixLogo).isEnabled());
 		log.debug("Verified that 'Empirix label' enabled on top left corner VoiceWatch dashboard");
-		Assert.assertTrue(driver.findElement(headerApplicationName).isDisplayed());
-		log.debug("Verified that 'Application Nmae' appeared on top left corner VoiceWatch dashboard");
+		
+		Assert.assertTrue(driver.findElement(headerApplicationName).isDisplayed());		
+		log.debug("Verified that 'Application Name' appeared on top left corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(headerApplicationName).isEnabled());
-		log.debug("Verified that 'Application Nmae' enabled on top left corner VoiceWatch dashboard");
+		log.debug("Verified that 'Application Name' enabled on top left corner VoiceWatch dashboard");
+		
+		Assert.assertEquals(driver.findElement(headerApplicationName).getText(), "VoiceWatch");		
+		log.debug("Verified that 'VoiceWatch' Text appeared on top left corner VoiceWatch dashboard");	
+		
+		
 		Assert.assertTrue(driver.findElement(headerDropdown).isDisplayed());
 		log.debug("Verified that dropdown appeared on top right corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(headerDropdown).isEnabled());
 		log.debug("Verified that dropdwon enabled on top right corner VoiceWatch dashboard");
+		
 		Assert.assertTrue(driver.findElement(headerContactUs).isDisplayed());
 		log.debug("Verified that 'ContacUs' appeared on top right corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(headerContactUs).isEnabled());
 		log.debug("Verified that 'ContacUs' enabled on top right corner VoiceWatch dashboard");
+		Assert.assertEquals(driver.findElement(headerContactUs).getText(), "Contact Us");		
+		log.debug("Verified that 'Contact Us' Text appeared on top left corner VoiceWatch dashboard");	
+		
+		
 		Assert.assertTrue(driver.findElement(headerHelp).isDisplayed());
 		log.debug("Verified that 'Help' appeared on top right corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(headerHelp).isEnabled());
 		log.debug("Verified that 'help' enabled on top right corner VoiceWatch dashboard");
+		
+		Assert.assertEquals(driver.findElement(headerHelp).getText(), "Help");		
+		log.debug("Verified that 'Help' Text appeared on top left corner VoiceWatch dashboard");	
 		
 		
 	}
@@ -191,19 +211,35 @@ public void footer() {
 		log.debug("Verified that 'BackToTop link' appeared on bottom right corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(footerBackToTop).isEnabled());
 		log.debug("Verified that 'BackToTop link' enabled on bottom right corner VoiceWatch dashboard");
-		Assert.assertTrue(driver.findElement(footerVersion).isDisplayed());
-		log.debug("Verified that 'Version' appeared on bottom left corner VoiceWatch dashboard");
+		Assert.assertEquals(driver.findElement(footerBackToTop).getText(), "Back to top");		
+		log.debug("Verified that 'Back to top' Text appeared on top left corner VoiceWatch dashboard");	
+		
+		
+		Assert.assertTrue(driver.findElement(footerVersion).isDisplayed());		
+		log.debug("Verified that 'Version' Text appeared on bottom left corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(footerVersion).isEnabled());
-		log.debug("Verified that 'Version' enabled on right corner VoiceWatch dashboard");
+		log.debug("Verified that 'Version' test enabled on right corner VoiceWatch dashboard");
+		Assert.assertEquals(driver.findElement(footerVersion).getText(), "Version");		
+		log.debug("Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard");	
+		
+		
+		
 		Assert.assertTrue(driver.findElement(footerVersionNumber).isDisplayed());
-		log.debug("Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard");
+		log.debug("Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard");		
 		Assert.assertTrue(driver.findElement(footerVersionNumber).isEnabled());
 		log.debug("Verified that 'Version Number' enabled on right corner VoiceWatch dashboard");
+		Assert.assertEquals(driver.findElement(footerVersionNumber).getText().contains("26.0"), true);		
+		log.debug("Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard");	
+		
+		
 		
 		Assert.assertTrue(driver.findElement(footerEmpirixLebel).isDisplayed());
 		log.debug("Verified that 'Empirix Label' appeared on bottom left corner VoiceWatch dashboard");
 		Assert.assertTrue(driver.findElement(footerEmpirixLebel).isEnabled());
 		log.debug("Verified that 'Empirix Label' enabled on right corner VoiceWatch dashboard");
+		
+		Assert.assertEquals(driver.findElement(footerEmpirixLebel).getText(), "Empirix");		
+		log.debug("Verified that 'Empirix' Text appeared on top left corner VoiceWatch dashboard");	
 			
 	}
 	

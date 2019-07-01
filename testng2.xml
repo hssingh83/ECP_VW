@@ -7,13 +7,12 @@
 </listeners>
 
 
-     <test  name="Test Case: 007 - Login with 'Partner Use' Credetials and verify TabAvailablity">
+   <test  name="Test Case: 002 - Login with 'Empirix Admin' Credetials'and verify TabAvailablity">
     <classes>
      
-      <class name="VW_TC.TC0007_login_With_Partner_User"/>
+      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin"/>
       
      </classes> 
-     
      </test>
      
         
