@@ -229,7 +229,7 @@ public void footer() {
 		Assert.assertTrue(driver.findElement(footerVersionNumber).isEnabled());
 		log.debug("Verified that 'Version Number' enabled on right corner VoiceWatch dashboard");
 		Assert.assertEquals(driver.findElement(footerVersionNumber).getText().contains("26.0"), true);		
-		log.debug("Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard");	
+		log.debug("Verified that 'Version contain 26.0' appeared on top left corner VoiceWatch dashboard");	
 		
 		
 		
