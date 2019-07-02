@@ -77,10 +77,10 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		Assert.assertEquals(driver.findElement(testTimeColumn).getText(), "Test Time");		
 		log.debug("Verified that 'Test Time' coloumn under Alerts Tab");
 		
-		Assert.assertTrue(driver.findElement(hammerColumn).isDisplayed());
+	/*	Assert.assertTrue(driver.findElement(hammerColumn).isDisplayed());
 		log.debug("Verified that 'Hammer' dislayed under Alerts Tab");
 		Assert.assertEquals(driver.findElement(hammerColumn).getText(), "Hammer");		
-		log.debug("Verified that 'Hammer' coloumn under Alerts Tab");
+		log.debug("Verified that 'Hammer' coloumn under Alerts Tab");*/
 		
 		Assert.assertTrue(driver.findElement(testColumn).isDisplayed());
 		log.debug("Verified that 'Test' dislayed under Alerts Tab");
@@ -96,12 +96,6 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		log.debug("Verified that 'Error Message' dislayed under Alerts Tab");
 		Assert.assertEquals(driver.findElement(errorMessageColumn).getText(), "Error Message");		
 		log.debug("Verified that 'Error Message' coloumn under Alerts Tab");
-		
-	/*	
-		Assert.assertTrue(driver.findElement(errorMessageColumn).isDisplayed());
-		log.debug("Verified that 'Threshold' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(errorMessageColumn).getText(), "Threshold");		
-		log.debug("Verified that 'Threshold' coloumn under Alerts Tab");*/
 		
 		Assert.assertTrue(driver.findElement(ThresholdColumn).isDisplayed());
 		log.debug("Verified that 'Threshold' dislayed under Alerts Tab");
@@ -135,9 +129,23 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		log.debug("Verified that 'Warning' text contain under Alerts Tab");
 	}
 
+
+	
+	
+public void hammerColumn() {
+	
+	if (driver.findElements(hammerColumn).isEmpty()) {
+		
+		log.debug("Verified that 'Hammer' coloum is not displaying under Alerts Tab");
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that 'Hammer' coloum dislayed under Alerts Tab");
+		
+	}
+
 }
-	
-	
-	
-	
+}
 	

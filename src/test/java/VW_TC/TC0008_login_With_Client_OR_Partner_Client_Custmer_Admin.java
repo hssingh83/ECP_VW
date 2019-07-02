@@ -105,6 +105,7 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		at.alertsValidations();		
+		at.hammerColumn();
 		d.header();
 		d.footer();
 		

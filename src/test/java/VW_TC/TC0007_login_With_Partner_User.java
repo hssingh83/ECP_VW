@@ -103,7 +103,8 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 		
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		at.alertsValidations();		
+		at.alertsValidations();	
+		at.hammerColumn();
 		d.header();
 		d.footer();
 		
