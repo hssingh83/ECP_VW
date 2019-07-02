@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import PageActions.pom001_VoiceWatch_logIn_Page;
 import PageActions.pom002_VoiceWatch_Home_Page;
+import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -81,6 +82,18 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 	    d.selectedTab();
 	
 	}
+	
+	@Test(priority=6)
+	public void alertTabValidation () throws IOException, InterruptedException {
+		
+		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+		at.alertsValidations();		
+		d.header();
+		d.footer();
+		
+	}
+	
 	@AfterTest
 	public void applicationClose() {
 	

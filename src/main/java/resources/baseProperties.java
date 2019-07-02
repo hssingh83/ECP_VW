@@ -45,7 +45,7 @@ prop.load(fis);
 String browserName=prop.getProperty("browser");
 if(browserName.equals("chrome"))
 {
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
     driver=new ChromeDriver();
     log.debug("Chrome Driver intilized successfully");
     log.debug("Chrome Browser selected & Launching in few second");
@@ -56,7 +56,7 @@ if(browserName.equals("chrome"))
 else if (browserName.equals("firefox"))
 	
 {
-	System.setProperty("webdriver.gecko.driver","C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\drivers\\geckodriver.exe");
+	System.setProperty("webdriver.gecko.driver","C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\drivers\\geckodriver.exe");
 	driver = new FirefoxDriver();
 	
 	log.info("Firefox Driver intilized successfully");
@@ -66,7 +66,7 @@ else if (browserName.equals("firefox"))
 //IE
 else if (browserName.equals("ie"))
 {
-	System.setProperty("webdriver.ie.driver","C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\drivers\\IEDriverServer.exe");
+	System.setProperty("webdriver.ie.driver","C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\drivers\\IEDriverServer.exe");
 	driver = new InternetExplorerDriver();
 	
 	log.info("IE Driver intilized successfully");

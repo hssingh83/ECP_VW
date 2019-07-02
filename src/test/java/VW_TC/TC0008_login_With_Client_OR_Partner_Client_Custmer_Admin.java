@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import PageActions.pom001_VoiceWatch_logIn_Page;
 import PageActions.pom002_VoiceWatch_Home_Page;
 import PageActions.pom003_VoiceWatch_Dashboard_Tab;
+import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -95,7 +96,20 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		db.activetest_section_dashboard();
 		d.header();
 		d.footer();
+		
+			}
+	
+	@Test(priority=6)
+	public void alertTabValidation () throws IOException, InterruptedException {
+		
+		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+		at.alertsValidations();		
+		d.header();
+		d.footer();
+		
 	}
+	
 	@AfterTest
 	public void applicationClose() {
 	
