@@ -113,14 +113,15 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 	public void testTabValidation () throws IOException, InterruptedException {
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
-		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		at.alertsValidations();		
 		d.header();
 		d.footer();
 		ts.testsValidations();
+		ts.testCreateicon();
+		ts.testCreateLink();
 		
 	}
+	
 	
 	@AfterTest
 	public void applicationClose() {

@@ -120,6 +120,8 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		d.header();
 		d.footer();
 		ts.testsValidations();
+		ts.testCreateicon();
+		ts.testCreateLink();
 		
 	}
 	

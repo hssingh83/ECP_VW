@@ -115,14 +115,14 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	public void testTabValidation () throws IOException, InterruptedException {
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
-		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		at.alertsValidations();		
 		d.header();
 		d.footer();
 		ts.testsValidations();
 		
 	}
+	
+	
 	
 	@AfterTest
 	public void applicationClose() {

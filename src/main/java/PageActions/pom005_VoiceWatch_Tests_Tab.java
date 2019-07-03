@@ -83,12 +83,12 @@ public class pom005_VoiceWatch_Tests_Tab {
 		Assert.assertFalse(driver.findElement(filterBox).isSelected());		
 		log.debug("Verified that 'Filter by test name' is blank while access test tab");
 		
-		Assert.assertTrue(driver.findElement(testCreateplusbutton).isDisplayed());
+		/*Assert.assertTrue(driver.findElement(testCreateplusbutton).isDisplayed());
 		log.debug("Verified that new test creation plus (+) icon appeared on top left side under Tests tab");		
 		Assert.assertTrue(driver.findElement(testCreateplusbutton).isEnabled());
 		log.debug("Verified that new test creation plus (+) icon enabled on top left side under Tests tab");		
 		Assert.assertFalse(driver.findElement(testCreateplusbutton).isSelected());
-		log.debug("Verified that new test creation plus (+) icon not selected while access the Tests tab");
+		log.debug("Verified that new test creation plus (+) icon not selected while access the Tests tab");*/
 		
 		Assert.assertTrue(driver.findElement(testlabel).isDisplayed());
 		log.debug("Verified that 'Test' label appeared on under Tests tab");		
@@ -100,94 +100,48 @@ public class pom005_VoiceWatch_Tests_Tab {
 		Assert.assertEquals(driver.findElement(pleaseSelectlabel).getText(), "Please select a test");		
 		log.debug("Verified that 'Please select a test ' Text validated under Test Tab");
 		
-		Assert.assertTrue(driver.findElement(testCreateLink).isDisplayed());
+		/*Assert.assertTrue(driver.findElement(testCreateLink).isDisplayed());
 		log.debug("Verified that new create a new test link appeared under Tests tab");		
 		Assert.assertTrue(driver.findElement(testCreateLink).isEnabled());
-		log.debug("Verified that new create a new test link enabled under Tests tab");	
+		log.debug("Verified that new create a new test link enabled under Tests tab");	*/
 		
 	}
+	
+public void testCreateicon() {
+		
+		if (driver.findElements(testCreateplusbutton).isEmpty()) {
+			
+			log.debug("Verified that new test creation plus (+) icon not appeared on top left side under Tests tab");	
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that new test creation plus (+) icon appeared on top left side under Tests tab");	
+			
+		}
 }
-	/*	Assert.assertTrue(driver.findElement(filterBox).isDisplayed());
-		log.debug("Verified that 'Filter by test name or tag filter'appeared under Alert tab");
-		Assert.assertTrue(driver.findElement(filterBox).isEnabled());		
-		log.debug("Verified that 'Filter by test name or tag filter'enabled under Alert tab");
-		Assert.assertFalse(driver.findElement(filterBox).isSelected());		
-		log.debug("Verified that 'Filter by test name or tag filter'selectable under Alert tab");
-		
-		
-		Assert.assertTrue(driver.findElement(testTimeColumn).isDisplayed());
-		log.debug("Verified that 'Test Time' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(testTimeColumn).getText(), "Test Time");		
-		log.debug("Verified that 'Test Time' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(hammerColumn).isDisplayed());
-		log.debug("Verified that 'Hammer' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(hammerColumn).getText(), "Hammer");		
-		log.debug("Verified that 'Hammer' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(testColumn).isDisplayed());
-		log.debug("Verified that 'Test' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(testColumn).getText(), "Test");		
-		log.debug("Verified that 'Test' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(errorStepColumn).isDisplayed());
-		log.debug("Verified that 'Error Step' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(errorStepColumn).getText(), "Error Step");		
-		log.debug("Verified that 'Error Step' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(errorMessageColumn).isDisplayed());
-		log.debug("Verified that 'Error Message' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(errorMessageColumn).getText(), "Error Message");		
-		log.debug("Verified that 'Error Message' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(ThresholdColumn).isDisplayed());
-		log.debug("Verified that 'Threshold' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(ThresholdColumn).getText(), "Threshold");		
-		log.debug("Verified that 'Threshold' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(SeverityColumn).isDisplayed());
-		log.debug("Verified that 'Severity' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(SeverityColumn).getText(), "Severity");		
-		log.debug("Verified that 'Severity' coloumn under Alerts Tab");
-		
-
-		Assert.assertTrue(driver.findElement(alertStatusColumn).isDisplayed());
-		log.debug("Verified that 'Alert Status' dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(alertStatusColumn).getText(), "Alert Status");		
-		log.debug("Verified that 'Alert Status' coloumn under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(totallabel).isDisplayed());
-		log.debug("Verified that count of total alert dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(totallabel).getText(), "Total");		
-		log.debug("Verified that 'Toal' text contain under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(criticallabel).isDisplayed());
-		log.debug("Verified that count of critical alert dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(criticallabel).getText(), "Critical");		
-		log.debug("Verified that 'critical' text contain under Alerts Tab");
-		
-		Assert.assertTrue(driver.findElement(warninglabel).isDisplayed());
-		log.debug("Verified that count of Warning alerts dislayed under Alerts Tab");
-		Assert.assertEquals(driver.findElement(warninglabel).getText(), "Warning");		
-		log.debug("Verified that 'Warning' text contain under Alerts Tab");*/
 	
-
-
+public void testCreateLink() {
 	
-	
-/*public void hammerColumn() {
-	
-	if (driver.findElements(hammerColumn).isEmpty()) {
+	if (driver.findElements(testCreateplusbutton).isEmpty()) {
 		
-		log.debug("Verified that 'Hammer' coloum is not displaying under Alerts Tab");
+		log.debug("Verified that new test created link is not appearing under Tests tab");		
 		
 					
 	}else
 	
 	{
-		log.debug("Verified that 'Hammer' coloum dislayed under Alerts Tab");
+		log.debug("Verified that new test created link appeared under Tests tab");
 		
-	}*/
+	}
+}	
 
+}	
+	
+
+
+	
+	
 
 	

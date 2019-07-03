@@ -123,7 +123,8 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 		d.header();
 		d.footer();
 		ts.testsValidations();
-		
+		ts.testCreateicon();
+		ts.testCreateLink();
 	}
 	
 	
