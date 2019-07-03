@@ -15,6 +15,7 @@ import PageActions.pom001_VoiceWatch_logIn_Page;
 import PageActions.pom002_VoiceWatch_Home_Page;
 import PageActions.pom003_VoiceWatch_Dashboard_Tab;
 import PageActions.pom004_VoiceWatch_Alerts_Tab;
+import PageActions.pom005_VoiceWatch_Tests_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -109,6 +110,18 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 		d.footer();
 		
 	}
+	
+	@Test(priority=7)
+	public void testTabValidation () throws IOException, InterruptedException {
+		
+		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+		d.header();
+		d.footer();
+		ts.testsValidations();
+		
+	}
+	
 	
 	@AfterTest
 	public void applicationClose() {
