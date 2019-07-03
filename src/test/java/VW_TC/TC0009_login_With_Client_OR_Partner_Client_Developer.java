@@ -119,7 +119,8 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 		d.header();
 		d.footer();
 		ts.testsValidations();
-		
+		ts.createTestbybutton();
+		ts.createTestbyLink();
 	}
 	
 	

@@ -119,6 +119,8 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 		d.header();
 		d.footer();
 		ts.testsValidations();
+		ts.createTestbybutton();
+		ts.createTestbyLink();
 		
 	}
 	

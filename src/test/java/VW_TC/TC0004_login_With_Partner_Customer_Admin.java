@@ -119,7 +119,8 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		d.header();
 		d.footer();
 		ts.testsValidations();
-		
+		ts.createTestbybutton();
+		ts.createTestbyLink();
 	}
 	
 	

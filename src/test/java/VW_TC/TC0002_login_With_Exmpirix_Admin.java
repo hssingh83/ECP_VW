@@ -126,6 +126,8 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		d.header();
 		d.footer();
 		ts.testsValidations();
+		ts.createTestbybutton();
+		ts.createTestbyLink();
 		
 	}
 	

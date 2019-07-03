@@ -120,6 +120,8 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		d.header();
 		d.footer();
 		ts.testsValidations();
+		ts.createTestbybutton();
+		ts.createTestbyLink();
 		
 	}
 	

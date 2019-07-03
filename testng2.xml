@@ -8,6 +8,14 @@
 
 
  
+       <test  name="Test Case: 000- Login Page Verification ">
+    <classes>
+     
+      <class name="VW_TC.TC0000_Debug_Testing"/>
+         
+     </classes> 
+     </test>
+     
        <test  name="Test Case: 001- Login Page Verification ">
     <classes>
      
@@ -39,8 +47,7 @@
       <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin"/>
       
      </classes> 
-     </test>
-     
+     </test>    
      
           
 
