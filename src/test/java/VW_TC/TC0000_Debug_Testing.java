@@ -19,13 +19,13 @@ import resources.baseProperties;
 import resources.dataDriven;
 
 
-public class TC0000_login_With_Exmpirix_Admin_Sanity extends baseProperties{
+public class TC0000_Debug_Testing extends baseProperties{
 	
 //public class TC0001_login extends TC0000_reusable{
 	
 	
 	
-	private static Logger log =LogManager.getLogger(TC0000_login_With_Exmpirix_Admin_Sanity.class.getName());
+	private static Logger log =LogManager.getLogger(TC0000_Debug_Testing.class.getName());
 	
 //	 private class TC0001_login extends TC0000_reusable {
 	
