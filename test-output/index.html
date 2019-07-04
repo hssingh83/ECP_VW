@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\hsingh\AppData\Local\Temp\testng-eclipse--439026948\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\hsingh\git_project\ECP_VW\testng2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,51 +91,145 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,  7 skipped,  </span>
+                    <span class="method-stats">24 methods, 1 failed,   23 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="TabValidation">TabValidation</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="testTabValidation">testTabValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="TabAvailabilityValidation">TabAvailabilityValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="alertTabValidation">alertTabValidation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="TabValidation">TabValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="dashBoardTabValidation">dashBoardTabValidation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="TabValidation">TabValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="footerMandatoryDetails">footerMandatoryDetails</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="alertTabValidation">alertTabValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="headerMandatoryDetails">headerMandatoryDetails</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="alertTabValidation">alertTabValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="logInWithPartnerClient_User">logInWithPartnerClient_User</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="alertTabValidation">alertTabValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User" hash-for-method="testTabValidation">testTabValidation</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="dashBoardTabValidation">dashBoardTabValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="dashBoardTabValidation">dashBoardTabValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="dashBoardTabValidation">dashBoardTabValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="footerMandatoryDetails">footerMandatoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="footerMandatoryDetails">footerMandatoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="footerMandatoryDetails">footerMandatoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="headerMandatoryDetails">headerMandatoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="headerMandatoryDetails">headerMandatoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="headerMandatoryDetails">headerMandatoryDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0001_login_Page_Verification" hash-for-method="logInScreenVerification">logInScreenVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0000_Debug_Testing" hash-for-method="logInWithExpirixAdmin">logInWithExpirixAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="logInWithExpirixAdmin">logInWithExpirixAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="logInWithExpirixBusinessAnalyst">logInWithExpirixBusinessAnalyst</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0004_login_With_Partner_Customer_Admin" hash-for-method="logInWithPartnerCustomerAdmin">logInWithPartnerCustomerAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0000_Debug_Testing" hash-for-method="testTabValidation">testTabValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0002_login_With_Exmpirix_Admin" hash-for-method="testTabValidation">testTabValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="VW_TC.TC0003_login_With_Empirix_Business_Analyst" hash-for-method="testTabValidation">testTabValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -146,329 +240,54 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">VW_TC.TC0011_login_With_Client_OR_Partner_Client_User</span>
+              <img src="failed.png"/>
+              <span class="class-name">VW_TC.TC0004_login_With_Partner_Customer_Admin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TabValidation">
-                  </a> <!-- TabValidation -->
-                  <span class="method-name">TabValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+                  <a name="testTabValidation">
+                  </a> <!-- testTabValidation -->
+                  <span class="method-name">testTabValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to convert data to an object
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.33&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 22984, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 63b0482c-5af7-4d9c-bde7-5a10bd801d0a
+*** Element info: {Using=xpath, value=//div[@class=&apos;row&apos;]//button[@class=&apos;btn btn-primary btn-sm&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at PageActions.pom005_VoiceWatch_Tests_Tab.createTestbybutton(pom005_VoiceWatch_Tests_Tab.java:99)
+	at VW_TC.TC0004_login_With_Partner_Customer_Admin.testTabValidation(TC0004_login_With_Partner_Customer_Admin.java:122)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">VW_TC.TC0000_Debug_Testing</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="alertTabValidation">
-                  </a> <!-- alertTabValidation -->
-                  <span class="method-name">alertTabValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="dashBoardTabValidation">
-                  </a> <!-- dashBoardTabValidation -->
-                  <span class="method-name">dashBoardTabValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="footerMandatoryDetails">
-                  </a> <!-- footerMandatoryDetails -->
-                  <span class="method-name">footerMandatoryDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="headerMandatoryDetails">
-                  </a> <!-- headerMandatoryDetails -->
-                  <span class="method-name">headerMandatoryDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="logInWithPartnerClient_User">
-                  </a> <!-- logInWithPartnerClient_User -->
-                  <span class="method-name">logInWithPartnerClient_User</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="logInWithExpirixAdmin">
+                  </a> <!-- logInWithExpirixAdmin -->
+                  <span class="method-name">logInWithExpirixAdmin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -476,202 +295,557 @@ Session ID: 64895b68-757d-460a-af90-12e76929e6b4
                   <a name="testTabValidation">
                   </a> <!-- testTabValidation -->
                   <span class="method-name">testTabValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;192.168.118.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14008, moz:profile: C:\Users\hsingh\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 64895b68-757d-460a-af90-12e76929e6b4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
-	at resources.baseProperties.intializeDriver(baseProperties.java:81)
-	at VW_TC.TC0011_login_With_Client_OR_Partner_Client_User.applicationLaunch(TC0011_login_With_Client_OR_Partner_Client_User.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-	at org.testng.TestRunner.run(TestRunner.java:497)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">VW_TC.TC0003_login_With_Empirix_Business_Analyst</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TabValidation">
+                  </a> <!-- TabValidation -->
+                  <span class="method-name">TabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="alertTabValidation">
+                  </a> <!-- alertTabValidation -->
+                  <span class="method-name">alertTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashBoardTabValidation">
+                  </a> <!-- dashBoardTabValidation -->
+                  <span class="method-name">dashBoardTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="footerMandatoryDetails">
+                  </a> <!-- footerMandatoryDetails -->
+                  <span class="method-name">footerMandatoryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerMandatoryDetails">
+                  </a> <!-- headerMandatoryDetails -->
+                  <span class="method-name">headerMandatoryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logInWithExpirixBusinessAnalyst">
+                  </a> <!-- logInWithExpirixBusinessAnalyst -->
+                  <span class="method-name">logInWithExpirixBusinessAnalyst</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTabValidation">
+                  </a> <!-- testTabValidation -->
+                  <span class="method-name">testTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">VW_TC.TC0004_login_With_Partner_Customer_Admin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TabValidation">
+                  </a> <!-- TabValidation -->
+                  <span class="method-name">TabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="alertTabValidation">
+                  </a> <!-- alertTabValidation -->
+                  <span class="method-name">alertTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashBoardTabValidation">
+                  </a> <!-- dashBoardTabValidation -->
+                  <span class="method-name">dashBoardTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="footerMandatoryDetails">
+                  </a> <!-- footerMandatoryDetails -->
+                  <span class="method-name">footerMandatoryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerMandatoryDetails">
+                  </a> <!-- headerMandatoryDetails -->
+                  <span class="method-name">headerMandatoryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logInWithPartnerCustomerAdmin">
+                  </a> <!-- logInWithPartnerCustomerAdmin -->
+                  <span class="method-name">logInWithPartnerCustomerAdmin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">VW_TC.TC0001_login_Page_Verification</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logInScreenVerification">
+                  </a> <!-- logInScreenVerification -->
+                  <span class="method-name">logInScreenVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">VW_TC.TC0002_login_With_Exmpirix_Admin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TabAvailabilityValidation">
+                  </a> <!-- TabAvailabilityValidation -->
+                  <span class="method-name">TabAvailabilityValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="alertTabValidation">
+                  </a> <!-- alertTabValidation -->
+                  <span class="method-name">alertTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashBoardTabValidation">
+                  </a> <!-- dashBoardTabValidation -->
+                  <span class="method-name">dashBoardTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="footerMandatoryDetails">
+                  </a> <!-- footerMandatoryDetails -->
+                  <span class="method-name">footerMandatoryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headerMandatoryDetails">
+                  </a> <!-- headerMandatoryDetails -->
+                  <span class="method-name">headerMandatoryDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logInWithExpirixAdmin">
+                  </a> <!-- logInWithExpirixAdmin -->
+                  <span class="method-name">logInWithExpirixAdmin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTabValidation">
+                  </a> <!-- testTabValidation -->
+                  <span class="method-name">testTabValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hsingh\AppData\Local\Temp\testng-eclipse--439026948\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hsingh\git_project\ECP_VW\testng2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;resources.listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Case: 000- Login Page Verification &quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;VW_TC.TC0011_login_With_Client_OR_Partner_Client_User&quot;/&gt;
+      &lt;class name=&quot;VW_TC.TC0000_Debug_Testing&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test Case: 000- Login Page Verification  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Case: 001- Login Page Verification &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VW_TC.TC0001_login_Page_Verification&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Case: 001- Login Page Verification  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Case: 002 - Login with &amp;#039;Empirix Admin&amp;#039; Credetials&amp;#039;and verify TabAvailablity&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VW_TC.TC0002_login_With_Exmpirix_Admin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Case: 002 - Login with &apos;Empirix Admin&apos; Credetials&apos;and verify TabAvailablity --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Case: 003 - Login with &amp;#039;Empirix Business Analyst&amp;#039; Credetials&amp;#039;and verify TabAvailablity&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VW_TC.TC0003_login_With_Empirix_Business_Analyst&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Case: 003 - Login with &apos;Empirix Business Analyst&apos; Credetials&apos;and verify TabAvailablity --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Case: 004 - Test Case Login with &amp;#039;Partner Customer Admin&amp;#039; Credetials and verify TabAvailablity&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;VW_TC.TC0004_login_With_Partner_Customer_Admin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Case: 004 - Test Case Login with &apos;Partner Customer Admin&apos; Credetials and verify TabAvailablity --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test Case: 000- Login Page Verification  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Case: 001- Login Page Verification  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Case: 002 - Login with 'Empirix Admin' Credetials'and verify TabAvailablity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Case: 003 - Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Case: 004 - Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'headerMandatoryDetails')
-data.setCell(0, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'TabValidation')
+data.setCell(0, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(0, 3, 200726);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'alertTabValidation')
-data.setCell(1, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'logInWithPartnerCustomerAdmin')
+data.setCell(1, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(1, 3, 29288);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dashBoardTabValidation')
-data.setCell(2, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'logInWithExpirixAdmin')
+data.setCell(2, 2, 'VW_TC.TC0000_Debug_Testing')
+data.setCell(2, 3, 27781);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'footerMandatoryDetails')
-data.setCell(3, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'logInWithExpirixBusinessAnalyst')
+data.setCell(3, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(3, 3, 20925);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testTabValidation')
-data.setCell(4, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'logInWithExpirixAdmin')
+data.setCell(4, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(4, 3, 13649);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logInWithPartnerClient_User')
-data.setCell(5, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'testTabValidation')
+data.setCell(5, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(5, 3, 13189);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TabValidation')
-data.setCell(6, 2, 'VW_TC.TC0011_login_With_Client_OR_Partner_Client_User')
-data.setCell(6, 3, 0);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(6, 1, 'testTabValidation')
+data.setCell(6, 2, 'VW_TC.TC0000_Debug_Testing')
+data.setCell(6, 3, 8569);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testTabValidation')
+data.setCell(7, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(7, 3, 7771);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testTabValidation')
+data.setCell(8, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(8, 3, 4367);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'dashBoardTabValidation')
+data.setCell(9, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(9, 3, 2307);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'dashBoardTabValidation')
+data.setCell(10, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(10, 3, 2165);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'dashBoardTabValidation')
+data.setCell(11, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(11, 3, 1747);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'alertTabValidation')
+data.setCell(12, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(12, 3, 1589);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'alertTabValidation')
+data.setCell(13, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(13, 3, 1430);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'alertTabValidation')
+data.setCell(14, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(14, 3, 1384);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TabAvailabilityValidation')
+data.setCell(15, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(15, 3, 846);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TabValidation')
+data.setCell(16, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(16, 3, 794);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'logInScreenVerification')
+data.setCell(17, 2, 'VW_TC.TC0001_login_Page_Verification')
+data.setCell(17, 3, 466);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'headerMandatoryDetails')
+data.setCell(18, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(18, 3, 254);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'headerMandatoryDetails')
+data.setCell(19, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(19, 3, 246);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'headerMandatoryDetails')
+data.setCell(20, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(20, 3, 223);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'footerMandatoryDetails')
+data.setCell(21, 2, 'VW_TC.TC0002_login_With_Exmpirix_Admin')
+data.setCell(21, 3, 161);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'footerMandatoryDetails')
+data.setCell(22, 2, 'VW_TC.TC0003_login_With_Empirix_Business_Analyst')
+data.setCell(22, 3, 160);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'footerMandatoryDetails')
+data.setCell(23, 2, 'VW_TC.TC0004_login_With_Partner_Customer_Admin')
+data.setCell(23, 3, 147);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">VW_TC.TC0011_login_With_Client_OR_Partner_Client_User</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">VW_TC.TC0000_Debug_Testing</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">applicationLaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">logInWithPartnerClient_User</span>
-                <span class="method-start">-1562180197420 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">headerMandatoryDetails</span>
-                <span class="method-start">-1562180197420 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">footerMandatoryDetails</span>
-                <span class="method-start">-1562180197420 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TabValidation</span>
-                <span class="method-start">-1562180197420 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">dashBoardTabValidation</span>
-                <span class="method-start">-1562180197420 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">alertTabValidation</span>
-                <span class="method-start">-1562180197420 ms</span>
+                <span class="method-name">logInWithExpirixAdmin</span>
+                <span class="method-start">19906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTabValidation</span>
-                <span class="method-start">-1562180197420 ms</span>
+                <span class="method-start">47691 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">applicationClose</span>
+                <span class="method-start">56261 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VW_TC.TC0001_login_Page_Verification</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">applicationLaunch</span>
+                <span class="method-start">57127 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logInScreenVerification</span>
+                <span class="method-start">86558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">applicationClose</span>
+                <span class="method-start">87025 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VW_TC.TC0002_login_With_Exmpirix_Admin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">applicationLaunch</span>
+                <span class="method-start">87817 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logInWithExpirixAdmin</span>
+                <span class="method-start">107572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">headerMandatoryDetails</span>
+                <span class="method-start">121223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">footerMandatoryDetails</span>
+                <span class="method-start">121470 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TabAvailabilityValidation</span>
+                <span class="method-start">121632 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dashBoardTabValidation</span>
+                <span class="method-start">122478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">alertTabValidation</span>
+                <span class="method-start">124226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTabValidation</span>
+                <span class="method-start">125611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">applicationClose</span>
+                <span class="method-start">133382 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VW_TC.TC0003_login_With_Empirix_Business_Analyst</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">applicationLaunch</span>
+                <span class="method-start">134254 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logInWithExpirixBusinessAnalyst</span>
+                <span class="method-start">160111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">headerMandatoryDetails</span>
+                <span class="method-start">181037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">footerMandatoryDetails</span>
+                <span class="method-start">181292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TabValidation</span>
+                <span class="method-start">181453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dashBoardTabValidation</span>
+                <span class="method-start">182247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">alertTabValidation</span>
+                <span class="method-start">184413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTabValidation</span>
+                <span class="method-start">186002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">applicationClose</span>
+                <span class="method-start">190369 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">VW_TC.TC0004_login_With_Partner_Customer_Admin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">applicationLaunch</span>
+                <span class="method-start">191209 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logInWithPartnerCustomerAdmin</span>
+                <span class="method-start">219048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">headerMandatoryDetails</span>
+                <span class="method-start">248337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">footerMandatoryDetails</span>
+                <span class="method-start">248561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TabValidation</span>
+                <span class="method-start">248709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dashBoardTabValidation</span>
+                <span class="method-start">449435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">alertTabValidation</span>
+                <span class="method-start">451743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTabValidation</span>
+                <span class="method-start">453174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">applicationClose</span>
+                <span class="method-start">466365 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

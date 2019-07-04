@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.ExtentReporterNG"/>
+    <listener class-name="resources.listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test Case: 004 - Test Case Login with &#039;Partner Customer Admin&#039; Credetials and verify TabAvailablity(failed)">
     <classes>
-      <class name="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User">
+      <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin">
         <methods>
-          <include name="TabValidation"/>
-          <include name="logInWithPartnerClient_User"/>
-          <include name="dashBoardTabValidation"/>
-          <include name="footerMandatoryDetails"/>
+          <include name="applicationLaunch"/>
           <include name="applicationClose"/>
           <include name="testTabValidation"/>
-          <include name="alertTabValidation"/>
-          <include name="headerMandatoryDetails"/>
-          <include name="applicationLaunch"/>
         </methods>
-      </class> <!-- VW_TC.TC0011_login_With_Client_OR_Partner_Client_User -->
+      </class> <!-- VW_TC.TC0004_login_With_Partner_Customer_Admin -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test Case: 004 - Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity(failed) -->
+</suite> <!-- Failed suite [Suite] -->
