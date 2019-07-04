@@ -8,7 +8,7 @@
 
 
  
-       <test  name="Test Case: 000- Login Page Verification ">
+       <test  name="Test Case: 000- Debug Verification ">
     <classes>
      
       <class name="VW_TC.TC0000_Debug_Testing"/>
