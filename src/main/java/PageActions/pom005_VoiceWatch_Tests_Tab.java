@@ -110,12 +110,12 @@ public class pom005_VoiceWatch_Tests_Tab {
 		Assert.assertEquals(driver.findElement(discardButton).getText(), "Discard");		
 		log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
 		
-		Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
+		/*Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
 		log.debug("Verified that 'Delete button' displayed under Tests tab");	
 		Assert.assertFalse(driver.findElement(deleteButton).isEnabled());
 		log.debug("Verified that 'Delete button' is disbaled under Tests tab");	
 		Assert.assertEquals(driver.findElement(deleteButton).getText(), "Delete");		
-		log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");
+		log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");*/
 		
 		Assert.assertTrue(driver.findElement(testNamelabel).isDisplayed());
 		log.debug("Verified that 'Test Name' label appeared on under Tests tab");		
@@ -161,12 +161,12 @@ public void createTestbyLink() {
 		Assert.assertEquals(driver.findElement(discardButton).getText(), "Discard");		
 		log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
 		
-		Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
+		/*Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
 		log.debug("Verified that 'Delete button' displayed under Tests tab");	
 		Assert.assertFalse(driver.findElement(deleteButton).isEnabled());
 		log.debug("Verified that 'Delete button' is disbaled under Tests tab");	
 		Assert.assertEquals(driver.findElement(deleteButton).getText(), "Delete");		
-		log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");
+		log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");*/
 		
 		Assert.assertTrue(driver.findElement(testNamelabel).isDisplayed());
 		log.debug("Verified that 'Test Name' label appeared on under Tests tab");		
@@ -221,6 +221,21 @@ public void testCreateLink() {
 		
 	}
 }	
+
+public void testdeletebutton() {
+	
+	if (driver.findElements(deleteButton).isEmpty()) {
+		
+		log.debug("Verified that 'Delete button' is not displayed under Tests tab");		
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that 'Delete button' displayed under Tests tab");	
+		
+	}
+}
 
 }	
 	
