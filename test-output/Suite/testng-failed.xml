@@ -5,15 +5,18 @@
     <listener class-name="resources.ExtentReporterNG"/>
     <listener class-name="resources.listeners"/>
   </listeners>
-  <test thread-count="5" name="Test Case: 004 - Test Case Login with &#039;Partner Customer Admin&#039; Credetials and verify TabAvailablity(failed)">
+  <test thread-count="5" name="Test Case: 005 - Login with &#039;Partner Developer&#039; Credetials and verify TabAvailablity(failed)">
     <classes>
-      <class name="VW_TC.TC0004_login_With_Partner_Customer_Admin">
+      <class name="VW_TC.TC0005_login_With_Partner_Developer">
         <methods>
-          <include name="applicationLaunch"/>
-          <include name="applicationClose"/>
+          <include name="headerMandatoryDetails"/>
           <include name="testTabValidation"/>
+          <include name="applicationClose"/>
+          <include name="footerMandatoryDetails"/>
+          <include name="logInWithPartnerDevelopment"/>
+          <include name="applicationLaunch"/>
         </methods>
-      </class> <!-- VW_TC.TC0004_login_With_Partner_Customer_Admin -->
+      </class> <!-- VW_TC.TC0005_login_With_Partner_Developer -->
     </classes>
-  </test> <!-- Test Case: 004 - Test Case Login with 'Partner Customer Admin' Credetials and verify TabAvailablity(failed) -->
+  </test> <!-- Test Case: 005 - Login with 'Partner Developer' Credetials and verify TabAvailablity(failed) -->
 </suite> <!-- Failed suite [Suite] -->

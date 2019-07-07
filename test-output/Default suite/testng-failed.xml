@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="VW_TC.TC0005_login_With_Partner_Developer">
+      <class name="VW_TC.TC0007_login_With_Partner_User">
         <methods>
-          <include name="headerMandatoryDetails"/>
-          <include name="testTabValidation"/>
           <include name="applicationClose"/>
-          <include name="footerMandatoryDetails"/>
-          <include name="logInWithPartnerDevelopment"/>
+          <include name="testTabValidation"/>
           <include name="applicationLaunch"/>
         </methods>
-      </class> <!-- VW_TC.TC0005_login_With_Partner_Developer -->
+      </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

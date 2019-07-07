@@ -71,7 +71,7 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 	
 	}
 	
-	@Test(priority=4)
+	/*@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -86,7 +86,7 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 	    d.adminTab();
 	    d.selectedTab();
 	
-	}
+	}*/
 	
 	@Test(priority=5)
 	public void dashBoardTabValidation () throws IOException, InterruptedException {

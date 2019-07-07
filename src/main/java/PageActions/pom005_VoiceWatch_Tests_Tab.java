@@ -93,6 +93,18 @@ public class pom005_VoiceWatch_Tests_Tab {
 	  
 	public void createTestbybutton() {
 		
+          if (driver.findElements(testCreateplusbutton).isEmpty()) {
+			
+			log.debug("Verified that new test creation plus (+) icon not appeared on top left side under Tests tab");	
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that new test creation plus (+) icon appeared on top left side under Tests tab");	
+			
+			
+		
 		log.debug("Validated the element pleaset while click Test Creation using button (+)");
 		driver.findElement(testCreateplusbutton).click();
 		
@@ -109,6 +121,19 @@ public class pom005_VoiceWatch_Tests_Tab {
 		log.debug("Verified that 'Discard button' is disbaled under Tests tab");	
 		Assert.assertEquals(driver.findElement(discardButton).getText(), "Discard");		
 		log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
+		
+        if (driver.findElements(deleteButton).isEmpty()) {
+			
+			log.debug("Verified that 'Delete button' is not displayed under Tests tab");		
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Delete button' displayed under Tests tab");	
+			
+		}
+		
 		
 		/*Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
 		log.debug("Verified that 'Delete button' displayed under Tests tab");	
@@ -134,15 +159,37 @@ public class pom005_VoiceWatch_Tests_Tab {
 		
 		Assert.assertEquals(driver.findElement(hammerGroupDefaultValue).getText(), "us_hammers");
 		log.debug("Verified that 'us_hammers' default value as Hammer Group under Test Tab");
+		
+		
+		
+		
+		
 				
 	}
+	}      
 	
 public void createTestbyLink() {
-		
+	
+	
 	   log.debug("Navigate to Alerts Tab");
 	   driver.findElement(alertsTab);
 	   driver.findElement(testTab).click();
 	   log.debug("Again Navigate Back to Test Tab");
+	   
+	
+	
+	if (driver.findElements(testCreateLink).isEmpty()) {
+		
+		log.debug("Verified that new test created link is not appearing under Tests tab");		
+		
+					
+	}else
+	
+	{
+		
+		log.debug("Verified that new test created link appeared under Tests tab");	
+		
+	   
 	   	   
 	    log.debug("Validated the element pleaset while click Test Creation using button (+)");
 		driver.findElement(testCreateplusbutton).click();
@@ -168,6 +215,18 @@ public void createTestbyLink() {
 		Assert.assertEquals(driver.findElement(deleteButton).getText(), "Delete");		
 		log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");*/
 		
+		  if (driver.findElements(deleteButton).isEmpty()) {
+				
+				log.debug("Verified that 'Delete button' is not displayed under Tests tab");		
+				
+							
+			}else
+			
+			{
+				log.debug("Verified that 'Delete button' displayed under Tests tab");	
+				
+			}
+		
 		Assert.assertTrue(driver.findElement(testNamelabel).isDisplayed());
 		log.debug("Verified that 'Test Name' label appeared on under Tests tab");		
 		Assert.assertEquals(driver.findElement(testNamelabel).getText(), "Test Name");		
@@ -188,11 +247,11 @@ public void createTestbyLink() {
 				
 	}
 	
+}
 	
 	
 	
-	
-public void testCreateicon() {
+/*public void testCreateicon() {
 		
 		if (driver.findElements(testCreateplusbutton).isEmpty()) {
 			
@@ -205,9 +264,9 @@ public void testCreateicon() {
 			log.debug("Verified that new test creation plus (+) icon appeared on top left side under Tests tab");	
 			
 		}
-}
+}*/
 	
-public void testCreateLink() {
+/*public void testCreateLink() {
 	
 	if (driver.findElements(testCreateplusbutton).isEmpty()) {
 		
@@ -220,9 +279,9 @@ public void testCreateLink() {
 		log.debug("Verified that new test created link appeared under Tests tab");
 		
 	}
-}	
+}	*/
 
-public void testdeletebutton() {
+/*public void testdeletebutton() {
 	
 	if (driver.findElements(deleteButton).isEmpty()) {
 		
@@ -235,7 +294,7 @@ public void testdeletebutton() {
 		log.debug("Verified that 'Delete button' displayed under Tests tab");	
 		
 	}
-}
+}*/
 
 }	
 	

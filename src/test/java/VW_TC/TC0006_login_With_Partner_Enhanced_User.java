@@ -68,7 +68,7 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 	    d.footer();
 	
 	}
-	@Test(priority=4)
+	/*@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -83,7 +83,7 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 	    d.auditTab();
 	    d.selectedTab();
 	
-	}
+	}*/
 	
 	@Test(priority=5)
 	public void dashBoardTabValidation () throws IOException, InterruptedException {
@@ -117,8 +117,8 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 		d.header();
 		d.footer();
 		ts.testsValidations();
-		ts.testCreateicon();
-		ts.testCreateLink();
+//		ts.testCreateicon();
+//		ts.testCreateLink();
 		
 	}
 	
