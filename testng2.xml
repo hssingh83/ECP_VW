@@ -8,16 +8,13 @@
 
 
  
-      
-        <test  name="Test Case: 005 - Login with 'Partner Developer' Credetials and verify TabAvailablity">
+                       <test  name="Test Case: 010 'Login with 'Client or Partner Client Enhanced User'and verify TabAvailablity">
     <classes>
      
-      <class name="VW_TC.TC0005_login_With_Partner_Developer"/>
+      <class name="VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User"/>
       
      </classes> 
-     </test>
-     
-          
+     </test> 
 
         
 

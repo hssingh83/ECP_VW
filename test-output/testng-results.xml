@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="152415" started-at="2019-07-07T07:12:45Z" finished-at="2019-07-07T07:15:17Z">
+  <suite name="Default suite" duration-ms="52708" started-at="2019-07-07T09:12:48Z" finished-at="2019-07-07T09:13:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="152415" started-at="2019-07-07T07:12:45Z" finished-at="2019-07-07T07:15:17Z">
-      <class name="VW_TC.TC0007_login_With_Partner_User">
-        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="applicationLaunch" is-config="true" duration-ms="28542" started-at="2019-07-07T07:12:45Z" finished-at="2019-07-07T07:13:14Z">
+    <test name="Default test" duration-ms="52708" started-at="2019-07-07T09:12:48Z" finished-at="2019-07-07T09:13:41Z">
+      <class name="VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User">
+        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="applicationLaunch" is-config="true" duration-ms="26003" started-at="2019-07-07T09:12:48Z" finished-at="2019-07-07T09:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationLaunch -->
-        <test-method status="PASS" signature="logInWithPartnerUser()[pri:1, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="logInWithPartnerUser" duration-ms="14996" started-at="2019-07-07T07:13:14Z" finished-at="2019-07-07T07:13:29Z">
+        <test-method status="PASS" signature="logInWithPartnerClient_EnhancedUser()[pri:1, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="logInWithPartnerClient_EnhancedUser" duration-ms="17602" started-at="2019-07-07T09:13:14Z" finished-at="2019-07-07T09:13:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInWithPartnerUser -->
-        <test-method status="PASS" signature="headerMandatoryDetails()[pri:2, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="headerMandatoryDetails" duration-ms="347" started-at="2019-07-07T07:13:29Z" finished-at="2019-07-07T07:13:29Z">
+        </test-method> <!-- logInWithPartnerClient_EnhancedUser -->
+        <test-method status="PASS" signature="headerMandatoryDetails()[pri:2, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="headerMandatoryDetails" duration-ms="485" started-at="2019-07-07T09:13:32Z" finished-at="2019-07-07T09:13:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headerMandatoryDetails -->
-        <test-method status="PASS" signature="footerMandatoryDetails()[pri:3, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="footerMandatoryDetails" duration-ms="343" started-at="2019-07-07T07:13:29Z" finished-at="2019-07-07T07:13:29Z">
+        <test-method status="PASS" signature="footerMandatoryDetails()[pri:3, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="footerMandatoryDetails" duration-ms="328" started-at="2019-07-07T09:13:33Z" finished-at="2019-07-07T09:13:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footerMandatoryDetails -->
-        <test-method status="PASS" signature="dashBoardTabValidation()[pri:5, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="dashBoardTabValidation" duration-ms="2563" started-at="2019-07-07T07:13:29Z" finished-at="2019-07-07T07:13:32Z">
+        <test-method status="PASS" signature="dashBoardTabValidation()[pri:5, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="dashBoardTabValidation" duration-ms="2403" started-at="2019-07-07T09:13:33Z" finished-at="2019-07-07T09:13:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoardTabValidation -->
-        <test-method status="PASS" signature="alertTabValidation()[pri:6, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="alertTabValidation" duration-ms="1793" started-at="2019-07-07T07:13:32Z" finished-at="2019-07-07T07:13:34Z">
+        <test-method status="PASS" signature="alertTabValidation()[pri:6, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="alertTabValidation" duration-ms="2044" started-at="2019-07-07T09:13:35Z" finished-at="2019-07-07T09:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alertTabValidation -->
-        <test-method status="PASS" signature="testTabValidation()[pri:7, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="testTabValidation" duration-ms="103286" started-at="2019-07-07T07:13:34Z" finished-at="2019-07-07T07:15:17Z">
+        <test-method status="PASS" signature="testTabValidation()[pri:7, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="testTabValidation" duration-ms="2915" started-at="2019-07-07T09:13:37Z" finished-at="2019-07-07T09:13:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTabValidation -->
-        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="applicationClose" is-config="true" duration-ms="537" started-at="2019-07-07T07:15:17Z" finished-at="2019-07-07T07:15:17Z">
+        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User@1aafa419]" name="applicationClose" is-config="true" duration-ms="925" started-at="2019-07-07T09:13:40Z" finished-at="2019-07-07T09:13:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationClose -->
-      </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
+      </class> <!-- VW_TC.TC0010_login_With_Client_OR_Partner_Client_Enhanced_User -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
