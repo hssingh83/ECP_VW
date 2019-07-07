@@ -724,3 +724,12 @@
 [DEBUG] 2019-07-07 16:22:54,089 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Discard button' displayed under Tests tab
 [DEBUG] 2019-07-07 16:22:54,105 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Discard button' is disbaled under Tests tab
 [DEBUG] 2019-07-07 16:22:54,121 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Discard' Text appeared on save button under Test Tab
+[DEBUG] 2019-07-07 16:24:34,151 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Delete button' is not displayed under Tests tab
+[DEBUG] 2019-07-07 16:24:34,223 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Test Name' label appeared on under Tests tab
+[DEBUG] 2019-07-07 16:24:34,238 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Test Name' Text validated under Test Tab
+[DEBUG] 2019-07-07 16:24:34,285 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Description' label appeared on under Tests tab
+[DEBUG] 2019-07-07 16:24:34,301 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Description' Text validated under Test Tab
+[DEBUG] 2019-07-07 16:24:34,347 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Hammer Group Name' label appeared on under Tests tab
+[DEBUG] 2019-07-07 16:24:34,362 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'Hammer Group' Text validated under Test Tab
+[DEBUG] 2019-07-07 16:24:34,378 pom005_VoiceWatch_Tests_Tab.createTestbyLink() - Verified that 'us_hammers' default value as Hammer Group under Test Tab
+[INFO ] 2019-07-07 16:24:35,144 TC0004_login_With_Partner_Customer_Admin.applicationClose() - Application closed successfully

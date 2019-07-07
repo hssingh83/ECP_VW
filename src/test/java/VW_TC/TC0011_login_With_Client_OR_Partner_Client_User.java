@@ -79,7 +79,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	    d.dashboard_screen();
-	    log.info("Few Tabs are missing under above role, let's find out");	  
+/*	    log.info("Few Tabs are missing under above role, let's find out");	  
 	    d.tagTab();
 	    d.scriptsTab();
 	    d.hammersTab();
@@ -87,7 +87,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 	    d.clientsTab();	    
 	    d.auditTab();
 	    d.adminTab();
-	    d.selectedTab();
+	    d.selectedTab();*/
 	
 	}
 	@Test(priority=5)

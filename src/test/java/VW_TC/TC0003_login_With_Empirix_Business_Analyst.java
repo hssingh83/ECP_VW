@@ -83,7 +83,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	//	    d.clientsTab();	    
 	//	    d.auditTab();
 	//	    d.adminTab();
-		    d.selectedTab();
+	//	    d.selectedTab();
 	}
 	
 

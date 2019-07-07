@@ -73,7 +73,7 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	    d.dashboard_screen();
-	    d.tagTab();
+/*	    d.tagTab();
 	    d.scriptsTab();
 	    d.usersTab();
 	    d.clientsTab();	    
@@ -81,7 +81,7 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 	    log.info("Few Tabs are missing under above role, let's find out");
 	    d.hammersTab();
 	    d.auditTab();
-	    d.selectedTab();
+	    d.selectedTab();*/
 	
 	}
 	

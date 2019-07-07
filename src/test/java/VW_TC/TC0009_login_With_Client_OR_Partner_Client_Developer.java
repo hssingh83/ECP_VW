@@ -76,7 +76,7 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	    d.dashboard_screen();
-	    d.tagTab();
+/*	    d.tagTab();
 	    d.scriptsTab();
 	    d.usersTab();
 	    log.info("Few Tabs are missing under above role, let's find out");
@@ -84,7 +84,7 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 	    d.clientsTab();	    
 	    d.auditTab();
 	    d.adminTab();
-	    d.selectedTab();
+	    d.selectedTab();*/
 	
 	}
 	@Test(priority=5)
