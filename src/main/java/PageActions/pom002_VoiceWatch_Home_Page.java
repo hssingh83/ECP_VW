@@ -74,6 +74,35 @@ public class pom002_VoiceWatch_Home_Page {
 	log.debug("Verified that 'Tests Tab' not selected on the VoiceWatch dashboard");
 	
 	
+		if (driver.findElements(tagTab).isEmpty()) {
+			
+			log.debug("Verified that 'Tags Tab' is not appearing on the VoiceWatch dashboard");
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Tags Tab' appeared on the VoiceWatch dashboard");
+			
+		}  
+	
+	
+
+	if (driver.findElements(scriptsTab).isEmpty()) {
+		
+		log.debug("Verified that 'Scripts Tab' is not appearing on the VoiceWatch dashboard");
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that 'Scripts Tab' appeared on the VoiceWatch dashboard");
+		
+	}
+
+
+	
+	
 	/*Assert.assertTrue(driver.findElement(tagTab).isDisplayed());
 	log.info("Verified that 'Tags Tab' appeared on the VoiceWatch dashboard");
 	Assert.assertTrue(driver.findElement(tagTab).isEnabled());
@@ -99,6 +128,32 @@ public class pom002_VoiceWatch_Home_Page {
 	log.debug("Verified that 'Variable Tab' not selected on the VoiceWatch dashboard");
 	
 	
+	if (driver.findElements(hammersTab).isEmpty()) {
+		
+		log.debug("Verified that 'Hammers Tab' is not appearing on the VoiceWatch dashboard");
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that 'Hammers Tab' appeared on the VoiceWatch dashboard");
+		
+	}
+	
+	if (driver.getCurrentUrl().contains("admin_dash")) {	
+			
+			
+			log.debug("Verified that 'Admin Tab' selected on the VoiceWatch application");
+
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Dashboard Tab' selected on the VoiceWatch application");
+			
+		}
+
+	
 	
 	/*Assert.assertTrue(driver.findElement(hammersTab).isDisplayed());
 	log.info("Verified that 'Hammer Tab' appeared on the dashoboard");
@@ -114,6 +169,86 @@ public class pom002_VoiceWatch_Home_Page {
 	log.debug("Verified that 'Notifications Tab' enabled on the VoiceWatch dashboard");
 	Assert.assertFalse(driver.getCurrentUrl().contains("notifi"));
 	log.debug("Verified that 'Notifications Tab' not selected on the VoiceWatch dashboard");
+	
+	
+if (driver.findElements(usersTab).isEmpty()) {
+		
+		log.debug("Verified that 'Users Tab' is not appearing on the VoiceWatch dashboard");
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that 'Users Tab' appeared on the VoiceWatch dashboard");
+		
+	}
+
+
+		
+	
+		
+		if (driver.findElements(clientsTab).isEmpty()) {
+			
+			log.debug("Verified that 'Clients Tab' is not appearing on the VoiceWatch dashboard");
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Clients Tab' appeared on the VoiceWatch dashboard");
+			
+		}
+  
+	
+	
+
+		
+		if (driver.findElements(auditTab).isEmpty()) {
+			
+			log.debug("Verified that 'Audit Tab' is not appearing on the VoiceWatch dashboard");
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Audit Tab' appeared on the VoiceWatch dashboard");
+			
+		}
+  
+	
+	
+	
+			
+		if (driver.findElements(adminsTab).isEmpty()) {
+			
+			log.debug("Verified that 'Admin Tab' is not appearing on the VoiceWatch dashboard");
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Admin Tab' appeared on the VoiceWatch dashboard");
+			
+		}
+  
+
+		if (driver.getCurrentUrl().contains("admin_dash")) {	
+			
+			
+			log.debug("Verified that 'Admin Tab' selected on the VoiceWatch application");
+
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Dashboard Tab' selected on the VoiceWatch application");
+			
+		}	
+		
+	}
+	
+	
+	
 	
 	
 	/*Assert.assertTrue(driver.findElement(usersTab).isDisplayed());
@@ -153,7 +288,7 @@ public class pom002_VoiceWatch_Home_Page {
 	Assert.assertTrue(driver.getCurrentUrl().contains("admin_dash"));
 	log.info("Verified that 'Admin Tab' selected on the dashoboard");*/
 
-	}	
+
 	
 	public void header() {
 		

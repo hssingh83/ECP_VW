@@ -67,7 +67,7 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 	    d.footer();
 	
 	}
-	/*@Test(priority=4)
+	@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -82,9 +82,9 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 	    d.auditTab();
 	    d.selectedTab();
 	
-	}*/
+	}
 	
-	/*@Test(priority=6)
+	@Test(priority=6)
 	public void alertTabValidation () throws IOException, InterruptedException {
 		
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
@@ -94,7 +94,7 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		d.header();
 		d.footer();
 		
-	}*/
+	}
 	
 	@Test(priority=7)
 	public void testTabValidation () throws IOException, InterruptedException {

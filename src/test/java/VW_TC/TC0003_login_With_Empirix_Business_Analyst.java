@@ -76,13 +76,13 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	public void TabValidation() {
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);
 		 d.dashboard_screen();
-		    d.tagTab();
-		    d.scriptsTab();
-		    d.hammersTab();
-		    d.usersTab();
-		    d.clientsTab();	    
-		    d.auditTab();
-		    d.adminTab();
+	//	    d.tagTab();
+	//	    d.scriptsTab();
+	//	    d.hammersTab();
+	//	    d.usersTab();
+	//	    d.clientsTab();	    
+	//	    d.auditTab();
+	//	    d.adminTab();
 		    d.selectedTab();
 	}
 	

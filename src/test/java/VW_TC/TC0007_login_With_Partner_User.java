@@ -70,22 +70,22 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 	
 	}
 	
-	/*@Test(priority=4)
+	@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	    d.dashboard_screen();
-	    d.adminTab();
-	    d.clientsTab();
-	    log.info("Few Tabs are missing under above role, let's find out");
-	    d.tagTab();
-	    d.scriptsTab();
-	    d.hammersTab();
-	    d.usersTab();
-	    d.auditTab();
-	    d.selectedTab();
+//	    d.adminTab();
+//	    d.clientsTab();
+//	    log.info("Few Tabs are missing under above role, let's find out");
+//	    d.tagTab();
+//	    d.scriptsTab();
+//	    d.hammersTab();
+//	    d.usersTab();
+//	    d.auditTab();
+//	    d.selectedTab();
 	
-	}*/
+	}
 	
 	@Test(priority=5)
 	public void dashBoardTabValidation () throws IOException, InterruptedException {
