@@ -4,6 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class pom005_VoiceWatch_Tests_Tab {
@@ -14,23 +16,16 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By testTab=By.linkText("Tests");
 	By alertsTab=By.linkText("Alerts");
 	
+	By dropdownTimeZone=By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']");
 	By testslabel=By.className("panel-heading");	
     By filterBox=By.xpath("//input[@placeholder='Filter by test name']");	
 	By testCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");	
 	By testlabel=By.xpath("//h4[contains(text(),'Test')]");	
 	By pleaseSelectlabel=By.xpath("//span[@id='loading']");	
 	By testCreateLink=By.linkText("or create a new test");
-	
-	
-	
 	By saveButton=By.xpath("//div[@class='row']//button[@class='btn btn-primary btn-sm']");
-	
 	By discardButton=By.xpath("//div[@class='row']//button[@class='btn btn-warning btn-sm']");
-	
-		
 	By deleteButton=By.xpath("//div[@class='row']//button[@class='btn btn-danger btn-sm']");
-	
-	
 	By checkboxEnabled=By.xpath("//input[@class='ng-valid ng-dirty ng-valid-parse ng-not-empty ng-touched']");
 	By testNamelabel=By.xpath("//div[contains(text(),'Test Name')]");
 	By descriptionlabel=By.xpath("//div[contains(text(),'Description')]");
@@ -91,7 +86,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	}
 
 	  
-	public void createTestbybutton() {
+																													public void createTestbybutton() {
 		
           if (driver.findElements(testCreateplusbutton).isEmpty()) {
 			
@@ -160,16 +155,63 @@ public class pom005_VoiceWatch_Tests_Tab {
 		Assert.assertEquals(driver.findElement(hammerlabel).getText(), "Hammer Group");		
 		log.debug("Verified that 'Hammer Group' Text validated under Test Tab");
 		
+	//	Select select = new Select(driver.findElement(By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']")));
+	//	System.out.println(select.getOptions());
+	
+
+		
 		Assert.assertEquals(driver.findElement(hammerGroupDefaultValue).getText(), "us_hammers");
 		log.debug("Verified that 'us_hammers' default value as Hammer Group under Test Tab");
 		
 		
+/*		WebElement dropdown = driver.findElement(By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']")); 
+        Select s = new Select(dropdown); 
+       java.util.List<WebElement> options = s.getOptions(); 
+        for(WebElement item:options) 
+        { 
+        
+             System.out.println("Dropdown values are "+ item.getText());           
+           }
+		*/
+        
+        
+		 String[] exp = {"(GMT -12:00) Eniwetok, Kwajalein","(GMT -11:00) Midway Island, Samoa","(GMT -10:00) Hawaii","(GMT -9:00) Alaska","(GMT -8:00) Pacific Time (US & Canada)","(GMT -7:00) Mountain Time (US & Canada)","(GMT -7:00) Arizona Time (US & Canada)","(GMT -6:00) Central Time (US & Canada), Mexico City","(GMT -5:00) Eastern Time (US & Canada)","(GMT -5:00) Bogota, Lima","(GMT -4:30) Caracas","(GMT -4:00) Atlantic Time (Canada)","(GMT -4:00) Santiago","(GMT -4:00) Georgetown, La Paz","(GMT -3:30) Newfoundland","(GMT -3:00) Buenos Aires","(GMT -3:00) Sao Paulo", "(GMT -2:00) Mid-Atlantic","(GMT -1:00 hour) Azores, Cape Verde Islands","(GMT) Western Europe Time, London, Lisbon, Casablanca, Greenwich","(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris","(GMT +2:00) Kaliningrad, South Africa, Cairo","(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg","(GMT +3:30) Tehran","(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi","(GMT +4:30) Kabul","(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent","(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi, Colombo","(GMT +5:45) Kathmandu","(GMT +6:00) Almaty, Dhaka","(GMT +6:30) Yangon, Cocos Islands","(GMT +7:00) Bangkok, Hanoi, Jakarta","(GMT +8:00) Beijing, Perth, Singapore, Hong Kong","(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk","(GMT +9:30) Adelaide, Darwin","(GMT +10:00) Eastern Australia, Guam, Vladivostok, Magadan","(GMT +11:00) Solomon Islands, New Caledonia","(GMT +12:00) Auckland, Wellington"};
+		// System.out.println(exp.length);
+		 log.debug("Verified that count of the dropdown values are: "  +exp.length); 
+		 
+		 WebElement dropdown = driver.findElement(dropdownTimeZone); 
 		
-		
-		
+	//	 System.out.println(dropdown.getSize());
+		 
+        Select s = new Select(dropdown); 
+        s.isMultiple();
+       java.util.List<WebElement> options = s.getOptions(); 
+       
+      
+       log.debug("Verified that following values available in the dropdown"); 
+      
+        for(WebElement item:options) 
+        { 
+        	for (int i = 0; i <options.size(); i++) {
+        		        		
+        		if (item.getText().equals(exp[i])) {
+        			
+        						    
+        			log.debug(""+item.getText());
+        			
+        			//		 System.out.println("hello i am hari" +item.getText());  
+        			 
+        			 Assert.assertEquals(item.getText(),exp[i]);
+     
+                   	}
+        		}
+        	        }
+        }
+      
+																													}
 				
-	}
-	}      
+	
+	     
 	
 public void createTestbyLink() {
 	
@@ -247,59 +289,41 @@ public void createTestbyLink() {
 		
 		Assert.assertEquals(driver.findElement(hammerGroupDefaultValue).getText(), "us_hammers");
 		log.debug("Verified that 'us_hammers' default value as Hammer Group under Test Tab");
-				
-	}
-	
-}
-	
-	
-	
-/*public void testCreateicon() {
 		
-		if (driver.findElements(testCreateplusbutton).isEmpty()) {
-			
-			log.debug("Verified that new test creation plus (+) icon not appeared on top left side under Tests tab");	
-			
-						
-		}else
+		 int count = 0;
+		 String[] exp = {"(GMT -12:00) Eniwetok, Kwajalein","(GMT -11:00) Midway Island, Samoa","(GMT -10:00) Hawaii","(GMT -9:00) Alaska","(GMT -8:00) Pacific Time (US & Canada)","(GMT -7:00) Mountain Time (US & Canada)","(GMT -7:00) Arizona Time (US & Canada)","(GMT -6:00) Central Time (US & Canada), Mexico City","(GMT -5:00) Eastern Time (US & Canada)","(GMT -5:00) Bogota, Lima","(GMT -4:30) Caracas","(GMT -4:00) Atlantic Time (Canada)","(GMT -4:00) Santiago","(GMT -4:00) Georgetown, La Paz","(GMT -3:30) Newfoundland","(GMT -3:00) Buenos Aires","(GMT -3:00) Sao Paulo", "(GMT -2:00) Mid-Atlantic","(GMT -1:00 hour) Azores, Cape Verde Islands","(GMT) Western Europe Time, London, Lisbon, Casablanca, Greenwich","(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris","(GMT +2:00) Kaliningrad, South Africa, Cairo","(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg","(GMT +3:30) Tehran","(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi","(GMT +4:30) Kabul","(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent","(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi, Colombo","(GMT +5:45) Kathmandu","(GMT +6:00) Almaty, Dhaka","(GMT +6:30) Yangon, Cocos Islands","(GMT +7:00) Bangkok, Hanoi, Jakarta","(GMT +8:00) Beijing, Perth, Singapore, Hong Kong","(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk","(GMT +9:30) Adelaide, Darwin","(GMT +10:00) Eastern Australia, Guam, Vladivostok, Magadan","(GMT +11:00) Solomon Islands, New Caledonia","(GMT +12:00) Auckland, Wellington"};
+		// System.out.println(exp.length);
+		 log.debug("Verified that count of the dropdown values are: "  +exp.length); 
+		 
+		 WebElement dropdown = driver.findElement(By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']")); 
 		
-		{
-			log.debug("Verified that new test creation plus (+) icon appeared on top left side under Tests tab");	
-			
-		}
-}*/
-	
-/*public void testCreateLink() {
-	
-	if (driver.findElements(testCreateplusbutton).isEmpty()) {
-		
-		log.debug("Verified that new test created link is not appearing under Tests tab");		
-		
-					
-	}else
-	
-	{
-		log.debug("Verified that new test created link appeared under Tests tab");
-		
-	}
-}	*/
+	//	 System.out.println(dropdown.getSize());
+		 
+        Select s = new Select(dropdown); 
+        s.isMultiple();
+       java.util.List<WebElement> options = s.getOptions(); 
+       
+      
+       log.debug("Verified that following values available in the dropdown"); 
+      
+        for(WebElement item:options) 
+        { 
+        	for (int i = 0; i <options.size(); i++) {
+        		        		
+        		if (item.getText().equals(exp[i])) {
+        			
+        						    
+        			log.debug(""+item.getText());
+        			
+        			//		 System.out.println("hello i am hari" +item.getText());  
+        			 
+        			 Assert.assertEquals(item.getText(),exp[i]);
+     
+                   	}
+        		}
+        	        }
+	}}}				
 
-/*public void testdeletebutton() {
-	
-	if (driver.findElements(deleteButton).isEmpty()) {
-		
-		log.debug("Verified that 'Delete button' is not displayed under Tests tab");		
-		
-					
-	}else
-	
-	{
-		log.debug("Verified that 'Delete button' displayed under Tests tab");	
-		
-	}
-}*/
-
-}	
 	
 
 

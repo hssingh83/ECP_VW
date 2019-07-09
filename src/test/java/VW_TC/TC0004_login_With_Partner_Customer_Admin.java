@@ -73,7 +73,7 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.dashboard_screen();
+		 d.home_screen();
 /*	    d.tagTab();
 	    d.scriptsTab();
 	    d.usersTab();

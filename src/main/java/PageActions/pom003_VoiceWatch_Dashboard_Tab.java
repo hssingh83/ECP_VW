@@ -4,6 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class pom003_VoiceWatch_Dashboard_Tab {
@@ -12,7 +14,10 @@ public class pom003_VoiceWatch_Dashboard_Tab {
 	public WebDriver driver;
 	
     By dashBoardTab=By.linkText("Dashboard");
+    By dropdownTimeSelected=By.xpath("//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']");
+    
     By overAllPerformanceLabel=By.xpath("//*[@id=\"overall\"]/nav/div/div/h1");
+    By dropdown=By.xpath("//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']");
     By failledCallsLabel=By.xpath("//*[@id=\"overall\"]/table/tbody/tr[1]/td[1]/span");
     By passedCallsLabels=By.xpath("//*[@id=\"overall\"]/table/tbody/tr[1]/td[2]/span");
     By alertslabels=By.xpath("//*[@id=\"overall\"]/table/tbody/tr[1]/td[3]/span");
@@ -81,6 +86,45 @@ public class pom003_VoiceWatch_Dashboard_Tab {
 		
 		Assert.assertEquals(driver.findElement(overallDownloadCSVbutton).getText(), "Download CSV");		
 		log.debug("Verified that 'Download CSV' test appeared on the button under Overall Performance section in dashboard Tab");
+		
+		
+		 String[] exp = {"Last 4 hours","Last 6 hours","Last 12 hours","Last 24 hours","Day"};
+		// System.out.println(exp.length);
+		 log.debug("Verified that count of the dropdown values are: "  +exp.length); 
+		 
+		 WebElement dropdown = driver.findElement(dropdownTimeSelected); 
+		
+	//	 System.out.println(dropdown.getSize());
+		 
+        Select s = new Select(dropdown); 
+        s.isMultiple();
+       java.util.List<WebElement> options = s.getOptions(); 
+       
+      
+       log.debug("Verified that following values available in the dropdown"); 
+      
+        for(WebElement item:options) 
+        { 
+        	for (int i = 0; i <options.size(); i++) {
+        		        		
+        		if (item.getText().equals(exp[i])) {
+        			
+        						    
+        			log.debug(""+item.getText());
+        			
+        			//		 System.out.println("hello i am hari" +item.getText());  
+        			 
+        			 Assert.assertEquals(item.getText(),exp[i]);
+        		}
+        	}
+        }
+        			 
+		
+		
+		
+		
+		
+		
 		
 	}
 	

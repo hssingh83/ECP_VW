@@ -75,7 +75,7 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.dashboard_screen();
+		 d.home_screen();
 /*	    d.tagTab();
 	    d.scriptsTab();
 	    d.usersTab();

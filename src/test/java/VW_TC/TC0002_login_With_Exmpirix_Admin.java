@@ -80,7 +80,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	public void TabAvailabilityValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.dashboard_screen();
+	    d.home_screen();
 	//    d.tagTab();
 	//    d.scriptsTab();
 	//    d.hammersTab();
@@ -123,8 +123,8 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		d.header();
-		d.footer();
+	/*	d.header();
+		d.footer();*/
 		ts.testsValidations();
 		ts.createTestbybutton();
 		ts.createTestbyLink();

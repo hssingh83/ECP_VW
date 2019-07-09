@@ -46,7 +46,7 @@ public class pom002_VoiceWatch_Home_Page {
 	
 	// Method for Verified Lables under Client Tab
 	
-	public void dashboard_screen() {	
+	public void home_screen() {	
 		
 	log.debug("VoiceWatch Dashboard Page verification Started");
 	

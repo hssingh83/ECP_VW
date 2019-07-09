@@ -78,7 +78,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.dashboard_screen();
+		 d.home_screen();
 /*	    log.info("Few Tabs are missing under above role, let's find out");	  
 	    d.tagTab();
 	    d.scriptsTab();

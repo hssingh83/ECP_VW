@@ -75,7 +75,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	@Test(priority=4)
 	public void TabValidation() {
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);
-		 d.dashboard_screen();
+		 d.home_screen();
 	//	    d.tagTab();
 	//	    d.scriptsTab();
 	//	    d.hammersTab();

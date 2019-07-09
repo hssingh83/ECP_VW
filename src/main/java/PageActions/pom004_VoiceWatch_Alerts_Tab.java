@@ -4,6 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class pom004_VoiceWatch_Alerts_Tab {
@@ -13,6 +15,7 @@ public class pom004_VoiceWatch_Alerts_Tab {
 	
 	By alertsTab=By.linkText("Alerts");
 	
+	By dropdownTimeSelected=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/select");
 	By checkBoxShowError=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/span[1]/input");
 	
 	By filterBox=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/span[2]/input");
@@ -127,6 +130,42 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		log.debug("Verified that count of Warning alerts dislayed under Alerts Tab");
 		Assert.assertEquals(driver.findElement(warninglabel).getText(), "Warning");		
 		log.debug("Verified that 'Warning' text contain under Alerts Tab");
+		
+		 String[] exp = {"Last 4 hours","Last 6 hours","Last 12 hours","Last 24 hours","Day"};
+		// System.out.println(exp.length);
+		 log.debug("Verified that count of the dropdown values are: "  +exp.length); 
+		 
+		 WebElement dropdown = driver.findElement(dropdownTimeSelected); 
+		
+	//	 System.out.println(dropdown.getSize());
+		 
+        Select s = new Select(dropdown); 
+        s.isMultiple();
+       java.util.List<WebElement> options = s.getOptions(); 
+       
+      
+       log.debug("Verified that following values available in the dropdown"); 
+      
+        for(WebElement item:options) 
+        { 
+        	for (int i = 0; i <options.size(); i++) {
+        		        		
+        		if (item.getText().equals(exp[i])) {
+        			
+        						    
+        			log.debug(""+item.getText());
+        			
+        			//		 System.out.println("hello i am hari" +item.getText());  
+        			 
+        			 Assert.assertEquals(item.getText(),exp[i]);
+        		}
+        	}
+        }
+        			 
+		
+		
+		
+		
 	}
 
 

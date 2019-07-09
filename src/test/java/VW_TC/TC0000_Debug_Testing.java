@@ -126,8 +126,8 @@ public class TC0000_Debug_Testing extends baseProperties{
 /*		d.header();
 		d.footer();*/
 		ts.testsValidations();
-		ts.createTestbybutton();
-		ts.createTestbyLink();
+		/*ts.createTestbybutton();
+		ts.createTestbyLink();*/
 		
 	}
 	
