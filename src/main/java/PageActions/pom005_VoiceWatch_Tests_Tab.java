@@ -1,5 +1,7 @@
 package PageActions;
 
+import java.util.Date;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -35,15 +37,38 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By retriesonFailureLabel=By.xpath("//div[contains(text(),'Retries on Failure')]");
 	By hammerdropdown=By.className("form-control ng-pristine ng-valid ng-not-empty ng-valid-required ng-touched");
 	By modifybutton=By.xpath("//span[contains(text(),'Modify')]");
+	By secheduleLabel=By.xpath("//h4[contains(text(),'Schedules')]");	
+	By timeZoneLabel=By.xpath("//div[contains(text(),'Time-zone')]");
+	By startDateLabel=By.xpath("//div[contains(text(),'Start Date')]");
+	By defaultStartDate=By.xpath("//input[@name='sDate']");
+	By EndDateLabel=By.xpath("//div[contains(text(),'End Date')]");
+	By defaultEndDate=By.xpath("//input[@name='eDate']");
+    
 	
+	By tieToScbscriptionCheckBox=By.xpath("//table[@class='ng-scope']//input[@class='ng-pristine ng-untouched ng-valid ng-not-empty']");
+	By enabledlabel=By.xpath("//table[@class='schedule ng-scope']//th[contains(text(),'Enabled')]");	
+	By descriptionBoxlabel=By.xpath("//th[contains(text(),'Description')]");	
+	By periodlabel=By.xpath("//th[contains(text(),'Period')]");	
+	By dayslabel=By.xpath("//th[contains(text(),'Days')]");	
+	By startTimelabel=By.xpath("//th[contains(text(),'Start Time')]");	
+	By EndTimelabel=By.xpath("//th[contains(text(),'End Time')]");	
 	
+	By reduceSechedule=By.xpath("//table[@class='schedule ng-scope']//tr[@class='ng-scope']//td[1]");
+	By addSechedule=By.xpath("//table[@class='schedule ng-scope']//span[@class='glyphicon glyphicon-plus-sign plusicon']");
+	By addDescription=By.xpath("//tr[@class='ng-scope']//input[@class='form-control ng-pristine ng-untouched ng-valid ng-empty']");
+	By periodValue=By.xpath("//input[@class='ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-min ng-valid-max ng-valid-required ng-valid-maxlength']");
+	By minutelabel=By.xpath("//td[contains(text(),'mins')]");
 	
-
+	By sunButton=By.xpath("//span[contains(text(),'Sun')]");
+	By monButton=By.xpath("//span[contains(text(),'Mon')]");
+	By tueButton=By.xpath("//span[contains(text(),'Tue')]");
+	By wedButton=By.xpath("//span[contains(text(),'Wed')]");
+	By thuButton=By.xpath("//span[contains(text(),'Thu')]");
+	By friButton=By.xpath("//span[contains(text(),'Fri')]");
+	By satButton=By.xpath("//span[contains(text(),'Sat')]");
 	
-	
-	
-	
-	
+	By startTimeValue=By.xpath("//table[@class='schedule ng-scope']//td[6]//input[1]");
+	By endTimeValue=By.xpath("//td[7]//input[1]");
 	
 	
 	   
@@ -205,14 +230,215 @@ public class pom005_VoiceWatch_Tests_Tab {
      
                    	}
         		}
-        	        }
         }
-      
-																													}
-				
+        
+       
+        Assert.assertTrue(driver.findElement(secheduleLabel).isDisplayed());
+		log.debug("Verified that 'Schedules' label appeared on under Tests tab");		
+		Assert.assertEquals(driver.findElement(secheduleLabel).getText(), "Schedules");		
+		log.debug("Verified that 'Schedules' Text validated under Test Tab");
+        
+		 Assert.assertTrue(driver.findElement(timeZoneLabel).isDisplayed());
+		log.debug("Verified that 'Start Date' label appeared on under Tests tab");		
+		Assert.assertEquals(driver.findElement(timeZoneLabel).getText(), "Time-zone");		
+		log.debug("Verified that 'Time-Zone' Text validated under Test Tab");
+			
+	    Assert.assertTrue(driver.findElement(startDateLabel).isDisplayed());
+		log.debug("Verified that 'Start Date' label appeared on under Tests tab");		
+		Assert.assertEquals(driver.findElement(startDateLabel).getText(), "Start Date");		
+		log.debug("Verified that 'Start Date' Text validated under Test Tab");
+	        
+        
+        
+		Assert.assertTrue(driver.findElement(defaultStartDate).isDisplayed());
+		log.debug("Verified that 'Start Date' displayed on under Tests tab");			
+		Assert.assertTrue(driver.findElement(defaultStartDate).isEnabled());
+		log.debug("Verified that 'Start Date' enabled on under Tests tab");	
+		
+        Assert.assertTrue(driver.findElement(EndDateLabel).isDisplayed());
+		log.debug("Verified that 'End Date' label appeared on under Tests tab");		
+		Assert.assertEquals(driver.findElement(EndDateLabel).getText(), "End Date");		
+		log.debug("Verified that 'End Date' Text validated under Test Tab");
+		
+		Assert.assertTrue(driver.findElement(defaultEndDate).isDisplayed());
+		log.debug("Verified that 'Start Date' displayed on under Tests tab");			
+		Assert.assertFalse(driver.findElement(defaultEndDate).isEnabled());
+		log.debug("Verified that 'Start Date' enabled on under Tests tab");	
+		
+		Assert.assertTrue(driver.findElement(tieToScbscriptionCheckBox).isDisplayed());
+		log.debug("Verified that 'Tie To Scbscription' CheckBox appeared in Test tab");			
+		Assert.assertTrue(driver.findElement(tieToScbscriptionCheckBox).isEnabled());
+		log.debug("Verified that 'Tie To Scbscription' CheckBox enabled in Test tab");	
+		Assert.assertTrue(driver.findElement(tieToScbscriptionCheckBox).isSelected());
+		log.debug("Verified that 'Tie To Scbscription' CheckBox selected in Test tab");	
+		
+		Assert.assertTrue(driver.findElement(enabledlabel).isDisplayed());
+		log.debug("Verified that 'Enabled' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(enabledlabel).getText(), "Enabled");		
+		log.debug("Verified that 'Enabled' Text validated under Test Tab");
+		
+		 Assert.assertTrue(driver.findElement(descriptionBoxlabel).isDisplayed());
+		log.debug("Verified that 'Description' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(descriptionBoxlabel).getText(), "Description");		
+		log.debug("Verified that 'Description' Text validated under Test Tab");
+			
+		Assert.assertTrue(driver.findElement(periodlabel).isDisplayed());
+		log.debug("Verified that 'Period' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(periodlabel).getText(), "Period");		
+		log.debug("Verified that 'Period' Text validated under Test Tab");
+		
+		Assert.assertTrue(driver.findElement(dayslabel).isDisplayed());
+		log.debug("Verified that 'Day' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(dayslabel).getText(), "Days");		
+		log.debug("Verified that 'Days' Text validated under Test Tab");
+					
+		Assert.assertTrue(driver.findElement(startTimelabel).isDisplayed());
+		log.debug("Verified that 'Start Time' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(startTimelabel).getText(), "Start Time");		
+		log.debug("Verified that 'Start Time' Text validated under Test Tab");
+		
+		Assert.assertTrue(driver.findElement(EndTimelabel).isDisplayed());
+		log.debug("Verified that 'End Time' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(EndTimelabel).getText(), "End Time");		
+		log.debug("Verified that 'End Time' Text validated under Test Tab");		
+		
+		
+		
+		Assert.assertTrue(driver.findElement(reduceSechedule).isDisplayed());
+		log.debug("Verified that '(-)' button appeared to remove configured sechedule");			
+		Assert.assertTrue(driver.findElement(reduceSechedule).isEnabled());
+		log.debug("Verified that '(-)' button enabled under sechedule section");	
+		
+		Assert.assertTrue(driver.findElement(addSechedule).isDisplayed());
+		log.debug("Verified that '(+)' button appeared to add new configured sechedule");			
+		Assert.assertTrue(driver.findElement(addSechedule).isEnabled());
+		log.debug("Verified that '(+)' button enabled under sechedule section");	
+		
+		 Assert.assertTrue(driver.findElement(addDescription).isDisplayed());
+		log.debug("Verified that 'Description' field appered under Sechedule section in test tab");		
+		Assert.assertTrue(driver.findElement(addDescription).isEnabled());		
+		log.debug("Verified that 'Description' field is enabled under Sechedule section in test tab");
+	        
+		 Assert.assertTrue(driver.findElement(periodValue).isDisplayed());
+		log.debug("Verified that 'period' field appeared under Sechedule section in test tab");		
+		Assert.assertTrue(driver.findElement(periodValue).isEnabled());		
+		log.debug("Verified that 'period' value field is enabled under Sechedule section in test tab");	
+		
+		 Assert.assertTrue(driver.findElement(minutelabel).isDisplayed());
+		log.debug("Verified that 'Minute' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(minutelabel).getText(), "mins");		
+		log.debug("Verified that 'Mins' Text validated under Test Tab");
+		
+		 Assert.assertTrue(driver.findElement(sunButton).isDisplayed());
+		log.debug("Verified that 'Sunday' button appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(sunButton).getText(), "Sun");		
+		log.debug("Verified that 'sun' Text appeared on the button under Test Tab");
+		Assert.assertTrue(driver.findElement(sunButton).isEnabled());
+		log.debug("Verified that 'Sun' button enabled under sechedule section");
+		
+		Assert.assertTrue(driver.findElement(monButton).isDisplayed());
+		log.debug("Verified that 'Monday' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(monButton).getText(), "Mon");		
+		log.debug("Verified that 'mon' Text appeared on the button under Test Tab");
+		Assert.assertTrue(driver.findElement(monButton).isEnabled());
+		log.debug("Verified that 'Mon' button enabled under sechedule section");
+		
+		Assert.assertTrue(driver.findElement(tueButton).isDisplayed());
+		log.debug("Verified that 'Tuesday' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(tueButton).getText(), "Tue");		
+		log.debug("Verified that 'Tue' Text appeared on the button under Test Tab");
+		Assert.assertTrue(driver.findElement(tueButton).isEnabled());
+		log.debug("Verified that 'Tue' button enabled under sechedule section");
+					
+		Assert.assertTrue(driver.findElement(wedButton).isDisplayed());
+		log.debug("Verified that 'Wednessday' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(wedButton).getText(), "Wed");		
+		log.debug("Verified that 'Wed' Text validated under Test Tab");
+		Assert.assertTrue(driver.findElement(wedButton).isEnabled());
+		log.debug("Verified that 'Wed' button enabled under sechedule section");
+		
+						
+		Assert.assertTrue(driver.findElement(thuButton).isDisplayed());
+		log.debug("Verified that 'Thrusday' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(thuButton).getText(), "Thu");		
+		log.debug("Verified that 'Thu' Text validated under Test Tab");
+		Assert.assertTrue(driver.findElement(thuButton).isEnabled());
+		log.debug("Verified that 'Thu' button enabled under sechedule section");
+		
+		Assert.assertTrue(driver.findElement(friButton).isDisplayed());
+		log.debug("Verified that 'Friday' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(friButton).getText(), "Fri");		
+		log.debug("Verified that 'Fri' Text validated under Test Tab");
+		Assert.assertTrue(driver.findElement(friButton).isEnabled());
+		log.debug("Verified that 'Fri' button enabled under sechedule section");
+		
+		
+		Assert.assertTrue(driver.findElement(satButton).isDisplayed());
+		log.debug("Verified that 'Satarday' label appeared under Sechedule section in test tab");		
+		Assert.assertEquals(driver.findElement(satButton).getText(), "Sat");		
+		log.debug("Verified that 'Sat' Text validated under Test Tab");
+		Assert.assertTrue(driver.findElement(satButton).isEnabled());
+		log.debug("Verified that 'Sat' button enabled under sechedule section");
+		
+		Assert.assertTrue(driver.findElement(startTimeValue).isDisplayed());
+		log.debug("Verified that 'Start Time' filled appeared under Sechedule section in test tab");		
+		Assert.assertTrue(driver.findElement(startTimeValue).isEnabled());
+		log.debug("Verified that 'Start Time' filled enabled under sechedule section");
+		
+		Assert.assertTrue(driver.findElement(endTimeValue).isDisplayed());
+		log.debug("Verified that 'End Time Value' filled appeared under Sechedule section in test tab");		
+		Assert.assertTrue(driver.findElement(endTimeValue).isEnabled());
+		log.debug("Verified that 'End Time Value filled enabled under sechedule section");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+        
+		}
+        
+		
+        //Validate Default start date should be system date
+        
+     /*   Date objDate = new Date();
+        
+        System.out.println(objDate.toString());
+        
+        String currentDate=objDate.toString();
+        
+        
+        String appDate=driver.findElement(defaultDate).getText();
+        
+        System.out.println(currentDate);
+        
+        System.out.println(appDate);
+        
+        if (currentDate==appDate) {
+        	
+        	System.out.println("Great Time");
+        } else
+        	
+        	System.out.println("Bad Time");
+        	
+        }
+        
+    //    Assert.assertEquals(appDate,currentDate);
+        
+        
+		}*/
+																													
+			
+       
+        
+        
+	//================================================================================			
 	
-	     
-	
+																													
 public void createTestbyLink() {
 	
 	
@@ -322,6 +548,166 @@ public void createTestbyLink() {
                    	}
         		}
         	        }
+	
+        Assert.assertTrue(driver.findElement(secheduleLabel).isDisplayed());
+      		log.debug("Verified that 'Schedules' label appeared on under Tests tab");		
+      		Assert.assertEquals(driver.findElement(secheduleLabel).getText(), "Schedules");		
+      		log.debug("Verified that 'Schedules' Text validated under Test Tab");
+              
+      		 Assert.assertTrue(driver.findElement(timeZoneLabel).isDisplayed());
+      		log.debug("Verified that 'Start Date' label appeared on under Tests tab");		
+      		Assert.assertEquals(driver.findElement(timeZoneLabel).getText(), "Time-zone");		
+      		log.debug("Verified that 'Time-Zone' Text validated under Test Tab");
+      			
+      	    Assert.assertTrue(driver.findElement(startDateLabel).isDisplayed());
+      		log.debug("Verified that 'Start Date' label appeared on under Tests tab");		
+      		Assert.assertEquals(driver.findElement(startDateLabel).getText(), "Start Date");		
+      		log.debug("Verified that 'Start Date' Text validated under Test Tab");
+      	        
+              
+              
+      		Assert.assertTrue(driver.findElement(defaultStartDate).isDisplayed());
+      		log.debug("Verified that 'Start Date' displayed on under Tests tab");			
+      		Assert.assertTrue(driver.findElement(defaultStartDate).isEnabled());
+      		log.debug("Verified that 'Start Date' enabled on under Tests tab");	
+      		
+              Assert.assertTrue(driver.findElement(EndDateLabel).isDisplayed());
+      		log.debug("Verified that 'End Date' label appeared on under Tests tab");		
+      		Assert.assertEquals(driver.findElement(EndDateLabel).getText(), "End Date");		
+      		log.debug("Verified that 'End Date' Text validated under Test Tab");
+      		
+      		Assert.assertTrue(driver.findElement(defaultEndDate).isDisplayed());
+      		log.debug("Verified that 'Start Date' displayed on under Tests tab");			
+      		Assert.assertFalse(driver.findElement(defaultEndDate).isEnabled());
+      		log.debug("Verified that 'Start Date' enabled on under Tests tab");	
+      		
+      		Assert.assertTrue(driver.findElement(tieToScbscriptionCheckBox).isDisplayed());
+      		log.debug("Verified that 'Tie To Scbscription' CheckBox appeared in Test tab");			
+      		Assert.assertTrue(driver.findElement(tieToScbscriptionCheckBox).isEnabled());
+      		log.debug("Verified that 'Tie To Scbscription' CheckBox enabled in Test tab");	
+      		Assert.assertTrue(driver.findElement(tieToScbscriptionCheckBox).isSelected());
+      		log.debug("Verified that 'Tie To Scbscription' CheckBox selected in Test tab");	
+      		
+      		Assert.assertTrue(driver.findElement(enabledlabel).isDisplayed());
+      		log.debug("Verified that 'Enabled' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(enabledlabel).getText(), "Enabled");		
+      		log.debug("Verified that 'Enabled' Text validated under Test Tab");
+      		
+      		 Assert.assertTrue(driver.findElement(descriptionBoxlabel).isDisplayed());
+      		log.debug("Verified that 'Description' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(descriptionBoxlabel).getText(), "Description");		
+      		log.debug("Verified that 'Description' Text validated under Test Tab");
+      			
+      		Assert.assertTrue(driver.findElement(periodlabel).isDisplayed());
+      		log.debug("Verified that 'Period' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(periodlabel).getText(), "Period");		
+      		log.debug("Verified that 'Period' Text validated under Test Tab");
+      		
+      		Assert.assertTrue(driver.findElement(dayslabel).isDisplayed());
+      		log.debug("Verified that 'Day' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(dayslabel).getText(), "Days");		
+      		log.debug("Verified that 'Days' Text validated under Test Tab");
+      					
+      		Assert.assertTrue(driver.findElement(startTimelabel).isDisplayed());
+      		log.debug("Verified that 'Start Time' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(startTimelabel).getText(), "Start Time");		
+      		log.debug("Verified that 'Start Time' Text validated under Test Tab");
+      		
+      		Assert.assertTrue(driver.findElement(EndTimelabel).isDisplayed());
+      		log.debug("Verified that 'End Time' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(EndTimelabel).getText(), "End Time");		
+      		log.debug("Verified that 'End Time' Text validated under Test Tab");		
+      		
+      		
+      		
+      		Assert.assertTrue(driver.findElement(reduceSechedule).isDisplayed());
+      		log.debug("Verified that '(-)' button appeared to remove configured sechedule");			
+      		Assert.assertTrue(driver.findElement(reduceSechedule).isEnabled());
+      		log.debug("Verified that '(-)' button enabled under sechedule section");	
+      		
+      		Assert.assertTrue(driver.findElement(addSechedule).isDisplayed());
+      		log.debug("Verified that '(+)' button appeared to add new configured sechedule");			
+      		Assert.assertTrue(driver.findElement(addSechedule).isEnabled());
+      		log.debug("Verified that '(+)' button enabled under sechedule section");	
+      		
+      		 Assert.assertTrue(driver.findElement(addDescription).isDisplayed());
+      		log.debug("Verified that 'Description' field appered under Sechedule section in test tab");		
+      		Assert.assertTrue(driver.findElement(addDescription).isEnabled());		
+      		log.debug("Verified that 'Description' field is enabled under Sechedule section in test tab");
+      	        
+      		 Assert.assertTrue(driver.findElement(periodValue).isDisplayed());
+      		log.debug("Verified that 'period' field appeared under Sechedule section in test tab");		
+      		Assert.assertTrue(driver.findElement(periodValue).isEnabled());		
+      		log.debug("Verified that 'period' value field is enabled under Sechedule section in test tab");	
+      		
+      		 Assert.assertTrue(driver.findElement(minutelabel).isDisplayed());
+      		log.debug("Verified that 'Minute' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(minutelabel).getText(), "mins");		
+      		log.debug("Verified that 'Mins' Text validated under Test Tab");
+      		
+      		 Assert.assertTrue(driver.findElement(sunButton).isDisplayed());
+      		log.debug("Verified that 'Sunday' button appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(sunButton).getText(), "Sun");		
+      		log.debug("Verified that 'sun' Text appeared on the button under Test Tab");
+      		Assert.assertTrue(driver.findElement(sunButton).isEnabled());
+      		log.debug("Verified that 'Sun' button enabled under sechedule section");
+      		
+      		Assert.assertTrue(driver.findElement(monButton).isDisplayed());
+      		log.debug("Verified that 'Monday' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(monButton).getText(), "Mon");		
+      		log.debug("Verified that 'mon' Text appeared on the button under Test Tab");
+      		Assert.assertTrue(driver.findElement(monButton).isEnabled());
+      		log.debug("Verified that 'Mon' button enabled under sechedule section");
+      		
+      		Assert.assertTrue(driver.findElement(tueButton).isDisplayed());
+      		log.debug("Verified that 'Tuesday' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(tueButton).getText(), "Tue");		
+      		log.debug("Verified that 'Tue' Text appeared on the button under Test Tab");
+      		Assert.assertTrue(driver.findElement(tueButton).isEnabled());
+      		log.debug("Verified that 'Tue' button enabled under sechedule section");
+      					
+      		Assert.assertTrue(driver.findElement(wedButton).isDisplayed());
+      		log.debug("Verified that 'Wednessday' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(wedButton).getText(), "Wed");		
+      		log.debug("Verified that 'Wed' Text validated under Test Tab");
+      		Assert.assertTrue(driver.findElement(wedButton).isEnabled());
+      		log.debug("Verified that 'Wed' button enabled under sechedule section");
+      		
+      						
+      		Assert.assertTrue(driver.findElement(thuButton).isDisplayed());
+      		log.debug("Verified that 'Thrusday' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(thuButton).getText(), "Thu");		
+      		log.debug("Verified that 'Thu' Text validated under Test Tab");
+      		Assert.assertTrue(driver.findElement(thuButton).isEnabled());
+      		log.debug("Verified that 'Thu' button enabled under sechedule section");
+      		
+      		Assert.assertTrue(driver.findElement(friButton).isDisplayed());
+      		log.debug("Verified that 'Friday' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(friButton).getText(), "Fri");		
+      		log.debug("Verified that 'Fri' Text validated under Test Tab");
+      		Assert.assertTrue(driver.findElement(friButton).isEnabled());
+      		log.debug("Verified that 'Fri' button enabled under sechedule section");
+      		
+      		
+      		Assert.assertTrue(driver.findElement(satButton).isDisplayed());
+      		log.debug("Verified that 'Satarday' label appeared under Sechedule section in test tab");		
+      		Assert.assertEquals(driver.findElement(satButton).getText(), "Sat");		
+      		log.debug("Verified that 'Sat' Text validated under Test Tab");
+      		Assert.assertTrue(driver.findElement(satButton).isEnabled());
+      		log.debug("Verified that 'Sat' button enabled under sechedule section");
+      		
+      		Assert.assertTrue(driver.findElement(startTimeValue).isDisplayed());
+      		log.debug("Verified that 'Start Time' filled appeared under Sechedule section in test tab");		
+      		Assert.assertTrue(driver.findElement(startTimeValue).isEnabled());
+      		log.debug("Verified that 'Start Time' filled enabled under sechedule section");
+      		
+      		Assert.assertTrue(driver.findElement(endTimeValue).isDisplayed());
+      		log.debug("Verified that 'End Time Value' filled appeared under Sechedule section in test tab");		
+      		Assert.assertTrue(driver.findElement(endTimeValue).isEnabled());
+      		log.debug("Verified that 'End Time Value filled enabled under sechedule section");
+      		
+	
+	
 	}}}				
 
 	
