@@ -16,8 +16,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	public WebDriver driver;
 	
 	By testTab=By.linkText("Tests");
-	By alertsTab=By.linkText("Alerts");
-	
+	By alertsTab=By.linkText("Alerts");	
 	By dropdownTimeZone=By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']");
 	By testslabel=By.className("panel-heading");	
     By filterBox=By.xpath("//input[@placeholder='Filter by test name']");	
@@ -42,33 +41,73 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By startDateLabel=By.xpath("//div[contains(text(),'Start Date')]");
 	By defaultStartDate=By.xpath("//input[@name='sDate']");
 	By EndDateLabel=By.xpath("//div[contains(text(),'End Date')]");
-	By defaultEndDate=By.xpath("//input[@name='eDate']");
-    
-	
+	By defaultEndDate=By.xpath("//input[@name='eDate']");	
 	By tieToScbscriptionCheckBox=By.xpath("//table[@class='ng-scope']//input[@class='ng-pristine ng-untouched ng-valid ng-not-empty']");
 	By enabledlabel=By.xpath("//table[@class='schedule ng-scope']//th[contains(text(),'Enabled')]");	
 	By descriptionBoxlabel=By.xpath("//th[contains(text(),'Description')]");	
 	By periodlabel=By.xpath("//th[contains(text(),'Period')]");	
 	By dayslabel=By.xpath("//th[contains(text(),'Days')]");	
 	By startTimelabel=By.xpath("//th[contains(text(),'Start Time')]");	
-	By EndTimelabel=By.xpath("//th[contains(text(),'End Time')]");	
-	
+	By EndTimelabel=By.xpath("//th[contains(text(),'End Time')]");		
 	By reduceSechedule=By.xpath("//table[@class='schedule ng-scope']//tr[@class='ng-scope']//td[1]");
 	By addSechedule=By.xpath("//table[@class='schedule ng-scope']//span[@class='glyphicon glyphicon-plus-sign plusicon']");
 	By addDescription=By.xpath("//tr[@class='ng-scope']//input[@class='form-control ng-pristine ng-untouched ng-valid ng-empty']");
 	By periodValue=By.xpath("//input[@class='ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-min ng-valid-max ng-valid-required ng-valid-maxlength']");
-	By minutelabel=By.xpath("//td[contains(text(),'mins')]");
-	
+	By minutelabel=By.xpath("//td[contains(text(),'mins')]");	
 	By sunButton=By.xpath("//span[contains(text(),'Sun')]");
 	By monButton=By.xpath("//span[contains(text(),'Mon')]");
 	By tueButton=By.xpath("//span[contains(text(),'Tue')]");
 	By wedButton=By.xpath("//span[contains(text(),'Wed')]");
 	By thuButton=By.xpath("//span[contains(text(),'Thu')]");
 	By friButton=By.xpath("//span[contains(text(),'Fri')]");
-	By satButton=By.xpath("//span[contains(text(),'Sat')]");
-	
+	By satButton=By.xpath("//span[contains(text(),'Sat')]");	
 	By startTimeValue=By.xpath("//table[@class='schedule ng-scope']//td[6]//input[1]");
 	By endTimeValue=By.xpath("//td[7]//input[1]");
+	
+	//===============================================================================
+	
+	By scriptlabel=By.xpath("//h4[contains(text(),'Script')]");
+	By scriptNamelabel=By.xpath("//div[@class='input-group-addon']");
+	By selectaScriptDropdown=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[3]/div/div[1]/div/div/select");
+	By inputParameterlabel=By.xpath("//label[contains(text(),'Input Parameters')]");
+	By namelabel=By.xpath("//th[contains(text(),'Name')]");
+	By valuelabel=By.xpath("//th[contains(text(),'Value')]");
+	By maskedlabel=By.xpath("//th[contains(text(),'Masked')]");
+	
+	By notificationslabel=By.xpath("//h4[contains(text(),'Notifications')]");
+	By notifiCheckbox=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[4]/div/div[2]/table/tbody/tr[3]/td[3]/select");
+	By notifiEnabledlabel=By.xpath("//label[contains(text(),'Notifications Enabled')]");
+	By enabledBoxlabel=By.xpath("//table[@class='schedule']//th[contains(text(),'Enabled')]");
+	By notifilabel=By.xpath("//th[contains(text(),'Notification')]");
+	By patternlabel=By.xpath("//th[contains(text(),'Pattern')]");
+	By severitylabel=By.xpath("//th[contains(text(),'Severity')]");
+	By notifionrettogoodlabel=By.xpath("//th[contains(text(),'Notify on return to good')]");
+	
+	
+	
+	By reduceNotifiButton=By.xpath("//span[@class='glyphicon glyphicon-minus-sign minusicon']");
+	By addNotifiButton=By.xpath("//table[@class='schedule']//span[@class='glyphicon glyphicon-plus-sign plusicon']");
+	By notifiDropdown=By.xpath("//td[3]//select[1]");
+	By patternDropdown=By.xpath("//td[4]//select[1]");
+	By patternValue=By.xpath("//input[@class='form-control ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-min']");
+	By serverityDropdown=By.xpath("//td[5]//select[1]");
+	By notifionCheckbox=By.xpath("//input[@class='ng-pristine ng-untouched ng-valid ng-empty']");
+	
+	
+	By failThreSoldlabel=By.xpath("//h4[contains(text(),'Failure Thresholds')]");
+	By primaryMetlabel=By.xpath("//a[contains(text(),'Primary Metrics')]");
+	By addMetLabel=By.xpath("//a[contains(text(),'Additional Metrics')]");
+	By failureEnabledlabel=By.xpath("//table[@class='table-bordered metrics ng-scope']//th[contains(text(),'Enabled')]");
+	By failMetriclabel=By.xpath("//th[contains(text(),'Metric')]");
+	By failCriterilabel=By.xpath("//th[contains(text(),'Criteria')]");
+	By failWarrninglabel=By.xpath("//th[contains(text(),'Warning')]");
+	By failCrticallabel=By.xpath("//th[contains(text(),'Critical')]");
+	By saveButtonTestTab=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[6]/div/span/button[1]");
+	By discardButtonTestTab=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[6]/div/span/button[2]");
+	By deleteButtonTestTab=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[6]/div/span/button[3]");
+	
+	
+	
 	
 	
 	   
@@ -209,7 +248,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	//	 System.out.println(dropdown.getSize());
 		 
         Select s = new Select(dropdown); 
-        s.isMultiple();
+        Assert.assertFalse(s.isMultiple());
        java.util.List<WebElement> options = s.getOptions(); 
        
       
@@ -390,18 +429,248 @@ public class pom005_VoiceWatch_Tests_Tab {
 		Assert.assertTrue(driver.findElement(endTimeValue).isEnabled());
 		log.debug("Verified that 'End Time Value filled enabled under sechedule section");
 		
+		//-------------------------------------------------------------------------------------------------------------------
 		
+		Assert.assertTrue(driver.findElement(scriptlabel).isDisplayed());
+		log.debug("Verified that 'Script' label appeared under test tab");		
+		Assert.assertEquals(driver.findElement(scriptlabel).getText(), "Script");		
+		log.debug("Verified that 'Script' Text validated under Test Tab");
 		
+		Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
+		log.debug("Verified that 'Script name' label appeared under script section in test tab");		
+		Assert.assertEquals(driver.findElement(scriptNamelabel).getText(), "Script name");		
+		log.debug("Verified that 'Script Name' Text validated under Test Tab");
 		
+	// Script Drop Down	
+	
+			 log.debug("Verified that script dropdown"); 			 
+			 WebElement scriptdropdown = driver.findElement(selectaScriptDropdown); 			
+		//	 System.out.println(dropdown.getSize());			 
+	        Select scripts1 = new Select(scriptdropdown); 	        
+	        Assert.assertFalse(scripts1.isMultiple());	        
+	       java.util.List<WebElement> options1 = scripts1.getOptions();    
+	      log.debug("Verified that following values available in the dropdown"); 
+	          for(WebElement item1:options1) 
+	        { 
+	        	for (int i = 0; i <options1.size(); i++) {          		
+	        		log.debug(""+item1.getText());      			   			
+	     
+	                   	}
+	        		}
+	          }
 		
+        Assert.assertTrue(driver.findElement(inputParameterlabel).isDisplayed());
+  		log.debug("Verified that 'Input Parameters' label appeared under script section in test tab");		
+  		Assert.assertEquals(driver.findElement(inputParameterlabel).getText(), "Input Parameters");		
+  		log.debug("Verified that 'Input Parameters' Text validated under Test Tab");
 		
+        Assert.assertTrue(driver.findElement(namelabel).isDisplayed());
+  		log.debug("Verified that 'Name' label appeared under script section in test tab");		
+  		Assert.assertEquals(driver.findElement(namelabel).getText(), "Name");		
+  		log.debug("Verified that 'Name' Text validated under Test Tab");
+  		
+        Assert.assertTrue(driver.findElement(valuelabel).isDisplayed());
+  		log.debug("Verified that 'Value' label appeared under script section in test tab");		
+  		Assert.assertEquals(driver.findElement(valuelabel).getText(), "Value");		
+  		log.debug("Verified that 'Value' Text validated under Test Tab");
+  		
+        Assert.assertTrue(driver.findElement(maskedlabel).isDisplayed());
+  		log.debug("Verified that 'Masked' label appeared under script section in test tab");		
+  		Assert.assertEquals(driver.findElement(maskedlabel).getText(), "Masked");		
+  		log.debug("Verified that 'Masked' Text validated under Test Tab");
+  		
+  		
+  		Assert.assertTrue(driver.findElement(notificationslabel).isDisplayed());
+  		log.debug("Verified that 'Notifications' label appeared under script section in test tab");		
+  		Assert.assertEquals(driver.findElement(notificationslabel).getText(), "Notifications");		
+  		log.debug("Verified that 'Notifications' Text validated under Test Tab");
+  		
+  		Assert.assertTrue(driver.findElement(enabledBoxlabel).isDisplayed());
+  		log.debug("Verified that 'Enabled' label appeared under Notification checkbox in test tab");		
+  		Assert.assertEquals(driver.findElement(enabledBoxlabel).getText(), "Enabled");		
+  		log.debug("Verified that 'Enabled' Text validated under Notification checkbox in test tab");			
+  	
+       
+   	Assert.assertTrue(driver.findElement(notifiCheckbox).isDisplayed());
+	log.debug("Verified that 'Notifi Enabled Checkbox' appeared under Notification in test tab");		 
+	Assert.assertTrue(driver.findElement(notifiCheckbox).isEnabled());
+	log.debug("Verified that 'Notification Enabled' checkbox appeared notification in Test tab");			
+	
+	
+	Assert.assertTrue(driver.findElement(enabledBoxlabel).isDisplayed());
+	log.debug("Verified that 'Enabled' label appeared under Notification checkbox in test tab");		
+	Assert.assertEquals(driver.findElement(enabledBoxlabel).getText(), "Enabled");		
+	log.debug("Verified that 'Enabled' Text validated under Notification checkbox in test tab");	
+	
+	Assert.assertTrue(driver.findElement(notifiEnabledlabel).isDisplayed());
+	log.debug("Verified that 'Notification' label appeared in notification dropdown in test tab");		
+	Assert.assertEquals(driver.findElement(notifiEnabledlabel).getText(), "Notifications Enabled");		
+	log.debug("Verified that 'Notifications Enabled' Text validated in notification dropdown in test tab");	
+	
+	Assert.assertTrue(driver.findElement(patternlabel).isDisplayed());
+	log.debug("Verified that 'Pattern' label appeared under Notification in test tab");		
+	Assert.assertEquals(driver.findElement(patternlabel).getText(), "Pattern");		
+	log.debug("Verified that 'Pattern' Text validated under Test Tab");	
+	
+	Assert.assertTrue(driver.findElement(severitylabel).isDisplayed());
+	log.debug("Verified that 'Severity' label appeared under Notification in test tab");	
+	Assert.assertEquals(driver.findElement(severitylabel).getText(), "Severity");		
+	log.debug("Verified that 'Severity' Text validated under Test Tab");	
+	
+	Assert.assertTrue(driver.findElement(notifionrettogoodlabel).isDisplayed());
+	log.debug("Verified that 'Notify on return to good' label appeared under Notification in test tab");		
+	Assert.assertEquals(driver.findElement(notifionrettogoodlabel).getText(), "Notify on return to good");		
+	log.debug("Verified that 'Notify on return to good' Text validated under Test Tab");	
+	
+	Assert.assertTrue(driver.findElement(reduceNotifiButton).isDisplayed());
+	log.debug("Verified that '(-) reduce notification button appeared under notification in Test tab");			
+	Assert.assertTrue(driver.findElement(reduceNotifiButton).isEnabled());
+	log.debug("Verified that '(-) reduce notification button enabled under notification in Test tab");			
+	  		
+  		
+	Assert.assertTrue(driver.findElement(addNotifiButton).isDisplayed());
+	log.debug("Verified that '(+) add notification button appeared under notification in Test tab");			
+	Assert.assertTrue(driver.findElement(addNotifiButton).isEnabled());
+	log.debug("Verified that '(+) add notification button enabled under notification in Test tab");			
+	
+	
+  	Assert.assertTrue(driver.findElement(notifiCheckbox).isDisplayed());
+	log.debug("Verified that 'Notifi Enabled Checkbox' appeared under Notification in test tab");		 
+	Assert.assertTrue(driver.findElement(notifiCheckbox).isEnabled());
+	log.debug("Verified that 'Notification Enabled' checkbox appeared notification in Test tab");			
+	
+	// Notification Drop Down	
 		
+			 log.debug("Verified that Notification dropdown"); 		 
+			 WebElement notifidropdown = driver.findElement(notifiDropdown);		
+		//	 System.out.println(dropdown.getSize());		 
+	       Select notifi1 = new Select(notifidropdown);        
+	       Assert.assertFalse(notifi1.isMultiple());       
+	      java.util.List<WebElement> options2 = notifi1.getOptions();   
+	     
+	      log.debug("Verified that following values available in the dropdown");      
+	       for(WebElement item2:options2) 
+	       { 
+	       	for (int i = 0; i <options2.size(); i++) {        		
+	       					        						    
+	       			log.debug(""+item2.getText());      			   			
+	    
+	                  	}
+	       		}
+	
+	    // Pattern Drop Down	
+			
+			 log.debug("Verified that Notification dropdown"); 		 
+			 WebElement Patterndropdown = driver.findElement(patternDropdown);		
+		//	 System.out.println(dropdown.getSize());		 
+	       Select pattern1 = new Select(Patterndropdown);        
+	       Assert.assertFalse(pattern1.isMultiple());       
+	      java.util.List<WebElement> options3 = pattern1.getOptions();   
+	     
+	      log.debug("Verified that following values available in the dropdown");      
+	       for(WebElement item3:options3) 
+	       { 
+	       	for (int i = 0; i <options3.size(); i++) {        		
+	       					        						    
+	       			log.debug(""+item3.getText());      			   			
+	    
+	                  	}
+	       		}
 		
+	     Assert.assertTrue(driver.findElement(patternValue).isDisplayed());
+	   	log.debug("Verified that 'Pattern' filled appeared under Notification in test tab");		 
+	   	Assert.assertTrue(driver.findElement(patternValue).isEnabled());
+	   	log.debug("Verified that 'Pattern' filled enabled under Notification in test tab");
+	       
+	 // Severty Drop Down	
 		
+		 log.debug("Verified that Severity dropdown"); 		 
+		 WebElement severitydropdown = driver.findElement(serverityDropdown);		
+	//	 System.out.println(dropdown.getSize());		 
+      Select severity1 = new Select(severitydropdown);        
+      Assert.assertFalse(severity1.isMultiple());       
+     java.util.List<WebElement> options4 = severity1.getOptions();   
+    
+     log.debug("Verified that following values available in the dropdown");      
+      for(WebElement item4:options4) 
+      { 
+      	for (int i = 0; i <options4.size(); i++) {        		
+      					        						    
+      			log.debug(""+item4.getText());      			   			
+   
+                 	}
+      		}  
+     Assert.assertTrue(driver.findElement(notifionCheckbox).isDisplayed());
+  	log.debug("Verified that 'Notify on return to good' Checkbox appeared under Notification in test tab");		 
+  	Assert.assertTrue(driver.findElement(notifionCheckbox).isEnabled());
+  	log.debug("Verified that 'Notify on return to good' checkbox enabled under notification in Test tab");			
+  	   
+	
+    Assert.assertTrue(driver.findElement(failThreSoldlabel).isDisplayed());
+	log.debug("Verified that 'Failure Thresholds' label appeared on under Tests tab");		
+	Assert.assertEquals(driver.findElement(failThreSoldlabel).getText(), "Failure Thresholds");		
+	log.debug("Verified that 'Failure Thresholds' Text validated under Test Tab");
+	
+	Assert.assertTrue(driver.findElement(primaryMetlabel).isDisplayed());
+	log.debug("Verified that 'Primary Metrics' label appeared on under Tests tab");		
+	Assert.assertEquals(driver.findElement(primaryMetlabel).getText(), "Primary Metrics");		
+	log.debug("Verified that 'Primary Metrics' Text validated under Test Tab");
+  	
+	Assert.assertTrue(driver.findElement(addMetLabel).isDisplayed());
+	log.debug("Verified that 'Additional Metrics' label appeared on under Tests tab");		
+	Assert.assertEquals(driver.findElement(addMetLabel).getText(), "Additional Metrics");		
+	log.debug("Verified that 'Additional Metrics' Text validated under Test Tab");
+	
+	Assert.assertTrue(driver.findElement(failureEnabledlabel).isDisplayed());
+	log.debug("Verified that 'Enabled' label appeared under Failure Thresholds in Tests tab");		
+	Assert.assertEquals(driver.findElement(failureEnabledlabel).getText(), "Enabled");		
+	log.debug("Verified that 'Enabled' text validated in Tests tab");		
+	       
+	Assert.assertTrue(driver.findElement(failMetriclabel).isDisplayed());
+	log.debug("Verified that 'Metric' label appeared under Failure Thresholds in Tests tab");		
+	Assert.assertEquals(driver.findElement(failMetriclabel).getText(), "Metric");		
+	log.debug("Verified that 'Metric' text validated in Tests tab");	
+	
+	Assert.assertTrue(driver.findElement(failCriterilabel).isDisplayed());
+	log.debug("Verified that 'Criteria' label appeared under Failure Thresholds in Tests tab");		
+	Assert.assertEquals(driver.findElement(failCriterilabel).getText(), "Criteria");		
+	log.debug("Verified that 'Criteria' text validated in Tests tab");
+	
+	Assert.assertTrue(driver.findElement(failWarrninglabel).isDisplayed());
+	log.debug("Verified that 'Warning' label appeared under Failure Thresholds in Tests tab");		
+	Assert.assertEquals(driver.findElement(failWarrninglabel).getText(), "Warning");		
+	log.debug("Verified that 'Warning' text validated in Tests tab");
+	
+	Assert.assertTrue(driver.findElement(failCrticallabel).isDisplayed());
+	log.debug("Verified that 'Critical' label appeared under Failure Thresholds in Tests tab");		
+	Assert.assertEquals(driver.findElement(failCrticallabel).getText(), "Critical");		
+	log.debug("Verified that 'Critical' text validated in Tests tab");
+	
+	Assert.assertTrue(driver.findElement(saveButtonTestTab).isDisplayed());
+	log.debug("Verified that 'Save' button displayed under Tests tab");	
+	Assert.assertFalse(driver.findElement(saveButtonTestTab).isEnabled());
+	log.debug("Verified that 'Save' button' is enabled under Tests tab");	
+	Assert.assertEquals(driver.findElement(saveButtonTestTab).getText(), "Save");		
+	log.debug("Verified that 'Save' Text appeared on save button under Test Tab");
+	
+	Assert.assertTrue(driver.findElement(discardButtonTestTab).isDisplayed());
+	log.debug("Verified that 'Discard' button displayed under Tests tab");	
+	Assert.assertFalse(driver.findElement(discardButtonTestTab).isEnabled());
+	log.debug("Verified that 'Discard' button' is enabled under Tests tab");	
+	Assert.assertEquals(driver.findElement(discardButtonTestTab).getText(), "Discard");		
+	log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
+	
+	Assert.assertTrue(driver.findElement(deleteButtonTestTab).isDisplayed());
+	log.debug("Verified that 'Delete' button displayed under Tests tab");	
+	Assert.assertFalse(driver.findElement(deleteButtonTestTab).isEnabled());
+	log.debug("Verified that 'Delete' button' is enabled under Tests tab");	
+	Assert.assertEquals(driver.findElement(deleteButtonTestTab).getText(), "Delete");		
+	log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");
+	
+	
+	
 		}
-        
-		}
-        
+       
 		
         //Validate Default start date should be system date
         
@@ -706,9 +975,247 @@ public void createTestbyLink() {
       		Assert.assertTrue(driver.findElement(endTimeValue).isEnabled());
       		log.debug("Verified that 'End Time Value filled enabled under sechedule section");
       		
+	  //===================================================================================================
+      		
+      		Assert.assertTrue(driver.findElement(scriptlabel).isDisplayed());
+    		log.debug("Verified that 'Script' label appeared under test tab");		
+    		Assert.assertEquals(driver.findElement(scriptlabel).getText(), "Script");		
+    		log.debug("Verified that 'Script' Text validated under Test Tab");
+    		
+    		Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
+    		log.debug("Verified that 'Script name' label appeared under script section in test tab");		
+    		Assert.assertEquals(driver.findElement(scriptNamelabel).getText(), "Script name");		
+    		log.debug("Verified that 'Script Name' Text validated under Test Tab");
+    		
+    	// Script Drop Down	
+    	
+    			 log.debug("Verified that script dropdown"); 			 
+    			 WebElement scriptdropdown = driver.findElement(selectaScriptDropdown); 			
+    		//	 System.out.println(dropdown.getSize());			 
+    	        Select scripts1 = new Select(scriptdropdown); 	        
+    	        Assert.assertFalse(scripts1.isMultiple());	        
+    	       java.util.List<WebElement> options1 = scripts1.getOptions();    
+    	      log.debug("Verified that following values available in the dropdown"); 
+    	          for(WebElement item1:options1) 
+    	        { 
+    	        	for (int i = 0; i <options1.size(); i++) {          		
+    	        		log.debug(""+item1.getText());      			   			
+    	     
+    	                   	}
+    	        		}
+    	          }
+    		
+            Assert.assertTrue(driver.findElement(inputParameterlabel).isDisplayed());
+      		log.debug("Verified that 'Input Parameters' label appeared under script section in test tab");		
+      		Assert.assertEquals(driver.findElement(inputParameterlabel).getText(), "Input Parameters");		
+      		log.debug("Verified that 'Input Parameters' Text validated under Test Tab");
+    		
+            Assert.assertTrue(driver.findElement(namelabel).isDisplayed());
+      		log.debug("Verified that 'Name' label appeared under script section in test tab");		
+      		Assert.assertEquals(driver.findElement(namelabel).getText(), "Name");		
+      		log.debug("Verified that 'Name' Text validated under Test Tab");
+      		
+            Assert.assertTrue(driver.findElement(valuelabel).isDisplayed());
+      		log.debug("Verified that 'Value' label appeared under script section in test tab");		
+      		Assert.assertEquals(driver.findElement(valuelabel).getText(), "Value");		
+      		log.debug("Verified that 'Value' Text validated under Test Tab");
+      		
+            Assert.assertTrue(driver.findElement(maskedlabel).isDisplayed());
+      		log.debug("Verified that 'Masked' label appeared under script section in test tab");		
+      		Assert.assertEquals(driver.findElement(maskedlabel).getText(), "Masked");		
+      		log.debug("Verified that 'Masked' Text validated under Test Tab");
+      		
+      		
+      		Assert.assertTrue(driver.findElement(notificationslabel).isDisplayed());
+      		log.debug("Verified that 'Notifications' label appeared under script section in test tab");		
+      		Assert.assertEquals(driver.findElement(notificationslabel).getText(), "Notifications");		
+      		log.debug("Verified that 'Notifications' Text validated under Test Tab");
+      		
+      		Assert.assertTrue(driver.findElement(enabledBoxlabel).isDisplayed());
+      		log.debug("Verified that 'Enabled' label appeared under Notification checkbox in test tab");		
+      		Assert.assertEquals(driver.findElement(enabledBoxlabel).getText(), "Enabled");		
+      		log.debug("Verified that 'Enabled' Text validated under Notification checkbox in test tab");			
+      	
+           
+       	Assert.assertTrue(driver.findElement(notifiCheckbox).isDisplayed());
+    	log.debug("Verified that 'Notifi Enabled Checkbox' appeared under Notification in test tab");		 
+    	Assert.assertTrue(driver.findElement(notifiCheckbox).isEnabled());
+    	log.debug("Verified that 'Notification Enabled' checkbox appeared notification in Test tab");			
+    	
+    	
+    	Assert.assertTrue(driver.findElement(enabledBoxlabel).isDisplayed());
+    	log.debug("Verified that 'Enabled' label appeared under Notification checkbox in test tab");		
+    	Assert.assertEquals(driver.findElement(enabledBoxlabel).getText(), "Enabled");		
+    	log.debug("Verified that 'Enabled' Text validated under Notification checkbox in test tab");	
+    	
+    	Assert.assertTrue(driver.findElement(notifiEnabledlabel).isDisplayed());
+    	log.debug("Verified that 'Notification' label appeared in notification dropdown in test tab");		
+    	Assert.assertEquals(driver.findElement(notifiEnabledlabel).getText(), "Notifications Enabled");		
+    	log.debug("Verified that 'Notifications Enabled' Text validated in notification dropdown in test tab");	
+    	
+    	Assert.assertTrue(driver.findElement(patternlabel).isDisplayed());
+    	log.debug("Verified that 'Pattern' label appeared under Notification in test tab");		
+    	Assert.assertEquals(driver.findElement(patternlabel).getText(), "Pattern");		
+    	log.debug("Verified that 'Pattern' Text validated under Test Tab");	
+    	
+    	Assert.assertTrue(driver.findElement(severitylabel).isDisplayed());
+    	log.debug("Verified that 'Severity' label appeared under Notification in test tab");	
+    	Assert.assertEquals(driver.findElement(severitylabel).getText(), "Severity");		
+    	log.debug("Verified that 'Severity' Text validated under Test Tab");	
+    	
+    	Assert.assertTrue(driver.findElement(notifionrettogoodlabel).isDisplayed());
+    	log.debug("Verified that 'Notify on return to good' label appeared under Notification in test tab");		
+    	Assert.assertEquals(driver.findElement(notifionrettogoodlabel).getText(), "Notify on return to good");		
+    	log.debug("Verified that 'Notify on return to good' Text validated under Test Tab");	
+    	
+    	Assert.assertTrue(driver.findElement(reduceNotifiButton).isDisplayed());
+    	log.debug("Verified that '(-) reduce notification button appeared under notification in Test tab");			
+    	Assert.assertTrue(driver.findElement(reduceNotifiButton).isEnabled());
+    	log.debug("Verified that '(-) reduce notification button enabled under notification in Test tab");			
+    	  		
+      		
+    	Assert.assertTrue(driver.findElement(addNotifiButton).isDisplayed());
+    	log.debug("Verified that '(+) add notification button appeared under notification in Test tab");			
+    	Assert.assertTrue(driver.findElement(addNotifiButton).isEnabled());
+    	log.debug("Verified that '(+) add notification button enabled under notification in Test tab");			
+    	
+    	
+      	Assert.assertTrue(driver.findElement(notifiCheckbox).isDisplayed());
+    	log.debug("Verified that 'Notifi Enabled Checkbox' appeared under Notification in test tab");		 
+    	Assert.assertTrue(driver.findElement(notifiCheckbox).isEnabled());
+    	log.debug("Verified that 'Notification Enabled' checkbox appeared notification in Test tab");			
+    	
+    	// Notification Drop Down	
+    		
+    			 log.debug("Verified that Notification dropdown"); 		 
+    			 WebElement notifidropdown = driver.findElement(notifiDropdown);		
+    		//	 System.out.println(dropdown.getSize());		 
+    	       Select notifi1 = new Select(notifidropdown);        
+    	       Assert.assertFalse(notifi1.isMultiple());       
+    	      java.util.List<WebElement> options2 = notifi1.getOptions();   
+    	     
+    	      log.debug("Verified that following values available in the dropdown");      
+    	       for(WebElement item2:options2) 
+    	       { 
+    	       	for (int i = 0; i <options2.size(); i++) {        		
+    	       					        						    
+    	       			log.debug(""+item2.getText());      			   			
+    	    
+    	                  	}
+    	       		}
+    	
+    	    // Pattern Drop Down	
+    			
+    			 log.debug("Verified that Notification dropdown"); 		 
+    			 WebElement Patterndropdown = driver.findElement(patternDropdown);		
+    		//	 System.out.println(dropdown.getSize());		 
+    	       Select pattern1 = new Select(Patterndropdown);        
+    	       Assert.assertFalse(pattern1.isMultiple());       
+    	      java.util.List<WebElement> options3 = pattern1.getOptions();   
+    	     
+    	      log.debug("Verified that following values available in the dropdown");      
+    	       for(WebElement item3:options3) 
+    	       { 
+    	       	for (int i = 0; i <options3.size(); i++) {        		
+    	       					        						    
+    	       			log.debug(""+item3.getText());      			   			
+    	    
+    	                  	}
+    	       		}
+    		
+    	     Assert.assertTrue(driver.findElement(patternValue).isDisplayed());
+    	   	log.debug("Verified that 'Pattern' filled appeared under Notification in test tab");		 
+    	   	Assert.assertTrue(driver.findElement(patternValue).isEnabled());
+    	   	log.debug("Verified that 'Pattern' filled enabled under Notification in test tab");
+    	       
+    	 // Severty Drop Down	
+    		
+    		 log.debug("Verified that Severity dropdown"); 		 
+    		 WebElement severitydropdown = driver.findElement(serverityDropdown);		
+    	//	 System.out.println(dropdown.getSize());		 
+          Select severity1 = new Select(severitydropdown);        
+          Assert.assertFalse(severity1.isMultiple());       
+         java.util.List<WebElement> options4 = severity1.getOptions();   
+        
+         log.debug("Verified that following values available in the dropdown");      
+          for(WebElement item4:options4) 
+          { 
+          	for (int i = 0; i <options4.size(); i++) {        		
+          					        						    
+          			log.debug(""+item4.getText());      			   			
+       
+                     	}
+          		}  
+         Assert.assertTrue(driver.findElement(notifionCheckbox).isDisplayed());
+      	log.debug("Verified that 'Notify on return to good' Checkbox appeared under Notification in test tab");		 
+      	Assert.assertTrue(driver.findElement(notifionCheckbox).isEnabled());
+      	log.debug("Verified that 'Notify on return to good' checkbox enabled under notification in Test tab");			
+      	   
+    	
+        Assert.assertTrue(driver.findElement(failThreSoldlabel).isDisplayed());
+    	log.debug("Verified that 'Failure Thresholds' label appeared on under Tests tab");		
+    	Assert.assertEquals(driver.findElement(failThreSoldlabel).getText(), "Failure Thresholds");		
+    	log.debug("Verified that 'Failure Thresholds' Text validated under Test Tab");
+    	
+    	Assert.assertTrue(driver.findElement(primaryMetlabel).isDisplayed());
+    	log.debug("Verified that 'Primary Metrics' label appeared on under Tests tab");		
+    	Assert.assertEquals(driver.findElement(primaryMetlabel).getText(), "Primary Metrics");		
+    	log.debug("Verified that 'Primary Metrics' Text validated under Test Tab");
+      	
+    	Assert.assertTrue(driver.findElement(addMetLabel).isDisplayed());
+    	log.debug("Verified that 'Additional Metrics' label appeared on under Tests tab");		
+    	Assert.assertEquals(driver.findElement(addMetLabel).getText(), "Additional Metrics");		
+    	log.debug("Verified that 'Additional Metrics' Text validated under Test Tab");
+    	
+    	Assert.assertTrue(driver.findElement(failureEnabledlabel).isDisplayed());
+    	log.debug("Verified that 'Enabled' label appeared under Failure Thresholds in Tests tab");		
+    	Assert.assertEquals(driver.findElement(failureEnabledlabel).getText(), "Enabled");		
+    	log.debug("Verified that 'Enabled' text validated in Tests tab");		
+    	       
+    	Assert.assertTrue(driver.findElement(failMetriclabel).isDisplayed());
+    	log.debug("Verified that 'Metric' label appeared under Failure Thresholds in Tests tab");		
+    	Assert.assertEquals(driver.findElement(failMetriclabel).getText(), "Metric");		
+    	log.debug("Verified that 'Metric' text validated in Tests tab");	
+    	
+    	Assert.assertTrue(driver.findElement(failCriterilabel).isDisplayed());
+    	log.debug("Verified that 'Criteria' label appeared under Failure Thresholds in Tests tab");		
+    	Assert.assertEquals(driver.findElement(failCriterilabel).getText(), "Criteria");		
+    	log.debug("Verified that 'Criteria' text validated in Tests tab");
+    	
+    	Assert.assertTrue(driver.findElement(failWarrninglabel).isDisplayed());
+    	log.debug("Verified that 'Warning' label appeared under Failure Thresholds in Tests tab");		
+    	Assert.assertEquals(driver.findElement(failWarrninglabel).getText(), "Warning");		
+    	log.debug("Verified that 'Warning' text validated in Tests tab");
+    	
+    	Assert.assertTrue(driver.findElement(failCrticallabel).isDisplayed());
+    	log.debug("Verified that 'Critical' label appeared under Failure Thresholds in Tests tab");		
+    	Assert.assertEquals(driver.findElement(failCrticallabel).getText(), "Critical");		
+    	log.debug("Verified that 'Critical' text validated in Tests tab");
+    	
+    	Assert.assertTrue(driver.findElement(saveButtonTestTab).isDisplayed());
+    	log.debug("Verified that 'Save' button displayed under Tests tab");	
+    	Assert.assertFalse(driver.findElement(saveButtonTestTab).isEnabled());
+    	log.debug("Verified that 'Save' button' is enabled under Tests tab");	
+    	Assert.assertEquals(driver.findElement(saveButtonTestTab).getText(), "Save");		
+    	log.debug("Verified that 'Save' Text appeared on save button under Test Tab");
+    	
+    	Assert.assertTrue(driver.findElement(discardButtonTestTab).isDisplayed());
+    	log.debug("Verified that 'Discard' button displayed under Tests tab");	
+    	Assert.assertFalse(driver.findElement(discardButtonTestTab).isEnabled());
+    	log.debug("Verified that 'Discard' button' is enabled under Tests tab");	
+    	Assert.assertEquals(driver.findElement(discardButtonTestTab).getText(), "Discard");		
+    	log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
+    	
+    	Assert.assertTrue(driver.findElement(deleteButtonTestTab).isDisplayed());
+    	log.debug("Verified that 'Delete' button displayed under Tests tab");	
+    	Assert.assertFalse(driver.findElement(deleteButtonTestTab).isEnabled());
+    	log.debug("Verified that 'Delete' button' is enabled under Tests tab");	
+    	Assert.assertEquals(driver.findElement(deleteButtonTestTab).getText(), "Delete");		
+    	log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");
+    		
 	
-	
-	}}}				
+	}
+}
 
 	
 
