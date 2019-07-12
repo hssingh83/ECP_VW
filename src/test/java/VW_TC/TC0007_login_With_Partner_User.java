@@ -116,8 +116,8 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		d.header();
-		d.footer();
+/*		d.header();
+		d.footer();*/
 		ts.testsValidations();
 		/*ts.createTestbybutton();*/
 		/*ts.testdeletebutton();*/

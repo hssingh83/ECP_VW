@@ -162,7 +162,8 @@ public class pom005_VoiceWatch_Tests_Tab {
 		{
 			log.debug("Verified that new test creation plus (+) icon appeared on top left side under Tests tab");	
 			
-			
+		}
+	  
 		
 		log.debug("Validated the element pleaset while click Test Creation using button (+)");
 		driver.findElement(testCreateplusbutton).click();
@@ -457,7 +458,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	     
 	                   	}
 	        		}
-	          }
+	          
 		
         Assert.assertTrue(driver.findElement(inputParameterlabel).isDisplayed());
   		log.debug("Verified that 'Input Parameters' label appeared under script section in test tab");		
@@ -830,7 +831,7 @@ public void createTestbyLink() {
      
                    	}
         		}
-        	        }
+        	        
 	
         Assert.assertTrue(driver.findElement(secheduleLabel).isDisplayed());
       		log.debug("Verified that 'Schedules' label appeared on under Tests tab");		
@@ -1017,7 +1018,7 @@ public void createTestbyLink() {
     	     
     	                   	}
     	        		}
-    	          }
+    	          
     		
             Assert.assertTrue(driver.findElement(inputParameterlabel).isDisplayed());
       		log.debug("Verified that 'Input Parameters' label appeared under script section in test tab");		
@@ -1235,8 +1236,7 @@ public void createTestbyLink() {
     		
 	
 	}
-}
-
+	}}}
 	
 
 

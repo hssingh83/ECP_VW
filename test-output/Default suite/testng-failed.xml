@@ -5,11 +5,8 @@
     <classes>
       <class name="VW_TC.TC0007_login_With_Partner_User">
         <methods>
-          <include name="dashBoardTabValidation"/>
           <include name="applicationClose"/>
           <include name="testTabValidation"/>
-          <include name="alertTabValidation"/>
-          <include name="TabValidation"/>
           <include name="applicationLaunch"/>
         </methods>
       </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
