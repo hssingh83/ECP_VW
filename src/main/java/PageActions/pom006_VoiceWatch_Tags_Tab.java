@@ -39,7 +39,7 @@ public class pom006_VoiceWatch_Tags_Tab {
 	public void tagsValidations() throws InterruptedException {	
 
 		driver.findElement(tagTab).click();		
-	//	Thread.sleep(10000);
+		Thread.sleep(10000);
 		
 		
 		
