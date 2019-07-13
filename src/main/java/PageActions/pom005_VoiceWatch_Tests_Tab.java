@@ -148,8 +148,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 		log.debug("Verified that 'Please select a test ' Text validated under Test Tab");
 		
 	}
-
-	  
+	
 	public void createTestbybutton() {
 		
           if (driver.findElements(testCreateplusbutton).isEmpty()) {
@@ -220,24 +219,12 @@ public class pom005_VoiceWatch_Tests_Tab {
 		Assert.assertEquals(driver.findElement(hammerlabel).getText(), "Hammer Group");		
 		log.debug("Verified that 'Hammer Group' Text validated under Test Tab");
 		
-	//	Select select = new Select(driver.findElement(By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']")));
-	//	System.out.println(select.getOptions());
 	
-
-		
 		Assert.assertEquals(driver.findElement(hammerGroupDefaultValue).getText(), "us_hammers");
 		log.debug("Verified that 'us_hammers' default value as Hammer Group under Test Tab");
 		
 		
-/*		WebElement dropdown = driver.findElement(By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']")); 
-        Select s = new Select(dropdown); 
-       java.util.List<WebElement> options = s.getOptions(); 
-        for(WebElement item:options) 
-        { 
-        
-             System.out.println("Dropdown values are "+ item.getText());           
-           }
-		*/
+
         
         
 		 String[] exp = {"(GMT -12:00) Eniwetok, Kwajalein","(GMT -11:00) Midway Island, Samoa","(GMT -10:00) Hawaii","(GMT -9:00) Alaska","(GMT -8:00) Pacific Time (US & Canada)","(GMT -7:00) Mountain Time (US & Canada)","(GMT -7:00) Arizona Time (US & Canada)","(GMT -6:00) Central Time (US & Canada), Mexico City","(GMT -5:00) Eastern Time (US & Canada)","(GMT -5:00) Bogota, Lima","(GMT -4:30) Caracas","(GMT -4:00) Atlantic Time (Canada)","(GMT -4:00) Santiago","(GMT -4:00) Georgetown, La Paz","(GMT -3:30) Newfoundland","(GMT -3:00) Buenos Aires","(GMT -3:00) Sao Paulo", "(GMT -2:00) Mid-Atlantic","(GMT -1:00 hour) Azores, Cape Verde Islands","(GMT) Western Europe Time, London, Lisbon, Casablanca, Greenwich","(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris","(GMT +2:00) Kaliningrad, South Africa, Cairo","(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg","(GMT +3:30) Tehran","(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi","(GMT +4:30) Kabul","(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent","(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi, Colombo","(GMT +5:45) Kathmandu","(GMT +6:00) Almaty, Dhaka","(GMT +6:30) Yangon, Cocos Islands","(GMT +7:00) Bangkok, Hanoi, Jakarta","(GMT +8:00) Beijing, Perth, Singapore, Hong Kong","(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk","(GMT +9:30) Adelaide, Darwin","(GMT +10:00) Eastern Australia, Guam, Vladivostok, Magadan","(GMT +11:00) Solomon Islands, New Caledonia","(GMT +12:00) Auckland, Wellington"};
@@ -270,8 +257,8 @@ public class pom005_VoiceWatch_Tests_Tab {
      
                    	}
         		}
-        }
         
+        }
        
         Assert.assertTrue(driver.findElement(secheduleLabel).isDisplayed());
 		log.debug("Verified that 'Schedules' label appeared on under Tests tab");		
@@ -458,7 +445,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	     
 	                   	}
 	        		}
-	          
+	
 		
         Assert.assertTrue(driver.findElement(inputParameterlabel).isDisplayed());
   		log.debug("Verified that 'Input Parameters' label appeared under script section in test tab");		
@@ -558,7 +545,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	    
 	                  	}
 	       		}
-	
+
 	    // Pattern Drop Down	
 			
 			 log.debug("Verified that Notification dropdown"); 		 
@@ -600,7 +587,8 @@ public class pom005_VoiceWatch_Tests_Tab {
       			log.debug(""+item4.getText());      			   			
    
                  	}
-      		}  
+      		} 
+	
      Assert.assertTrue(driver.findElement(notifionCheckbox).isDisplayed());
   	log.debug("Verified that 'Notify on return to good' Checkbox appeared under Notification in test tab");		 
   	Assert.assertTrue(driver.findElement(notifionCheckbox).isEnabled());
@@ -673,49 +661,10 @@ public class pom005_VoiceWatch_Tests_Tab {
 		log.debug("Verified that 'Delete button' displayed under Tests tab");	
 		
 	}
+
+}
 	
-	/*
-	Assert.assertTrue(driver.findElement(deleteButtonTestTab).isDisplayed());
-	log.debug("Verified that 'Delete' button displayed under Tests tab");	
-	Assert.assertFalse(driver.findElement(deleteButtonTestTab).isEnabled());
-	log.debug("Verified that 'Delete' button' is enabled under Tests tab");	
-	Assert.assertEquals(driver.findElement(deleteButtonTestTab).getText(), "Delete");		
-	log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");*/
-	
-	
-	
-		}
-       
-		
-        //Validate Default start date should be system date
-        
-     /*   Date objDate = new Date();
-        
-        System.out.println(objDate.toString());
-        
-        String currentDate=objDate.toString();
-        
-        
-        String appDate=driver.findElement(defaultDate).getText();
-        
-        System.out.println(currentDate);
-        
-        System.out.println(appDate);
-        
-        if (currentDate==appDate) {
-        	
-        	System.out.println("Great Time");
-        } else
-        	
-        	System.out.println("Bad Time");
-        	
-        }
-        
-    //    Assert.assertEquals(appDate,currentDate);
-        
-        
-		}*/
-																													
+
 			
        
         
@@ -744,7 +693,7 @@ public void createTestbyLink() {
 		
 		log.debug("Verified that new test created link appeared under Tests tab");	
 		
-	   
+	}  
 	   	   
 	    log.debug("Validated the element pleaset while click Test Creation using button (+)");
 		driver.findElement(testCreateplusbutton).click();
@@ -763,13 +712,7 @@ public void createTestbyLink() {
 		Assert.assertEquals(driver.findElement(discardButton).getText(), "Discard");		
 		log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
 		
-		/*Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
-		log.debug("Verified that 'Delete button' displayed under Tests tab");	
-		Assert.assertFalse(driver.findElement(deleteButton).isEnabled());
-		log.debug("Verified that 'Delete button' is disbaled under Tests tab");	
-		Assert.assertEquals(driver.findElement(deleteButton).getText(), "Delete");		
-		log.debug("Verified that 'Delete' Text appeared on save button under Test Tab");*/
-		
+				
 		  if (driver.findElements(deleteButton).isEmpty()) {
 				
 				log.debug("Verified that 'Delete button' is not displayed under Tests tab");		
@@ -832,7 +775,7 @@ public void createTestbyLink() {
                    	}
         		}
         	        
-	
+        }
         Assert.assertTrue(driver.findElement(secheduleLabel).isDisplayed());
       		log.debug("Verified that 'Schedules' label appeared on under Tests tab");		
       		Assert.assertEquals(driver.findElement(secheduleLabel).getText(), "Schedules");		
@@ -1236,7 +1179,7 @@ public void createTestbyLink() {
     		
 	
 	}
-	}}}
+	}
 	
 
 

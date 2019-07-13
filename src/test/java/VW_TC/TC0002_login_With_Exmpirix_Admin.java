@@ -59,7 +59,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	}   
       
 	
-	
+/*	
 	@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
@@ -117,19 +117,15 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		d.header();
 		d.footer();
 		
-	}
+	}*/
 	
 	@Test(priority=7)
 	public void testTabValidation () throws IOException, InterruptedException {
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		d.header();
-		d.footer();
 		ts.testsValidations();
 		ts.createTestbybutton();
-		d.header();
-		d.footer();
 		ts.createTestbyLink();
 		d.header();
 		d.footer();
@@ -143,16 +139,12 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	
+	
 		tg.tagsValidations();
-		d.header();
-		d.footer();
 		tg.createTagbybutton();
+		tg.createNewTag();		
 		d.header();
-		d.footer();
-		tg.createNewTag();
-		d.header();
-		d.footer();
-		
+		d.footer();	
 	}
 	
 	

@@ -13,7 +13,7 @@ public class pom006_VoiceWatch_Tags_Tab {
 	
 	By tagTab=By.linkText("Tags");
 	By alertsTab=By.linkText("Alerts");	
-	By tagslabel=By.xpath("//div[@class='panel-heading']");
+	By tagslabel=By.xpath("//*[@id=\"LAB-R\"]/div/div[1]/div/div/div[1]");
 	By tagfilterBox=By.xpath("//input[@placeholder='Filter by tag name']");
 	By tagCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");	
 	By taglabel=By.xpath("//h4[contains(text(),'Tag')]");
@@ -36,9 +36,10 @@ public class pom006_VoiceWatch_Tags_Tab {
 	
 	// Method for Verified Lables under Client Tab
 	
-	public void tagsValidations() {	
-		
-		driver.findElement(tagTab).click();
+	public void tagsValidations() throws InterruptedException {	
+
+		driver.findElement(tagTab).click();		
+	//	Thread.sleep(10000);
 		
 		
 		
