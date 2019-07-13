@@ -15,6 +15,7 @@ import PageActions.pom001_VoiceWatch_logIn_Page;
 import PageActions.pom002_VoiceWatch_Home_Page;
 import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
+import PageActions.pom006_VoiceWatch_Tags_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -105,9 +106,33 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		d.footer();
 		ts.testsValidations();
 		ts.createTestbybutton();
+		d.header();
+		d.footer();
 		ts.createTestbyLink();
+		d.header();
+		d.footer();
 		
 	}
+	
+	
+	@Test(priority=8)
+	public void tagTabValidation () throws IOException, InterruptedException {
+		
+		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	
+		tg.tagsValidations();
+		d.header();
+		d.footer();
+		tg.createTagbybutton();
+		d.header();
+		d.footer();
+		tg.createNewTag();
+		d.header();
+		d.footer();
+		
+	}
+	
 	
 	@AfterTest
 	public void applicationClose() {
