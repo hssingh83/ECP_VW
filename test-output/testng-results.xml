@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="133292" started-at="2019-07-12T10:10:34Z" finished-at="2019-07-12T10:12:48Z">
+  <suite name="Default suite" duration-ms="41309" started-at="2019-07-13T02:53:52Z" finished-at="2019-07-13T02:54:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="133292" started-at="2019-07-12T10:10:34Z" finished-at="2019-07-12T10:12:48Z">
-      <class name="VW_TC.TC0007_login_With_Partner_User">
-        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="applicationLaunch" is-config="true" duration-ms="18237" started-at="2019-07-12T10:10:34Z" finished-at="2019-07-12T10:10:53Z">
+    <test name="Default test" duration-ms="41309" started-at="2019-07-13T02:53:52Z" finished-at="2019-07-13T02:54:33Z">
+      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin">
+        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0002_login_With_Exmpirix_Admin@1aafa419]" name="applicationLaunch" is-config="true" duration-ms="20553" started-at="2019-07-13T02:53:52Z" finished-at="2019-07-13T02:54:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationLaunch -->
-        <test-method status="PASS" signature="logInWithPartnerUser()[pri:1, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="logInWithPartnerUser" duration-ms="11662" started-at="2019-07-12T10:10:53Z" finished-at="2019-07-12T10:11:04Z">
+        <test-method status="PASS" signature="logInWithExpirixAdmin()[pri:1, instance:VW_TC.TC0002_login_With_Exmpirix_Admin@1aafa419]" name="logInWithExpirixAdmin" duration-ms="14004" started-at="2019-07-13T02:54:12Z" finished-at="2019-07-13T02:54:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInWithPartnerUser -->
-        <test-method status="PASS" signature="testTabValidation()[pri:7, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="testTabValidation" duration-ms="102606" started-at="2019-07-12T10:11:04Z" finished-at="2019-07-12T10:12:47Z">
+        </test-method> <!-- logInWithExpirixAdmin -->
+        <test-method status="PASS" signature="testTagValidation()[pri:7, instance:VW_TC.TC0002_login_With_Exmpirix_Admin@1aafa419]" name="testTagValidation" duration-ms="5777" started-at="2019-07-13T02:54:26Z" finished-at="2019-07-13T02:54:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTabValidation -->
-        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="applicationClose" is-config="true" duration-ms="771" started-at="2019-07-12T10:12:47Z" finished-at="2019-07-12T10:12:48Z">
+        </test-method> <!-- testTagValidation -->
+        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0002_login_With_Exmpirix_Admin@1aafa419]" name="applicationClose" is-config="true" duration-ms="942" started-at="2019-07-13T02:54:32Z" finished-at="2019-07-13T02:54:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationClose -->
-      </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
+      </class> <!-- VW_TC.TC0002_login_With_Exmpirix_Admin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

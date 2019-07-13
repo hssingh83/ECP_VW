@@ -15,6 +15,7 @@ import PageActions.pom002_VoiceWatch_Home_Page;
 import PageActions.pom003_VoiceWatch_Dashboard_Tab;
 import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
+import PageActions.pom006_VoiceWatch_Tags_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -58,7 +59,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	}   
       
 	
-	
+/*	
 	@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
@@ -127,7 +128,30 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		d.footer();
 		ts.testsValidations();
 		ts.createTestbybutton();
+		d.header();
+		d.footer();
 		ts.createTestbyLink();
+		d.header();
+		d.footer();
+		
+	}
+	*/
+	
+	@Test(priority=7)
+	public void testTagValidation () throws IOException, InterruptedException {
+		
+		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	
+		tg.tagsValidations();
+		d.header();
+		d.footer();
+		tg.createTagbybutton();
+		d.header();
+		d.footer();
+		tg.createNewTag();
+		d.header();
+		d.footer();
 		
 	}
 	
