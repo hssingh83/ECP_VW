@@ -125,16 +125,16 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 		ts.testsValidations();
 		d.header();
 		d.footer();
-		ts.createTestbybutton();
-		d.header();
-		d.footer();
-		ts.createTestbyLink();
-		d.header();
-		d.footer();
+	//	ts.createTestbybutton();
+	//	d.header();
+	//	d.footer();
+	//	ts.createTestbyLink();
+	//	d.header();
+	//	d.footer();
 		
 	}
 	
-	
+	/*
 	@Test(priority=8)
 	public void tagTabValidation () throws IOException, InterruptedException {
 		
@@ -151,7 +151,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 		d.header();
 		d.footer();
 		
-	}
+	}*/
 	
 	
 	@AfterTest

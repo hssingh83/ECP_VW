@@ -1,13 +1,13 @@
 package PageActions;
 
-import java.util.Date;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class pom005_VoiceWatch_Tests_Tab {
@@ -21,10 +21,20 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By testslabel=By.className("panel-heading");	
     By filterBox=By.xpath("//input[@placeholder='Filter by test name']");	
 	By testCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");	
+
+	
+	
+	
 	By testlabel=By.xpath("//h4[contains(text(),'Test')]");	
 	By pleaseSelectlabel=By.xpath("//span[@id='loading']");	
 	By testCreateLink=By.linkText("or create a new test");
+
+	
 	By saveButton=By.xpath("//div[@class='row']//button[@class='btn btn-primary btn-sm']");
+	
+
+	
+	
 	By discardButton=By.xpath("//div[@class='row']//button[@class='btn btn-warning btn-sm']");
 	By deleteButton=By.xpath("//div[@class='row']//button[@class='btn btn-danger btn-sm']");
 	By checkboxEnabled=By.xpath("//input[@class='ng-valid ng-dirty ng-valid-parse ng-not-empty ng-touched']");
@@ -150,6 +160,8 @@ public class pom005_VoiceWatch_Tests_Tab {
 	}
 	
 	public void createTestbybutton() {
+		   
+		driver.findElement(testTab).click();
 		
           if (driver.findElements(testCreateplusbutton).isEmpty()) {
 			
@@ -163,9 +175,19 @@ public class pom005_VoiceWatch_Tests_Tab {
 			
 		}
 	  
+	
+		log.debug("Validated the different elements while click Test Creation using button (+)");
 		
-		log.debug("Validated the element pleaset while click Test Creation using button (+)");
+		
+	//	driver.findElement(testCreateplusbutton).click();
+		
 		driver.findElement(testCreateplusbutton).click();
+		
+/*		WebElement element = driver.findElement(testCreateplusbutton);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(element));
+		element.click();*/
+		
 		
 		Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
 		log.debug("Verified that 'Save button' displayed under Tests tab");	
@@ -182,7 +204,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 		log.debug("Verified that 'Discard' Text appeared on save button under Test Tab");
 		
 		
-	     		
+
 		
         if (driver.findElements(deleteButton).isEmpty()) {
 			

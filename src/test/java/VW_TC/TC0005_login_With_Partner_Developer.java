@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import PageActions.pom001_VoiceWatch_logIn_Page;
 import PageActions.pom002_VoiceWatch_Home_Page;
+import PageActions.pom003_VoiceWatch_Dashboard_Tab;
 import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
 import PageActions.pom006_VoiceWatch_Tags_Tab;
@@ -73,17 +74,32 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		 d.home_screen();
-/*	    d.tagTab();
-	    d.scriptsTab();
-	    d.usersTab();
-	    d.clientsTab();	    
-	    d.adminTab();
-	    log.info("Few Tabs are missing under above role, let's find out");
-	    d.hammersTab();
-	    d.auditTab();
-	    d.selectedTab();*/
+	//    d.tagTab();
+	//    d.scriptsTab();
+	//    d.usersTab();
+	//    d.clientsTab();	    
+	//    d.adminTab();
+	//    log.info("Few Tabs are missing under above role, let's find out");
+	//    d.hammersTab();
+	//    d.auditTab();
+	//    d.selectedTab();
 	
 	}
+	
+	@Test(priority=5)
+	public void dashBoardTabValidation () throws IOException, InterruptedException {
+		
+		pom003_VoiceWatch_Dashboard_Tab db=new pom003_VoiceWatch_Dashboard_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+				
+		db.OverallPerfomance_section_dashboard();
+		db.activetest_section_dashboard();
+		d.header();
+		d.footer();
+	}
+	
+	
+	
 	
 	@Test(priority=6)
 	public void alertTabValidation () throws IOException, InterruptedException {
