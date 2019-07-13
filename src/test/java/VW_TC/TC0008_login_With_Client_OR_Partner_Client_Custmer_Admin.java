@@ -118,9 +118,10 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	
+		ts.testsValidations();
 		d.header();
 		d.footer();
-		ts.testsValidations();
 		ts.createTestbybutton();
 		d.header();
 		d.footer();

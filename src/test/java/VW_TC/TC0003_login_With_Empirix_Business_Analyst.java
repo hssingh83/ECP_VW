@@ -115,9 +115,9 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+		ts.testsValidations();
 		d.header();
 		d.footer();
-		ts.testsValidations();
 		ts.createTestbybutton();
 		d.header();
 		d.footer();
@@ -134,16 +134,16 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	
+	
 		tg.tagsValidations();
 		d.header();
 		d.footer();
 		tg.createTagbybutton();
 		d.header();
 		d.footer();
-		tg.createNewTag();
+		tg.createNewTag();		
 		d.header();
-		d.footer();
-		
+		d.footer();	
 	}
 	
 	

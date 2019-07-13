@@ -115,9 +115,10 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+		
+		ts.testsValidations();
 		d.header();
 		d.footer();
-		ts.testsValidations();
 		ts.createTestbybutton();
 		d.header();
 		d.footer();
