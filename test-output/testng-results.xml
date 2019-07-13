@@ -1,53 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="692287" started-at="2019-07-13T18:55:17Z" finished-at="2019-07-13T19:06:50Z">
+  <suite name="Default suite" duration-ms="45714" started-at="2019-07-13T19:35:33Z" finished-at="2019-07-13T19:36:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="692287" started-at="2019-07-13T18:55:17Z" finished-at="2019-07-13T19:06:50Z">
-      <class name="VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin">
-        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="applicationLaunch" is-config="true" duration-ms="22883" started-at="2019-07-13T18:55:17Z" finished-at="2019-07-13T18:55:40Z">
+    <test name="Default test" duration-ms="45714" started-at="2019-07-13T19:35:33Z" finished-at="2019-07-13T19:36:19Z">
+      <class name="VW_TC.TC0007_login_With_Partner_User">
+        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="applicationLaunch" is-config="true" duration-ms="22315" started-at="2019-07-13T19:35:33Z" finished-at="2019-07-13T19:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationLaunch -->
-        <test-method status="PASS" signature="logInWithPartnerClient_CustomerAdmin()[pri:1, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="logInWithPartnerClient_CustomerAdmin" duration-ms="13121" started-at="2019-07-13T18:55:40Z" finished-at="2019-07-13T18:55:53Z">
+        <test-method status="PASS" signature="logInWithPartnerUser()[pri:1, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="logInWithPartnerUser" duration-ms="14050" started-at="2019-07-13T19:35:56Z" finished-at="2019-07-13T19:36:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInWithPartnerClient_CustomerAdmin -->
-        <test-method status="PASS" signature="headerMandatoryDetails()[pri:2, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="headerMandatoryDetails" duration-ms="547" started-at="2019-07-13T18:55:53Z" finished-at="2019-07-13T18:55:54Z">
+        </test-method> <!-- logInWithPartnerUser -->
+        <test-method status="PASS" signature="headerMandatoryDetails()[pri:2, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="headerMandatoryDetails" duration-ms="346" started-at="2019-07-13T19:36:10Z" finished-at="2019-07-13T19:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headerMandatoryDetails -->
-        <test-method status="PASS" signature="footerMandatoryDetails()[pri:3, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="footerMandatoryDetails" duration-ms="328" started-at="2019-07-13T18:55:54Z" finished-at="2019-07-13T18:55:54Z">
+        <test-method status="PASS" signature="footerMandatoryDetails()[pri:3, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="footerMandatoryDetails" duration-ms="221" started-at="2019-07-13T19:36:10Z" finished-at="2019-07-13T19:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footerMandatoryDetails -->
-        <test-method status="PASS" signature="TabValidation()[pri:4, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="TabValidation" duration-ms="401329" started-at="2019-07-13T18:55:54Z" finished-at="2019-07-13T19:02:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TabValidation -->
-        <test-method status="PASS" signature="dashBoardTabValidation()[pri:5, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="dashBoardTabValidation" duration-ms="2000" started-at="2019-07-13T19:02:36Z" finished-at="2019-07-13T19:02:38Z">
+        <test-method status="PASS" signature="dashBoardTabValidation()[pri:5, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="dashBoardTabValidation" duration-ms="2727" started-at="2019-07-13T19:36:10Z" finished-at="2019-07-13T19:36:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoardTabValidation -->
-        <test-method status="PASS" signature="alertTabValidation()[pri:6, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="alertTabValidation" duration-ms="3487" started-at="2019-07-13T19:02:38Z" finished-at="2019-07-13T19:02:41Z">
+        <test-method status="PASS" signature="alertTabValidation()[pri:6, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="alertTabValidation" duration-ms="2196" started-at="2019-07-13T19:36:13Z" finished-at="2019-07-13T19:36:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alertTabValidation -->
-        <test-method status="PASS" signature="testTabValidation()[pri:7, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="testTabValidation" duration-ms="233762" started-at="2019-07-13T19:02:41Z" finished-at="2019-07-13T19:06:35Z">
+        <test-method status="PASS" signature="testTabValidation()[pri:7, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="testTabValidation" duration-ms="2641" started-at="2019-07-13T19:36:15Z" finished-at="2019-07-13T19:36:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTabValidation -->
-        <test-method status="PASS" signature="tagTabValidation()[pri:8, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="tagTabValidation" duration-ms="13916" started-at="2019-07-13T19:06:35Z" finished-at="2019-07-13T19:06:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tagTabValidation -->
-        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin@47eaca72]" name="applicationClose" is-config="true" duration-ms="905" started-at="2019-07-13T19:06:49Z" finished-at="2019-07-13T19:06:50Z">
+        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0007_login_With_Partner_User@1aafa419]" name="applicationClose" is-config="true" duration-ms="1203" started-at="2019-07-13T19:36:18Z" finished-at="2019-07-13T19:36:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationClose -->
-      </class> <!-- VW_TC.TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin -->
+      </class> <!-- VW_TC.TC0007_login_With_Partner_User -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

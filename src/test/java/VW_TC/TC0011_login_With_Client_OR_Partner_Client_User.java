@@ -134,25 +134,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 		
 	}
 	
-	/*
-	@Test(priority=8)
-	public void tagTabValidation () throws IOException, InterruptedException {
-		
-		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
-		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	
-		tg.tagsValidations();
-		d.header();
-		d.footer();
-		tg.createTagbybutton();
-		d.header();
-		d.footer();
-		tg.createNewTag();
-		d.header();
-		d.footer();
-		
-	}*/
-	
+
 	
 	@AfterTest
 	public void applicationClose() {

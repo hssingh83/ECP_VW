@@ -120,31 +120,12 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 		ts.testsValidations();
 		d.header();
 		d.footer();
-		ts.createTestbybutton();
-		d.header();
-		d.footer();
-		ts.createTestbyLink();
-		d.header();
-		d.footer();
-		
-	}
-	
-	
-	@Test(priority=8)
-	public void tagTabValidation () throws IOException, InterruptedException {
-		
-		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
-		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	
-		tg.tagsValidations();
-		d.header();
-		d.footer();
-		tg.createTagbybutton();
-		d.header();
-		d.footer();
-		tg.createNewTag();
-		d.header();
-		d.footer();
+	//	ts.createTestbybutton();
+	//	d.header();
+	//	d.footer();
+	//	ts.createTestbyLink();
+	//	d.header();
+	//	d.footer();
 		
 	}
 	
