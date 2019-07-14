@@ -22,13 +22,7 @@ import resources.dataDriven;
 
 public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	
-//public class TC0001_login extends TC0000_reusable{
-	
-	
-	
 	private static Logger log =LogManager.getLogger(TC0004_login_With_Partner_Customer_Admin.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	
@@ -47,7 +41,7 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		l.getUsername().sendKeys(data.get(1));
 	    l.getPassword().sendKeys(data.get(2));
 	    l.getSignButton().click();
-	    Thread.sleep(1000);
+	    Thread.sleep(10);
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.debug("Verified that VoiceWatch Application login successfully with Partner_Customer Admin creadetial");
@@ -75,17 +69,7 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		 d.home_screen();
-	//    d.tagTab();
-	//    d.scriptsTab();
-	//    d.usersTab();
-	//    d.clientsTab();	    
-	//    d.adminTab();
-	//    d.selectedTab();
-	//    log.info("Few Tabs are missing under above role, let's find out");
-	//    d.hammersTab();
-	//    d.auditTab();    
-	    
-	
+		
 	}
 	
 	@Test(priority=5)

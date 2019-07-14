@@ -16,10 +16,6 @@ public class pom006_VoiceWatch_Tags_Tab {
 	By tagslabel=By.xpath("//*[@id=\"LAB-R\"]/div/div[1]/div/div/div[1]");
 	By tagfilterBox=By.xpath("//input[@placeholder='Filter by tag name']");
 	By tagCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");	
-//	By tagCreateplusbutton=By.xpath("//*[@id="LAB-R"]/div/div[1]/div/div/div[2]/a/span");
-//	By tagCreatePlusButton=By.xpath("//*[@id=\"LAB-R\"]/div/div[1]/div/div/div[2]/a/span");
-	
-	
 	By taglabel=By.xpath("//h4[contains(text(),'Tag')]");
 	By pleaseselecttaglabel=By.xpath("//span[@id='loading']");
 	By createNewTagLink=By.xpath("//u[contains(text(),'or create a new tag')]");
@@ -161,11 +157,4 @@ public class pom006_VoiceWatch_Tags_Tab {
 	
 	}
 		}
-	
-	
-
-
-	
-	
-
 	

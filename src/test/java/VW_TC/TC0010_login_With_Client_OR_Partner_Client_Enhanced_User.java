@@ -21,14 +21,8 @@ import resources.baseProperties;
 import resources.dataDriven;
 
 public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends baseProperties{
-	
-//public class TC0001_login extends TC0000_reusable{
-	
-	
-	
+
 	private static Logger log =LogManager.getLogger(TC0010_login_With_Client_OR_Partner_Client_Enhanced_User.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	public void applicationLaunch() throws IOException, InterruptedException {
@@ -47,12 +41,10 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 	    l.getPassword().sendKeys(data.get(2));
 	    l.getSignButton().click();
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
-	    Thread.sleep(1000);
+	    Thread.sleep(10);
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.info("Verified that VoiceWatch Application login successfully with Client/Partner Clinet_Enhanced User creadetial");
-	    log.debug("Validate the requiment as Aceess Level= Client/Partner_Client & Role=Enhamced User");
-	    
-		
+	    log.debug("Validate the requiment as Aceess Level= Client/Partner_Client & Role=Enhamced User");	
 		
 	}	
 
@@ -77,16 +69,6 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		 d.home_screen();
-/*	    d.tagTab();
-	    d.scriptsTab();
-	    d.usersTab();
-	    log.info("Few Tabs are missing under above role, let's find out");	    
-	    d.hammersTab();
-	    d.clientsTab();	    
-	    d.auditTab();
-	    d.adminTab();
-	    d.selectedTab();*/
-	
 	}
 	
 	@Test(priority=5)
@@ -107,10 +89,8 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		at.alertsValidations();		
-		at.hammerColumn();
 		d.header();
-		d.footer();
-		
+	   d.footer();
 	}
 	
 	@Test(priority=7)
@@ -142,8 +122,7 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 		d.footer();
 		
 	}
-	
-	
+		
 	
 	@AfterTest
 	public void applicationClose() {
@@ -152,6 +131,4 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 		log.info("Application closed successfully");
 		
 	}
-	}
-	
-		
+	}		

@@ -22,13 +22,7 @@ import resources.dataDriven;
 
 public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
-//public class TC0001_login extends TC0000_reusable{
-	
-	
-	
 	private static Logger log =LogManager.getLogger(TC0002_login_With_Exmpirix_Admin.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	
@@ -40,8 +34,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
 	
 	@Test(priority=1)
-	public void logInWithExpirixAdmin () throws IOException, InterruptedException {
-		
+	public void logInWithExpirixAdmin () throws IOException, InterruptedException {		
 		dataDriven d=new dataDriven();
 	    ArrayList<String> data=d.getData("login","Admin_login");
 		
@@ -51,7 +44,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		l.getUsername().sendKeys(data.get(1));
         l.getPassword().sendKeys(data.get(2));
 	    l.getSignButton().click();
-	    Thread.sleep(1000);
+	    Thread.sleep(10);
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.debug("Verified that VoiceWatch Application login successfully with Empirix Admin creadetial");
@@ -72,8 +65,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	public void footerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.footer();
-	
+	    d.footer();	
 	}
 
 		
@@ -103,9 +95,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		db.OverallPerfomance_section_dashboard();
 		db.activetest_section_dashboard();
 		d.header();
-		d.footer();
-
-	
+		d.footer();	
 	}
 	
 	@Test(priority=6)
@@ -168,28 +158,5 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
 	}
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	

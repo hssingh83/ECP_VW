@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -89,18 +89,18 @@ return driver;
 	}
 	
 	
-	
 
+		
+	public void getScreenshot(String result) throws IOException
+//	public void getScreenshot() throws IOException
 	
-public void getScreenshot(String result) throws IOException
 	{
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-	FileHandler.copy(src, new File("C:\\Users\\Administrator\\TVoiceWatch\\src\\main\\java\\Screenshot"+result+"screenshot.png"));
-		//FileUtils.copyFile(src, new File("C://test//"+result+"screenshot.png"));
-		
-	         }	 
-
+	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(src, new File("C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\screenshot"+result+"screenshot.png"));
+//	FileUtils.copyFile(src, new File("C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\screenshot\\screenshot.png"));
+	
+	}
 
 
 	

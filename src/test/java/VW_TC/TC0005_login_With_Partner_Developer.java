@@ -22,13 +22,7 @@ import resources.dataDriven;
 
 public class TC0005_login_With_Partner_Developer extends baseProperties{
 	
-//public class TC0001_login extends TC0000_reusable{
-	
-	
-	
 	private static Logger log =LogManager.getLogger(TC0005_login_With_Partner_Developer.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	public void applicationLaunch() throws IOException, InterruptedException {
@@ -46,7 +40,7 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		l.getUsername().sendKeys(data.get(1));
 	    l.getPassword().sendKeys(data.get(2));
 	    l.getSignButton().click();
-	    Thread.sleep(1000);
+	    Thread.sleep(10);
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.info("Verified that VoiceWatch Application login successfully with Partner_Developer creadetial");
@@ -74,15 +68,6 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		 d.home_screen();
-	//    d.tagTab();
-	//    d.scriptsTab();
-	//    d.usersTab();
-	//    d.clientsTab();	    
-	//    d.adminTab();
-	//    log.info("Few Tabs are missing under above role, let's find out");
-	//    d.hammersTab();
-	//    d.auditTab();
-	//    d.selectedTab();
 	
 	}
 	
@@ -96,10 +81,7 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		db.activetest_section_dashboard();
 		d.header();
 		d.footer();
-	}
-	
-	
-	
+	}	
 	
 	@Test(priority=6)
 	public void alertTabValidation () throws IOException, InterruptedException {
@@ -159,7 +141,4 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		
 	}
 }
-	
-	
-	
 	

@@ -16,34 +16,22 @@ public class pom004_VoiceWatch_Alerts_Tab {
 	By alertsTab=By.linkText("Alerts");
 	
 	By dropdownTimeSelected=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/select");
-	By checkBoxShowError=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/span[1]/input");
-	
-	By filterBox=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/span[2]/input");
-	
-	By testTimeColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[1]/span[1]");
-	
-	By hammerColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[2]/div/span[1]");
-	
-	By testColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[3]/span[1]");
-	
-	By errorStepColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[4]");
-	
-	By errorMessageColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[5]");
-	
-	By ThresholdColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[6]");
-	
-	By SeverityColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[7]");
-	
-	By alertStatusColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[8]");
-	
-	By totallabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[3]/span[1]/span");
-	
-	By criticallabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[3]/span[2]/span");
-	
-	By warninglabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[3]/span[3]/span");
+	By checkBoxShowError=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/span[1]/input");	
+	By filterBox=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/span[2]/input");	
+	By testTimeColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[1]/span[1]");	
+//	By hammerColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[2]/div/span[1]");
+	By hammerColumn=By.xpath("//div[@class='sortable']//span[contains(text(),'Hammer')]");
 	
 	
-	
+	By testColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[3]/span[1]");	
+	By errorStepColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[4]");	
+	By errorMessageColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[5]");	
+	By ThresholdColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[6]");	
+	By SeverityColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[7]");	
+	By alertStatusColumn=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/table/thead/tr/th[8]");	
+	By totallabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[3]/span[1]/span");	
+	By criticallabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[3]/span[2]/span");	
+	By warninglabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[3]/span[3]/span");	
 	
 	   
     
@@ -56,7 +44,7 @@ public class pom004_VoiceWatch_Alerts_Tab {
 	
 	// Method for Verified Lables under Client Tab
 	
-	public void alertsValidations() {	
+	public void alertsValidations() throws InterruptedException {	
 		
 		driver.findElement(alertsTab).click();
 		
@@ -80,7 +68,22 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		Assert.assertEquals(driver.findElement(testTimeColumn).getText(), "Test Time");		
 		log.debug("Verified that 'Test Time' coloumn under Alerts Tab");
 		
-	/*	Assert.assertTrue(driver.findElement(hammerColumn).isDisplayed());
+		Thread.sleep(1000);
+		
+		if (driver.findElements(hammerColumn).isEmpty()) {
+			
+			log.debug("Verified that 'Hammer' coloum is not displaying under Alerts Tab");
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Hammer' coloum dislayed under Alerts Tab");
+			
+		}		
+		
+		
+/*		Assert.assertTrue(driver.findElement(hammerColumn).isDisplayed());
 		log.debug("Verified that 'Hammer' dislayed under Alerts Tab");
 		Assert.assertEquals(driver.findElement(hammerColumn).getText(), "Hammer");		
 		log.debug("Verified that 'Hammer' coloumn under Alerts Tab");*/
@@ -161,10 +164,7 @@ public class pom004_VoiceWatch_Alerts_Tab {
         		}
         	}
         }
-        			 
-		
-		
-		
+   
 		
 	}
 

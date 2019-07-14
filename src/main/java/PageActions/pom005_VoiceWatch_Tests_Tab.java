@@ -20,21 +20,11 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By dropdownTimeZone=By.xpath("//div[@class='input-group']//select[@class='form-control ng-pristine ng-untouched ng-valid ng-not-empty']");
 	By testslabel=By.className("panel-heading");	
     By filterBox=By.xpath("//input[@placeholder='Filter by test name']");	
-	By testCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");	
-
-	
-	
-	
+	By testCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");		
 	By testlabel=By.xpath("//h4[contains(text(),'Test')]");	
 	By pleaseSelectlabel=By.xpath("//span[@id='loading']");	
-	By testCreateLink=By.linkText("or create a new test");
-
-	
-	By saveButton=By.xpath("//div[@class='row']//button[@class='btn btn-primary btn-sm']");
-	
-
-	
-	
+	By testCreateLink=By.linkText("or create a new test");	
+	By saveButton=By.xpath("//div[@class='row']//button[@class='btn btn-primary btn-sm']");	
 	By discardButton=By.xpath("//div[@class='row']//button[@class='btn btn-warning btn-sm']");
 	By deleteButton=By.xpath("//div[@class='row']//button[@class='btn btn-danger btn-sm']");
 	By checkboxEnabled=By.xpath("//input[@class='ng-valid ng-dirty ng-valid-parse ng-not-empty ng-touched']");
@@ -72,18 +62,14 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By friButton=By.xpath("//span[contains(text(),'Fri')]");
 	By satButton=By.xpath("//span[contains(text(),'Sat')]");	
 	By startTimeValue=By.xpath("//table[@class='schedule ng-scope']//td[6]//input[1]");
-	By endTimeValue=By.xpath("//td[7]//input[1]");
-	
-	//===============================================================================
-	
+	By endTimeValue=By.xpath("//td[7]//input[1]");	
 	By scriptlabel=By.xpath("//h4[contains(text(),'Script')]");
 	By scriptNamelabel=By.xpath("//div[@class='input-group-addon']");
 	By selectaScriptDropdown=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[3]/div/div[1]/div/div/select");
 	By inputParameterlabel=By.xpath("//label[contains(text(),'Input Parameters')]");
 	By namelabel=By.xpath("//th[contains(text(),'Name')]");
 	By valuelabel=By.xpath("//th[contains(text(),'Value')]");
-	By maskedlabel=By.xpath("//th[contains(text(),'Masked')]");
-	
+	By maskedlabel=By.xpath("//th[contains(text(),'Masked')]");	
 	By notificationslabel=By.xpath("//h4[contains(text(),'Notifications')]");
 	By notifiCheckbox=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[2]/form/section[4]/div/div[2]/table/tbody/tr[3]/td[3]/select");
 	By notifiEnabledlabel=By.xpath("//label[contains(text(),'Notifications Enabled')]");
@@ -91,19 +77,14 @@ public class pom005_VoiceWatch_Tests_Tab {
 	By notifilabel=By.xpath("//th[contains(text(),'Notification')]");
 	By patternlabel=By.xpath("//th[contains(text(),'Pattern')]");
 	By severitylabel=By.xpath("//th[contains(text(),'Severity')]");
-	By notifionrettogoodlabel=By.xpath("//th[contains(text(),'Notify on return to good')]");
-	
-	
-	
+	By notifionrettogoodlabel=By.xpath("//th[contains(text(),'Notify on return to good')]");	
 	By reduceNotifiButton=By.xpath("//span[@class='glyphicon glyphicon-minus-sign minusicon']");
 	By addNotifiButton=By.xpath("//table[@class='schedule']//span[@class='glyphicon glyphicon-plus-sign plusicon']");
 	By notifiDropdown=By.xpath("//td[3]//select[1]");
 	By patternDropdown=By.xpath("//td[4]//select[1]");
 	By patternValue=By.xpath("//input[@class='form-control ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-min']");
 	By serverityDropdown=By.xpath("//td[5]//select[1]");
-	By notifionCheckbox=By.xpath("//input[@class='ng-pristine ng-untouched ng-valid ng-empty']");
-	
-	
+	By notifionCheckbox=By.xpath("//input[@class='ng-pristine ng-untouched ng-valid ng-empty']");	
 	By failThreSoldlabel=By.xpath("//h4[contains(text(),'Failure Thresholds')]");
 	By primaryMetlabel=By.xpath("//a[contains(text(),'Primary Metrics')]");
 	By addMetLabel=By.xpath("//a[contains(text(),'Additional Metrics')]");
@@ -118,10 +99,7 @@ public class pom005_VoiceWatch_Tests_Tab {
 	
 	
 	
-	
-	
 	   
-    
 	//ContractorA
 	
 	public pom005_VoiceWatch_Tests_Tab(WebDriver driver) {
@@ -1202,10 +1180,3 @@ public void createTestbyLink() {
 	
 	}
 	}
-	
-
-
-	
-	
-
-	

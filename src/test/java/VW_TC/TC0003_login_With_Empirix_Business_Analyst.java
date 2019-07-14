@@ -22,13 +22,7 @@ import resources.dataDriven;
 
 public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	
-//public class TC0001_login extends TC0000_reusable{
-	
-	
-	
 	private static Logger log =LogManager.getLogger(TC0003_login_With_Empirix_Business_Analyst.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	
@@ -47,7 +41,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		l.getUsername().sendKeys(data.get(1));
 	    l.getPassword().sendKeys(data.get(2));
 	    l.getSignButton().click();
-	    Thread.sleep(1000);
+	    Thread.sleep(10);
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.info("Verified that VoiceWatch Application login successfully with Empirix Business Analyst creadetial");
@@ -60,8 +54,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.header();
-	
+	    d.header();	
 	}
 	
 	@Test(priority=3)
@@ -77,14 +70,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	public void TabValidation() {
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);
 		 d.home_screen();
-	//	    d.tagTab();
-	//	    d.scriptsTab();
-	//	    d.hammersTab();
-	//	    d.usersTab();
-	//	    d.clientsTab();	    
-	//	    d.auditTab();
-	//	    d.adminTab();
-	//	    d.selectedTab();
+	
 	}
 	
 
@@ -119,7 +105,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		d.header();
 		d.footer();
 		ts.testsValidations();
-	
+		ts.createTestbybutton();	
 		
 	}
 	
@@ -132,14 +118,11 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	
 		d.header();
 		d.footer();
-		tg.tagsValidations();
-		
+		tg.tagsValidations();		
 	
 	}
 	
-	
-	
-	
+		
 	@AfterTest
 	public void applicationClose() {
 	
@@ -148,27 +131,4 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		
 	}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	

@@ -21,14 +21,8 @@ import resources.baseProperties;
 import resources.dataDriven;
 
 public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends baseProperties{
-	
-//public class TC0001_login extends TC0000_reusable{
-	
-	
-	
+
 	private static Logger log =LogManager.getLogger(TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	public void applicationLaunch() throws IOException, InterruptedException {
@@ -46,12 +40,11 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		l.getUsername().sendKeys(data.get(1));
 	    l.getPassword().sendKeys(data.get(2));
 	    l.getSignButton().click();
-	    Thread.sleep(1000);
+	    Thread.sleep(10);
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.info("Verified that VoiceWatch Application login successfully with Client/Partner Clinet_Customer_Admin creadetial");
-	    log.debug("Validate the requiment as Aceess Level= Client/Partner_Client & Role=Customer_Admin");
-	 
+	    log.debug("Validate the requiment as Aceess Level= Client/Partner_Client & Role=Customer_Admin");	 
 		
 	}	
 	
@@ -76,16 +69,6 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		 d.home_screen();
-/*	    d.tagTab();
-	    d.scriptsTab();
-	    d.usersTab();
-	    log.info("Few Tabs are missing under above role, let's find out");
-	    d.hammersTab();
-	    d.clientsTab();	    
-	    d.auditTab();
-	    d.adminTab();
-	    d.selectedTab();*/
-	
 	}
 	
 	@Test(priority=5)
@@ -107,7 +90,6 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		at.alertsValidations();		
-		at.hammerColumn();
 		d.header();
 		d.footer();
 		
@@ -158,176 +140,5 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		log.info("Application closed successfully");
 		
 	}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*	
-	@Test
-	public void loginToApplication () throws InterruptedException, IOException 
-	
-	{
-		 p00_reuseable_case r=new p00_reuseable_case(driver);
-		 pom001_logInPage l=new pom001_logInPage(driver);
-		 
-		 
-		 r.BrowserInitializer();
-		 
-//		 l.logPageLabelVerification();
-		 r.applicationVoiceWatchLaunch();
-		 r.loginCredetials();
-		
-	}
-	
-}
-*/
-	/*@BeforeTest
-	public void initializer() throws IOException
-	{
-		log.info("VoiceWatch loginPageAccess TestCase Validation Started");
-		
-		driver=intializeDriver();
-		log.info("Driver intilized successfully");
-	}
-	
-	
-	//@Test(dataProvider="getData")
-	
-	//public void basePageNavigtion (String Username, String Password) throws InterruptedException
-	
-	@Test
-	public void basePageLoginValidation () throws InterruptedException, IOException 
-	
-	{
-	
-		
-	//	dataDriven d=new dataDriven();
-	//	ArrayList<String> data=d.getData("login","Admin_login");
-		
-	//	driver.get(data.get(1));
-				
-		driver.get(prop.getProperty("url"));
-		
-		
-		Thread.sleep(10000);
-		  
-		driver.manage().window().maximize();
-		 
-		
-		log.info("VoiceWatch Application Launched successfully");
-		
-		
-		pom001_logInPage l=new pom001_logInPage(driver);
-		
-		
-		
-		
-	//**LogIn Page Label verification Started//
-		l.logPageLabelVerification();
-	
-	//Additional Copyright Information
-		
-	//	l.getCopyRightLink().click();
-	//	l.additional_copy();
-	//Data Driven		
-		
-		
-	  dataDriven d=new dataDriven();
-	  ArrayList<String> data=d.getData("login","Admin_login");
-	  
-	  l.getUsername().sendKeys(data.get(1));
-	  
-	  l.getPassword().sendKeys(data.get(2));
-		
-	  l.getSignButton().click();	
-		
-	  Thread.sleep(10000);	
-		
-	  driver.close();	
-	}*/
-/*}*/
-	    
-	/*//	l.getUsername().sendKeys(prop.getProperty("AdminUsername"));
-	    
-	 //   dataDriven d=new dataDriven();
-	 //   ArrayList<String> data=d.getData("login","login2");
-
-//	    ArrayList<String> data=d.getData("login","Admin_login2");
-       l.getUsername().sendKeys(data.get(1));
-	    
-		
-		log.info("UserName inserting Successfully");
-	//	l.getPassword().sendKeys(prop.getProperty("AdminPwd"));
-		
-		l.getPassword().sendKeys(data.get(2));
-		
-		log.info("Password inserting Successfully");
-		
-		l.getSignButton().click();
-		
-		log.info("Sigin button Clicked Successfully");
-		
-		Thread.sleep(10000);
-		
-		log.info("Trying to access application");
-		
-	//	Assert.assertEquals(driver.getTitle(), "OpenAM - Login");
-		
-			
-		log.info("Validation Result");
 	}	
-					
-	}
 	
-	///Parameter
-			@DataProvider
-	     public Object[][] getData()
-	     {
-	        Object[][] data=new Object[2][2];
-	       // data[0][0]="https://vwqang2.empirix.com/";
-	        data[0][0]="testHari1";
-	        data[0][1]="Test@1234";
-	        
-	        log.info("User testHari1 trying to access");
-	        
-	        ///Second Data Type
-	       // data[1][0]="https://abcd/";
-	       // data[1][0]="Hari1";
-	      //  data[1][1]="Hello1";
-	        data[0][0]="testHari";
-	        data[0][1]="Test@1234";
-	        log.info("User testHari trying to access");
-	        
-	        return data;
-	     }
-		
-			@AfterTest
-			public void teardown()
-			{
-				driver.close();
-				log.info("VoiceWatch Application closed successfully");
-			}*/
-		
-

@@ -13,12 +13,8 @@ import PageActions.pom001_VoiceWatch_logIn_Page;
 import resources.baseProperties;
 
 public class TC0001_login_Page_Verification extends baseProperties{
-
-
 	
 	private static Logger log =LogManager.getLogger(TC0001_login_Page_Verification.class.getName());
-	
-//	 private class TC0001_login extends TC0000_reusable {
 	
 	@BeforeTest
 	
@@ -30,7 +26,6 @@ public class TC0001_login_Page_Verification extends baseProperties{
 	@Test(priority=1)
 	public void logInScreenVerification () {
 		
-//		pom001_VoiceWatch_logIn_Page l=new pom001_VoiceWatch_logIn_Page(driver);
 		pom001_VoiceWatch_logIn_Page l=new pom001_VoiceWatch_logIn_Page(driver);
 		l.logPageLabelVerification();
 		l.getCopyRightLink().click();
