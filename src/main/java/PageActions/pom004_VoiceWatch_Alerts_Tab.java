@@ -68,8 +68,7 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		Assert.assertEquals(driver.findElement(testTimeColumn).getText(), "Test Time");		
 		log.debug("Verified that 'Test Time' coloumn under Alerts Tab");
 		
-		Thread.sleep(1000);
-		
+	/*		
 		if (driver.findElements(hammerColumn).isEmpty()) {
 			
 			log.debug("Verified that 'Hammer' coloum is not displaying under Alerts Tab");
@@ -80,7 +79,7 @@ public class pom004_VoiceWatch_Alerts_Tab {
 		{
 			log.debug("Verified that 'Hammer' coloum dislayed under Alerts Tab");
 			
-		}		
+		}		*/
 		
 		
 /*		Assert.assertTrue(driver.findElement(hammerColumn).isDisplayed());
@@ -150,6 +149,9 @@ public class pom004_VoiceWatch_Alerts_Tab {
        log.debug("Verified that following values available in the dropdown"); 
       
         for(WebElement item:options) 
+        	
+        	
+        	
         { 
         	for (int i = 0; i <options.size(); i++) {
         		        		
@@ -169,11 +171,35 @@ public class pom004_VoiceWatch_Alerts_Tab {
 	}
 
 
+//====================================================
+	
+	public void hammerColumn() throws Exception  
 	
 	
-public void hammerColumn() {
+	{         
+	  try   
+	  {    
+	    if(driver.findElement(hammerColumn).isDisplayed() )     
+	    {      
+	      System.out.print("hammer coming");   
+	    }    
+	  }      
+	  catch(Exception e)     
+	  {       
+		  System.out.print("hammer not coming");   
+	  }       
+	}         	
 	
-	if (driver.findElements(hammerColumn).isEmpty()) {
+	
+//=====================================================	
+/*public void hammerColumn() {
+	
+	Assert.assertTrue(driver.findElement(warninglabel).isDisplayed());
+	
+	if (driver.findElement(hammerColumn).isDisplayed());
+	
+	
+//	if (driver.findElements(hammerColumn).isEmpty()) {
 		
 		log.debug("Verified that 'Hammer' coloum is not displaying under Alerts Tab");
 		
@@ -184,7 +210,7 @@ public void hammerColumn() {
 		log.debug("Verified that 'Hammer' coloum dislayed under Alerts Tab");
 		
 	}
+*/
+}
 
-}
-}
 	

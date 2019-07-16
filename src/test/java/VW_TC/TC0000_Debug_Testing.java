@@ -15,6 +15,7 @@ import PageActions.pom002_VoiceWatch_Home_Page;
 import PageActions.pom003_VoiceWatch_Dashboard_Tab;
 import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
+import PageActions.pom007_VoiceWatch_Script_Tabs;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -73,10 +74,10 @@ public class TC0000_Debug_Testing extends baseProperties{
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	    d.footer();
 	
-	}
+	}*/
 
 		
-	@Test(priority=4)
+	/*@Test(priority=4)
 	public void TabAvailabilityValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -90,10 +91,10 @@ public class TC0000_Debug_Testing extends baseProperties{
 	    d.adminTab();
 	    d.selectedTab();
 	
-	}
+	}*/
 
 	
-	@Test(priority=5)
+/*	@Test(priority=5)
 	public void dashBoardTabValidation () throws IOException, InterruptedException {
 		
 		pom003_VoiceWatch_Dashboard_Tab db=new pom003_VoiceWatch_Dashboard_Tab(driver);
@@ -105,29 +106,50 @@ public class TC0000_Debug_Testing extends baseProperties{
 		d.footer();
 
 	
-	}
+	}*/
 	
-	@Test(priority=6)
-	public void alertTabValidation () throws IOException, InterruptedException {
+/*	@Test(priority=6)
+	public void alertTabValidation () throws Exception {
 		
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		at.alertsValidations();		
-		d.header();
-		d.footer();
+		at.alertsValidations();	
+	
+		at.hammerColumn();
+	//	d.header();
+	//	d.footer();
 		
-	}
-	*/
-	@Test(priority=7)
+	}*/
+	
+	/*@Test(priority=7)
 	public void testTabValidation () throws IOException, InterruptedException {
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-/*		d.header();
-		d.footer();*/
+		d.header();
+		d.footer();
 		ts.testsValidations();
-		/*ts.createTestbybutton();
-		ts.createTestbyLink();*/
+		ts.createTestbybutton();
+		ts.createTestbyLink();
+		
+	}*/
+	
+	
+	@Test(priority=9)
+	public void scriptTabValidation () throws Exception {
+		
+		
+		pom007_VoiceWatch_Script_Tabs sc=new pom007_VoiceWatch_Script_Tabs(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	
+		
+		
+	sc.goScriptBuilderTabValidation();
+	d.header();
+	d.footer();
+	sc.scriptUploadTabValidation();
+	d.header();
+	d.footer();
 		
 	}
 	

@@ -17,6 +17,7 @@ import PageActions.pom003_VoiceWatch_Dashboard_Tab;
 import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
 import PageActions.pom006_VoiceWatch_Tags_Tab;
+import PageActions.pom007_VoiceWatch_Script_Tabs;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -84,7 +85,7 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 	}	
 	
 	@Test(priority=6)
-	public void alertTabValidation () throws IOException, InterruptedException {
+	public void alertTabValidation () throws Exception {
 		
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -129,6 +130,24 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		tg.createNewTag();
 		d.header();
 		d.footer();
+		
+	}
+	
+	@Test(priority=9)
+	public void scriptTabValidation () throws Exception {
+		
+		
+		pom007_VoiceWatch_Script_Tabs sc=new pom007_VoiceWatch_Script_Tabs(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	
+		
+		
+	sc.goScriptBuilderTabValidation();
+	d.header();
+	d.footer();
+	sc.scriptUploadTabValidation();
+	d.header();
+	d.footer();
 		
 	}
 	

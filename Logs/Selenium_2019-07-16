@@ -1,0 +1,33 @@
+[DEBUG] 2019-07-16 21:41:26,382 baseProperties.intializeDriver() - Chrome Driver intilized successfully
+[DEBUG] 2019-07-16 21:41:26,387 baseProperties.intializeDriver() - Chrome Browser selected & Launching in few second
+[DEBUG] 2019-07-16 21:41:41,859 baseProperties.intializeDriver() - URL provided
+[DEBUG] 2019-07-16 21:41:43,058 baseProperties.intializeDriver() - Screen maximized successfully
+[DEBUG] 2019-07-16 21:41:43,058 baseProperties.intializeDriver() - Waiting to access above URL
+[DEBUG] 2019-07-16 21:41:52,074 baseProperties.intializeDriver() -  Verified that VoiceWatch login screen appeared successfully
+[DEBUG] 2019-07-16 21:41:52,535 pom001_VoiceWatch_logIn_Page.getUsername() - Start inserting User Credetials
+[DEBUG] 2019-07-16 21:41:52,539 pom001_VoiceWatch_logIn_Page.getUsername() - UserName inserted Successfully
+[DEBUG] 2019-07-16 21:41:52,603 pom001_VoiceWatch_logIn_Page.getPassword() - Password inserted Successfully
+[DEBUG] 2019-07-16 21:41:52,667 pom001_VoiceWatch_logIn_Page.getSignButton() - Sigin button Clicked Successfully
+[DEBUG] 2019-07-16 21:41:53,736 TC0000_Debug_Testing.logInWithExpirixAdmin() - Waiting for launch VoiceWatch application using above creadetails
+[DEBUG] 2019-07-16 21:42:11,077 TC0000_Debug_Testing.logInWithExpirixAdmin() - Verified that VoiceWatch Application login successfully with Empirix Admin creadetial
+[DEBUG] 2019-07-16 21:42:11,077 TC0000_Debug_Testing.logInWithExpirixAdmin() - Validate the requiment as Aceess Level= Empirix & Role=Empirix Admin
+[DEBUG] 2019-07-16 21:42:21,237 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Go Script Builder Scripts' label appeared on left side of under Script tab
+[DEBUG] 2019-07-16 21:42:21,264 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Go Script Builder Scripts' label enabled on left side of under Script tab
+[DEBUG] 2019-07-16 21:42:21,264 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Go Script Builder Scripts' Text validated on left side under Script Tab
+[DEBUG] 2019-07-16 21:42:21,304 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Script count' dispalyed left side under Script tab
+[DEBUG] 2019-07-16 21:42:21,328 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Script count' enabled left side under Script tab
+[DEBUG] 2019-07-16 21:42:21,372 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Filter by name' filed appeared on left side of under Script tab
+[DEBUG] 2019-07-16 21:42:21,400 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Filter by name' filed enabled on left side of under Script tab
+[DEBUG] 2019-07-16 21:42:21,436 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Please select a script ' label appeared on  under Go Script builder tab
+[DEBUG] 2019-07-16 21:42:21,460 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Please select a script ' label enabled under Go Script builder tab
+[DEBUG] 2019-07-16 21:42:21,488 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Please select a script or' Text validated under Go Script Builder
+[DEBUG] 2019-07-16 21:42:25,853 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Call Master Scripts' label appeared on left side of Script Upload tab under Script tab
+[DEBUG] 2019-07-16 21:42:25,875 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Call Master Scripts' label enabled on left side of Script Upload tab under Script tab
+[DEBUG] 2019-07-16 21:42:25,919 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Call master Script count' dispalyed on left side of Script Upload tab under Script tab
+[DEBUG] 2019-07-16 21:42:25,943 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Call master Script count' enabled on left side of Script Upload tab under Script tab
+[DEBUG] 2019-07-16 21:42:25,975 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Filter by name' filed appeared on left side of under Script tab
+[DEBUG] 2019-07-16 21:42:25,999 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Filter by name' filed enabled on left side of under Script tab
+[DEBUG] 2019-07-16 21:42:26,031 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Please select a script ' label appeared on  under Go Script builder tab
+[DEBUG] 2019-07-16 21:42:26,051 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Please select a script ' label enabled under Go Script builder tab
+[DEBUG] 2019-07-16 21:42:26,084 pom007_VoiceWatch_Script_Tabs.scriptUploadTabValidation() - Verified that 'Please select a script or' Text validated under Go Script Builder
+[DEBUG] 2019-07-16 21:42:29,524 TC0000_Debug_Testing.applicationClose() - Application closed successfully
