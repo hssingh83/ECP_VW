@@ -67,15 +67,12 @@ public class pom007_VoiceWatch_Script_Tabs {
 		driver.findElement(scriptsTab).click();		
 		Thread.sleep(10000);
 		
-	//	Assert.assertTrue(driver.findElement(goScriptBuilderTab1).isSelected());		
-	//	log.debug("Verified that 'Go Script Builder' is selected while click script tab");
-		
 		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isDisplayed());
 		log.debug("Verified that 'Go Script Builder Scripts' label appeared on left side of under Script tab");	
 		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isEnabled());
 		log.debug("Verified that 'Go Script Builder Scripts' label enabled on left side of under Script tab");	
-	//	Assert.assertEquals(driver.findElement(goScriptBuilderScriptslabel).getText(), "Go Script Builder Scripts 	25");	
-	//	Assert.assertEquals(driver.findElements(goScriptBuilderScriptslabel).contains(goScriptBuilderScriptslabel), true );
+		
+		Assert.assertEquals(driver.findElement(goScriptBuilderScriptslabel).getText().contains("Go Script Builder Scripts"), true);	
 		log.debug("Verified that 'Go Script Builder Scripts' Text validated on left side under Script Tab");		
 		
 		Assert.assertTrue(driver.findElement(goScriptBuilderScriptsCount).isDisplayed());
@@ -116,16 +113,13 @@ public class pom007_VoiceWatch_Script_Tabs {
 		driver.findElement(scriptUploadTab).click();
 		Thread.sleep(1000);
 		
-	//	Assert.assertTrue(driver.findElement(goScriptBuilderTab1).isSelected());		
-	//	log.debug("Verified that 'Go Script Builder' is selected while click script tab");
-		
+			
 		Assert.assertTrue(driver.findElement(callMasterScriptslabel).isDisplayed());
 		log.debug("Verified that 'Call Master Scripts' label appeared on left side of Script Upload tab under Script tab");	
 		Assert.assertTrue(driver.findElement(callMasterScriptslabel).isEnabled());
 		log.debug("Verified that 'Call Master Scripts' label enabled on left side of Script Upload tab under Script tab");	
-	//	Assert.assertEquals(driver.findElement(goScriptBuilderScriptslabel).getText(), "Go Script Builder Scripts 	25");	
-	//	Assert.assertEquals(driver.findElements(goScriptBuilderScriptslabel).contains(goScriptBuilderScriptslabel), true );
-	//	log.debug("Verified that 'Go Script Builder Scripts' Text validated on left side under Script Tab");		
+		Assert.assertEquals(driver.findElement(callMasterScriptslabel).getText().contains("Call Master Scripts"), true);	
+		log.debug("Verified that 'Call Master Scripts' Text validated on left side under Script Upload Tab");		
 		
 		Assert.assertTrue(driver.findElement(callMasterScriptscount).isDisplayed());
 		log.debug("Verified that 'Call master Script count' dispalyed on left side of Script Upload tab under Script tab");	
@@ -136,15 +130,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 		log.debug("Verified that 'Filter by name' filed appeared on left side of under Script tab");	
 		Assert.assertTrue(driver.findElement(filterByNameSU).isEnabled());
 		log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");	
-		
-		/*Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isDisplayed());
-		log.debug("Verified that 'Please select a script ' label appeared on  under Go Script builder tab");	
-		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isEnabled());
-		log.debug("Verified that 'Please select a script ' label enabled under Go Script builder tab");	
-		Assert.assertEquals(driver.findElement(pleaseSelectlabelGSB).getText(), "Please select a script or");		
-		log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");*/
-		
-			
+					
 		  if (driver.findElements(pleaseSelectlabelGSB).isEmpty()) {
 				
 	        	 log.debug("Verified that 'Please select a Go Script from the left. ' label appeared on  under Script Upload tab");
@@ -188,6 +174,22 @@ public class pom007_VoiceWatch_Script_Tabs {
 		log.debug("Validated the element while click Script Creation using button (+)");
 		
 				
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isDisplayed());
+		log.debug("Verified that 'Go Script Builder Scripts' label appeared on left side of under Script tab");	
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isEnabled());
+		log.debug("Verified that 'Go Script Builder Scripts' label enabled on left side of under Script tab");	
+		Assert.assertEquals(driver.findElement(goScriptBuilderScriptslabel).getText().contains("Go Script Builder Scripts"), true);	
+		log.debug("Verified that 'Go Script Builder Scripts' Text validated on left side under Script Tab");		
+		
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptsCount).isDisplayed());
+		log.debug("Verified that 'Script count' dispalyed left side under Script tab");
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptsCount).isEnabled());		
+		log.debug("Verified that 'Script count' enabled left side under Script tab");
+		
+		Assert.assertTrue(driver.findElement(filterByNameGSB).isDisplayed());
+		log.debug("Verified that 'Filter by name' filed appeared on left side of under Script tab");	
+		Assert.assertTrue(driver.findElement(filterByNameGSB).isEnabled());
+		log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");			
 		
 		Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
 		log.debug("Verified that 'Script name' label appeared on under Go Script Builder");		
@@ -259,7 +261,22 @@ public void createGSBbyLink() throws InterruptedException {
 		
 		log.debug("Validated the element while click create a new script by link");
 		
-				
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isDisplayed());
+		log.debug("Verified that 'Go Script Builder Scripts' label appeared on left side of under Script tab");	
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isEnabled());
+		log.debug("Verified that 'Go Script Builder Scripts' label enabled on left side of under Script tab");	
+		Assert.assertEquals(driver.findElement(goScriptBuilderScriptslabel).getText().contains("Go Script Builder Scripts"), true);	
+		log.debug("Verified that 'Go Script Builder Scripts' Text validated on left side under Script Tab");		
+		
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptsCount).isDisplayed());
+		log.debug("Verified that 'Script count' dispalyed left side under Script tab");
+		Assert.assertTrue(driver.findElement(goScriptBuilderScriptsCount).isEnabled());		
+		log.debug("Verified that 'Script count' enabled left side under Script tab");
+		
+		Assert.assertTrue(driver.findElement(filterByNameGSB).isDisplayed());
+		log.debug("Verified that 'Filter by name' filed appeared on left side of under Script tab");	
+		Assert.assertTrue(driver.findElement(filterByNameGSB).isEnabled());
+		log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");			
 		
 		Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
 		log.debug("Verified that 'Script name' label appeared on under Go Script Builder");		
