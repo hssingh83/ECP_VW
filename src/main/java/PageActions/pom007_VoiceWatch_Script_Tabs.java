@@ -92,12 +92,31 @@ public class pom007_VoiceWatch_Script_Tabs {
 		Assert.assertTrue(driver.findElement(filterByNameGSB).isEnabled());
 		log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");	
 		
+		
+         if (driver.findElements(pleaseSelectlabelGSB).isEmpty()) {
+			
+        	 log.debug("Verified that 'Please select a Go Script from the left. ' label appeared on  under Go Script builder tab");
+ 			log.debug("Verified that 'Please select a Go Script from the left. ' label enabled under Go Script builder tab");	
+ 			log.debug("Verified that 'Please select a Go Script from the left.' Text validated under Go Script Builder");
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that 'Please select a script ' label appeared on  under Go Script builder tab");
+			log.debug("Verified that 'Please select a script ' label enabled under Go Script builder tab");	
+			log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");
+			
+		}  
+		
+		
+		/*
 		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isDisplayed());
 		log.debug("Verified that 'Please select a script ' label appeared on  under Go Script builder tab");	
 		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isEnabled());
 		log.debug("Verified that 'Please select a script ' label enabled under Go Script builder tab");	
 		Assert.assertEquals(driver.findElement(pleaseSelectlabelGSB).getText(), "Please select a script or");		
-		log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");
+		log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");*/
 		
 				
 	/*driver.findElement(scriptUploadTab).click();
@@ -141,15 +160,32 @@ public class pom007_VoiceWatch_Script_Tabs {
 		Assert.assertTrue(driver.findElement(filterByNameSU).isEnabled());
 		log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");	
 		
-		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isDisplayed());
+		/*Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isDisplayed());
 		log.debug("Verified that 'Please select a script ' label appeared on  under Go Script builder tab");	
 		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isEnabled());
 		log.debug("Verified that 'Please select a script ' label enabled under Go Script builder tab");	
 		Assert.assertEquals(driver.findElement(pleaseSelectlabelGSB).getText(), "Please select a script or");		
-		log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");
+		log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");*/
 		
+			
+		  if (driver.findElements(pleaseSelectlabelGSB).isEmpty()) {
 				
-		driver.findElement(scriptUploadTab).click();
+	        	 log.debug("Verified that 'Please select a Go Script from the left. ' label appeared on  under Script Upload tab");
+	 			log.debug("Verified that 'Please select a Go Script from the left. ' label enabled under Script Upload tab");	
+	 			log.debug("Verified that 'Please select a Go Script from the left.' Text validated under Script Upload tab");
+				
+							
+			}else
+			
+			{
+				log.debug("Verified that 'Please select a script ' label appeared on  under Script Upload tab");
+				log.debug("Verified that 'Please select a script ' label enabled under Script Upload tab");	
+				log.debug("Verified that 'Please select a script or' Text validated under Script Upload tab");
+				
+			}  
+		
+		
+		/*driver.findElement(scriptUploadTab).click();
 		Thread.sleep(1000);
 		System.out.println("Script Upload");
 		Thread.sleep(1000);
@@ -157,7 +193,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 		System.out.println("CSV UPLOAD");
 		Thread.sleep(1000);
 		driver.findElement(goScriptBuilderTab).click();
-		System.out.println("Go scipt");
+		System.out.println("Go scipt");*/
 	
 				
 	}

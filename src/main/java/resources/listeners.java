@@ -36,12 +36,12 @@ public void onTestFailure(ITestResult result) {
 	
 	
 	
-  try {
+/*  try {
 	bs.getScreenshot(result.getName());
 } catch (IOException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
-}
+}*/
 	
 	
 }

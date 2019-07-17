@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="VW_TC.TC0000_Debug_Testing">
+      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst">
         <methods>
-          <include name="scriptTabValidation"/>
           <include name="applicationLaunch"/>
+          <include name="scriptTabValidation"/>
           <include name="applicationClose"/>
         </methods>
-      </class> <!-- VW_TC.TC0000_Debug_Testing -->
+      </class> <!-- VW_TC.TC0003_login_With_Empirix_Business_Analyst -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
