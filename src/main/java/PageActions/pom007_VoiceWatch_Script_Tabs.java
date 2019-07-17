@@ -95,9 +95,9 @@ public class pom007_VoiceWatch_Script_Tabs {
 		
          if (driver.findElements(pleaseSelectlabelGSB).isEmpty()) {
 			
-        	 log.debug("Verified that 'Please select a Go Script from the left. ' label appeared on  under Go Script builder tab");
- 			log.debug("Verified that 'Please select a Go Script from the left. ' label enabled under Go Script builder tab");	
- 			log.debug("Verified that 'Please select a Go Script from the left.' Text validated under Go Script Builder");
+        	 log.debug("Verified that 'Please select a Call Master Script from the left. ' label appeared on  under Go Script builder tab");
+ 			log.debug("Verified that 'Please select a Call Master Script from the left. ' label enabled under Go Script builder tab");	
+ 			log.debug("Verified that 'Please select a Call Master Script from the left.' Text validated under Go Script Builder");
 			
 						
 		}else
