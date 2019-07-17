@@ -9,7 +9,7 @@
   
     
      
-          <test  name="Test Case: 001- Login Page Verification ">
+      <test  name="Test Case: 001- Login Page Verification ">
     <classes>
      
       <class name="VW_TC.TC0001_login_Page_Verification"/>

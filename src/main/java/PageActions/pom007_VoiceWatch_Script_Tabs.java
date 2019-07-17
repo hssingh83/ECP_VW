@@ -26,9 +26,9 @@ public class pom007_VoiceWatch_Script_Tabs {
 //	By goScriptBuilderScriptsCount1=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/div/div[3]/div/div[1]/span");
 	
 	By filterByNameGSB=By.xpath("//input[@placeholder='Filter by name']");
-	By createNewScriptPlusButton=By.xpath("//div[@class='panel-body']//span[@class='glyphicon glyphicon-plus-sign pull-right']");
+	By createNewGSBPlusButton=By.xpath("//div[@class='panel-body']//span[@class='glyphicon glyphicon-plus-sign pull-right']");
 	By pleaseSelectlabelGSB=By.xpath("//span[contains(text(),'Please select a script or')]");
-	By createNewScriptlinkGSB=By.xpath("//u[contains(text(),'create a new script')]");
+	By createNewGSBlink=By.xpath("//u[contains(text(),'create a new script')]");
 	By scriptUploadTab=By.xpath("//span[contains(text(),'Script Upload')]");
 	By callMasterScriptslabel=By.xpath("//div[@class='panel-heading ng-binding']");
 	By callMasterScriptscount=By.xpath("//span[@class='badge pull-right ng-binding']");
@@ -40,19 +40,15 @@ public class pom007_VoiceWatch_Script_Tabs {
 	By transformedCSVlabel=By.xpath("//span[contains(text(),'Transformed CSV(s)')]");
 	By filterByCSV=By.xpath("//div[@class='row margin-left-right-0px']//h4//i//input[@placeholder='Filter by csv file name']");
 	By samplecsvDownoad=By.xpath("//span[contains(text(),'Sample CSV download')]");
-	
-	
-	
-	By tagslabel=By.xpath("//*[@id=\"LAB-R\"]/div/div[1]/div/div/div[1]");
-	By tagfilterBox=By.xpath("//input[@placeholder='Filter by tag name']");
-	By tagCreateplusbutton=By.xpath("//span[@class='glyphicon glyphicon-plus-sign']");	
-	By taglabel=By.xpath("//h4[contains(text(),'Tag')]");
-	By pleaseselecttaglabel=By.xpath("//span[@id='loading']");
-	By createNewTagLink=By.xpath("//u[contains(text(),'or create a new tag')]");
-	By tagNamelabel=By.xpath("//div[@class='input-group-addon']");	
-	By tagNamefield=By.xpath("//*[@id=\"LAB-R\"]/div/div[2]/div[1]/form/section/div/div/input");
-	By saveButton=By.xpath("//span[@class='pull-right']//button[contains(@class,'btn btn-primary btn-sm')]");
-	By deleteButton=By.xpath("//span[@class='pull-right']//button[@class='btn btn-danger btn-sm']");
+	By scriptNamelabel=By.xpath("//div[contains(text(),'Script name')]");
+	By scriptNamefield=By.xpath("//input[@placeholder='Enter script name']");
+	By scriptDesclabel=By.xpath("//form[@name='wbs_form']//div[@class='small-width'][contains(text(),'Description')]");
+	By scriptDescfield=By.xpath("//form[@name='wbs_form']//input[@placeholder='Enter description']");
+	By saveButtonGSB=By.xpath("//button[@class='btn btn-info btn-sm btn-float-right']");
+	By scriptBuilderlabel=By.xpath("//a[contains(text(),'Script Builder')]");
+	By resultslabel=By.xpath("//a[contains(text(),'Results')]");
+	By callLogsNamelabel=By.xpath("//a[contains(text(),'Call Logs')]");
+	By associatedTestslabel=By.xpath("//a[contains(text(),'Associated Tests')]");
 		
 	
 	
@@ -110,25 +106,6 @@ public class pom007_VoiceWatch_Script_Tabs {
 		}  
 		
 		
-		/*
-		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isDisplayed());
-		log.debug("Verified that 'Please select a script ' label appeared on  under Go Script builder tab");	
-		Assert.assertTrue(driver.findElement(pleaseSelectlabelGSB).isEnabled());
-		log.debug("Verified that 'Please select a script ' label enabled under Go Script builder tab");	
-		Assert.assertEquals(driver.findElement(pleaseSelectlabelGSB).getText(), "Please select a script or");		
-		log.debug("Verified that 'Please select a script or' Text validated under Go Script Builder");*/
-		
-				
-	/*driver.findElement(scriptUploadTab).click();
-		Thread.sleep(1000);
-		System.out.println("Script Upload");
-		Thread.sleep(1000);
-		driver.findElement(csvTranformerTab).click();
-		System.out.println("CSV UPLOAD");
-		Thread.sleep(1000);
-		driver.findElement(goScriptBuilderTab).click();
-		System.out.println("Go scipt");*/
-	
 				
 	}
 	
@@ -184,113 +161,155 @@ public class pom007_VoiceWatch_Script_Tabs {
 				
 			}  
 		
-		
-		/*driver.findElement(scriptUploadTab).click();
-		Thread.sleep(1000);
-		System.out.println("Script Upload");
-		Thread.sleep(1000);
-		driver.findElement(csvTranformerTab).click();
-		System.out.println("CSV UPLOAD");
-		Thread.sleep(1000);
-		driver.findElement(goScriptBuilderTab).click();
-		System.out.println("Go scipt");*/
-	
 				
 	}
 	
 	
-	
-	
-	
-	
-
 	  
-	public void createTagbybutton() {
+	public void createGSBbybutton() throws InterruptedException {
 		
-          if (driver.findElements(tagCreateplusbutton).isEmpty()) {
+		driver.findElement(scriptsTab).click();
+		Thread.sleep(10000);
+		driver.findElement(createNewGSBPlusButton).click();
+		
+		
+          if (driver.findElements(createNewGSBPlusButton).isEmpty()) {
 			
-			log.debug("Verified that new tag creation plus (+) icon not appeared on top left side under tags tab");	
+			log.debug("Verified that create a new script plus (+) icon not appeared on top left side under Script tab");	
 			
 						
 		}else
 		
 		{
-			log.debug("Verified that new tag creation plus (+) icon appeared on top left side under tags tab");	
+			log.debug("Verified that create a new script plus (+) icon appeared on top left side under Script tab");	
 			
 			
 		
-		log.debug("Validated the element please set while click Tag Creation using button (+)");
-		driver.findElement(tagCreateplusbutton).click();
+		log.debug("Validated the element while click Script Creation using button (+)");
 		
-		Assert.assertTrue(driver.findElement(tagNamelabel).isDisplayed());
-		log.debug("Verified that 'Tags' label appeared on left side under Tag tab");		
-		Assert.assertEquals(driver.findElement(tagNamelabel).getText(), "Tag Name");		
-		log.debug("Verified that 'Tag Name' Text validated on left side under Tag Tab");		
+				
 		
+		Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
+		log.debug("Verified that 'Script name' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(scriptNamelabel).getText(), "Script name");		
+		log.debug("Verified that 'Script name' Text validated on under Go Script Builder");		
 		
-		Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
-		log.debug("Verified that 'Save button' displayed under Tag tab");	
-		Assert.assertFalse(driver.findElement(saveButton).isEnabled());
-		log.debug("Verified that 'Save button' is disbaled under Tag tab");	
-		Assert.assertEquals(driver.findElement(saveButton).getText(), "Save");		
-		log.debug("Verified that 'Save' Text appeared on save button under Tag Tab");	
+		Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+		log.debug("Verified that 'Script name' filed appeared on under Go Script Builder");		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+		log.debug("Verified that 'Script name' field enabled on under Go Script Builder");	
 		
+		Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
+		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
+		log.debug("Verified that 'Description' Text validated on under Go Script Builder");	
 		
-		Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
-		log.debug("Verified that 'Delete button' displayed under tags tab");	
-		Assert.assertFalse(driver.findElement(deleteButton).isEnabled());
-		log.debug("Verified that 'Delete button' is disbaled under tags tab");	
-		Assert.assertEquals(driver.findElement(deleteButton).getText(), "Delete");		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+		log.debug("Verified that 'Description' field enabled on under Go Script Builder");	
 		
-		}
-	}
+				
+		Assert.assertTrue(driver.findElement(saveButtonGSB).isDisplayed());
+		log.debug("Verified that 'Save button' displayed under Go Script Upload tab");	
+		Assert.assertFalse(driver.findElement(saveButtonGSB).isEnabled());
+		log.debug("Verified that 'Save button' is disbaled under Go Script Upload tab");	
+		Assert.assertEquals(driver.findElement(saveButtonGSB).getText(), "Save");		
+		log.debug("Verified that 'Save' Text appeared on save button under Go Script Upload tab");	
 		
-	public void createNewTag() {
-	
-	/*
-	   log.debug("Navigate to Alerts Tab");
-	   driver.findElement(alertsTab);*/
-	   driver.findElement(tagTab).click();
-	   log.debug("Again Navigate Back to Tags Tab");
-	   
-	
-	
-	if (driver.findElements(createNewTagLink).isEmpty()) {
+		Assert.assertTrue(driver.findElement(scriptBuilderlabel).isDisplayed());
+		log.debug("Verified that 'Script Builder' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(scriptBuilderlabel).getText(), "Script Builder");		
+		log.debug("Verified that 'Script Builder' Text validated on under Go Script Builder");	
 		
-		log.debug("Verified that new tag created link is not appearing under Tags tab");		
+		Assert.assertTrue(driver.findElement(resultslabel).isDisplayed());
+		log.debug("Verified that 'Results' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(resultslabel).getText(), "Results");		
+		log.debug("Verified that 'Results' Text validated on under Go Script Builder");	
 		
-					
-	}else
-	
-	{
+		Assert.assertTrue(driver.findElement(callLogsNamelabel).isDisplayed());
+		log.debug("Verified that 'Call Logs' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(callLogsNamelabel).getText(), "Call Logs");		
+		log.debug("Verified that 'Call Logs' Text validated on under Go Script Builder");	
 		
-		log.debug("Verified that new test created link appeared under Tags tab");	    		
-	
-	}
+		Assert.assertTrue(driver.findElement(associatedTestslabel).isDisplayed());
+		log.debug("Verified that 'Associted Test' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(associatedTestslabel).getText(), "Associated Tests");		
+		log.debug("Verified that 'Associted Test' Text validated on under Go Script Builder");	
+		
 
-	log.debug("Validated the element please set while click Tag Creation using button (+)");
-	driver.findElement(tagCreateplusbutton).click();
-	
-	Assert.assertTrue(driver.findElement(tagNamelabel).isDisplayed());
-	log.debug("Verified that 'Tags' label appeared on left side under Tag tab");		
-	Assert.assertEquals(driver.findElement(tagNamelabel).getText(), "Tag Name");		
-	log.debug("Verified that 'Tag Name' Text validated on left side under Tag Tab");		
-	
-	
-	Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
-	log.debug("Verified that 'Save button' displayed under Tag tab");	
-	Assert.assertFalse(driver.findElement(saveButton).isEnabled());
-	log.debug("Verified that 'Save button' is disbaled under Tag tab");	
-	Assert.assertEquals(driver.findElement(saveButton).getText(), "Save");		
-	log.debug("Verified that 'Save' Text appeared on save button under Tag Tab");	
-	
-	
-	Assert.assertTrue(driver.findElement(deleteButton).isDisplayed());
-	log.debug("Verified that 'Delete button' displayed under tags tab");	
-	Assert.assertFalse(driver.findElement(deleteButton).isEnabled());
-	log.debug("Verified that 'Delete button' is disbaled under tags tab");	
-	Assert.assertEquals(driver.findElement(deleteButton).getText(), "Delete");		
-	
-	}
 		}
-	
+	}
+public void createGSBbyLink() throws InterruptedException {
+		
+		driver.findElement(scriptsTab).click();
+		Thread.sleep(10000);
+		driver.findElement(createNewGSBlink).click();
+		
+		
+          if (driver.findElements(createNewGSBlink).isEmpty()) {
+			
+			log.debug("Verified that create a new script by link is not appeared under Go Script Builder tab");	
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that create a new script by link is appeared under Go Script Builder tab");				
+		
+		log.debug("Validated the element while click create a new script by link");
+		
+				
+		
+		Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
+		log.debug("Verified that 'Script name' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(scriptNamelabel).getText(), "Script name");		
+		log.debug("Verified that 'Script name' Text validated on under Go Script Builder");		
+		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+		log.debug("Verified that 'Script name' filed appeared on under Go Script Builder");		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+		log.debug("Verified that 'Script name' field enabled on under Go Script Builder");	
+		
+		Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
+		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
+		log.debug("Verified that 'Description' Text validated on under Go Script Builder");	
+		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
+		Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+		log.debug("Verified that 'Description' field enabled on under Go Script Builder");	
+		
+				
+		Assert.assertTrue(driver.findElement(saveButtonGSB).isDisplayed());
+		log.debug("Verified that 'Save button' displayed under Go Script Upload tab");	
+		Assert.assertFalse(driver.findElement(saveButtonGSB).isEnabled());
+		log.debug("Verified that 'Save button' is disbaled under Go Script Upload tab");	
+		Assert.assertEquals(driver.findElement(saveButtonGSB).getText(), "Save");		
+		log.debug("Verified that 'Save' Text appeared on save button under Go Script Upload tab");	
+		
+		Assert.assertTrue(driver.findElement(scriptBuilderlabel).isDisplayed());
+		log.debug("Verified that 'Script Builder' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(scriptBuilderlabel).getText(), "Script Builder");		
+		log.debug("Verified that 'Script Builder' Text validated on under Go Script Builder");	
+		
+		Assert.assertTrue(driver.findElement(resultslabel).isDisplayed());
+		log.debug("Verified that 'Results' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(resultslabel).getText(), "Results");		
+		log.debug("Verified that 'Results' Text validated on under Go Script Builder");	
+		
+		Assert.assertTrue(driver.findElement(callLogsNamelabel).isDisplayed());
+		log.debug("Verified that 'Call Logs' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(callLogsNamelabel).getText(), "Call Logs");		
+		log.debug("Verified that 'Call Logs' Text validated on under Go Script Builder");	
+		
+		Assert.assertTrue(driver.findElement(associatedTestslabel).isDisplayed());
+		log.debug("Verified that 'Associted Test' label appeared on under Go Script Builder");		
+		Assert.assertEquals(driver.findElement(associatedTestslabel).getText(), "Associated Tests");		
+		log.debug("Verified that 'Associted Test' Text validated on under Go Script Builder");	
+		
+
+		}
+	}		
+}

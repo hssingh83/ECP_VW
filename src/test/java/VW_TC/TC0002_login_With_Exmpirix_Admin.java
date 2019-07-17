@@ -155,12 +155,14 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
 		
 		
-	sc.goScriptBuilderTabValidation();
-	d.header();
-	d.footer();
-	sc.scriptUploadTabValidation();
-	d.header();
-	d.footer();
+		sc.goScriptBuilderTabValidation();
+		sc.createGSBbybutton();
+		sc.createGSBbyLink();
+		d.header();
+		d.footer();
+		sc.scriptUploadTabValidation();
+		d.header();
+		d.footer();
 		
 	}
 

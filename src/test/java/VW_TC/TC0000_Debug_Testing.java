@@ -145,11 +145,14 @@ public class TC0000_Debug_Testing extends baseProperties{
 		
 		
 	sc.goScriptBuilderTabValidation();
+	sc.createGSBbybutton();
+	sc.createGSBbyLink();
 	d.header();
 	d.footer();
 	sc.scriptUploadTabValidation();
 	d.header();
 	d.footer();
+	
 		
 	}
 	

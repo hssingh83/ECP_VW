@@ -131,14 +131,14 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 		pom007_VoiceWatch_Script_Tabs sc=new pom007_VoiceWatch_Script_Tabs(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	
-		
-		
-	sc.goScriptBuilderTabValidation();
-	d.header();
-	d.footer();
-	sc.scriptUploadTabValidation();
-	d.header();
-	d.footer();
+		sc.goScriptBuilderTabValidation();
+		sc.createGSBbybutton();
+		sc.createGSBbyLink();
+		d.header();
+		d.footer();
+		sc.scriptUploadTabValidation();
+		d.header();
+		d.footer();
 		
 	}
 		

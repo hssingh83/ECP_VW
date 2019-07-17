@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+<listener class-name="resources.ExtentReporterNG"/>
+<listener class-name="resources.listeners"></listener>
+</listeners>
+
+  
+    
+     
+          <test  name="Test Case: 0000- Debugging Verification ">
+    <classes>
+     
+      <class name="VW_TC.TC0000_Debug_Testing"/>
+         
+     </classes> 
+     </test>
+     
+  
+     
+</suite> <!-- Suite -->

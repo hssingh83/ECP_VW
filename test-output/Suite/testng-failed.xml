@@ -5,22 +5,15 @@
     <listener class-name="resources.ExtentReporterNG"/>
     <listener class-name="resources.listeners"/>
   </listeners>
-  <test thread-count="5" name="Test Case: 003 - Login with &#039;Empirix Business Analyst&#039; Credetials&#039;and verify TabAvailablity(failed)">
+  <test thread-count="5" name="Test Case: 0000- Debugging Verification (failed)">
     <classes>
-      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst">
+      <class name="VW_TC.TC0000_Debug_Testing">
         <methods>
+          <include name="scriptTabValidation"/>
           <include name="applicationLaunch"/>
-          <include name="dashBoardTabValidation"/>
-          <include name="tagTabValidation"/>
-          <include name="footerMandatoryDetails"/>
-          <include name="headerMandatoryDetails"/>
-          <include name="testTabValidation"/>
           <include name="applicationClose"/>
-          <include name="TabValidation"/>
-          <include name="logInWithExpirixBusinessAnalyst"/>
-          <include name="alertTabValidation"/>
         </methods>
-      </class> <!-- VW_TC.TC0003_login_With_Empirix_Business_Analyst -->
+      </class> <!-- VW_TC.TC0000_Debug_Testing -->
     </classes>
-  </test> <!-- Test Case: 003 - Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity(failed) -->
+  </test> <!-- Test Case: 0000- Debugging Verification (failed) -->
 </suite> <!-- Failed suite [Suite] -->

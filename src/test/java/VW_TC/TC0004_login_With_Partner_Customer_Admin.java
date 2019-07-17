@@ -140,15 +140,16 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		
 		pom007_VoiceWatch_Script_Tabs sc=new pom007_VoiceWatch_Script_Tabs(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	
 		
 		
-	sc.goScriptBuilderTabValidation();
-	d.header();
-	d.footer();
-	sc.scriptUploadTabValidation();
-	d.header();
-	d.footer();
+		sc.goScriptBuilderTabValidation();
+		sc.createGSBbybutton();
+		sc.createGSBbyLink();
+		d.header();
+		d.footer();
+		sc.scriptUploadTabValidation();
+		d.header();
+		d.footer();
 		
 	}
 	
