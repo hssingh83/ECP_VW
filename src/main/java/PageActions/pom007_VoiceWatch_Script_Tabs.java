@@ -111,7 +111,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 			
 		
 		driver.findElement(scriptUploadTab).click();
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 		
 			
 		Assert.assertTrue(driver.findElement(callMasterScriptslabel).isDisplayed());

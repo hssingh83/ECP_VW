@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="143449" started-at="2019-07-17T17:07:28Z" finished-at="2019-07-17T17:09:51Z">
+  <suite name="Default suite" duration-ms="155307" started-at="2019-07-17T17:26:29Z" finished-at="2019-07-17T17:29:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="143449" started-at="2019-07-17T17:07:28Z" finished-at="2019-07-17T17:09:51Z">
+    <test name="Default test" duration-ms="155307" started-at="2019-07-17T17:26:29Z" finished-at="2019-07-17T17:29:04Z">
       <class name="VW_TC.TC0000_Debug_Testing">
-        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="applicationLaunch" is-config="true" duration-ms="41465" started-at="2019-07-17T17:07:28Z" finished-at="2019-07-17T17:08:09Z">
+        <test-method status="PASS" signature="applicationLaunch()[pri:0, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="applicationLaunch" is-config="true" duration-ms="42902" started-at="2019-07-17T17:26:29Z" finished-at="2019-07-17T17:27:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationLaunch -->
-        <test-method status="PASS" signature="logInWithExpirixAdmin()[pri:1, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="logInWithExpirixAdmin" duration-ms="34906" started-at="2019-07-17T17:08:10Z" finished-at="2019-07-17T17:08:44Z">
+        <test-method status="PASS" signature="logInWithExpirixAdmin()[pri:1, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="logInWithExpirixAdmin" duration-ms="42519" started-at="2019-07-17T17:27:12Z" finished-at="2019-07-17T17:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInWithExpirixAdmin -->
-        <test-method status="PASS" signature="scriptTabValidation()[pri:9, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="scriptTabValidation" duration-ms="65524" started-at="2019-07-17T17:08:45Z" finished-at="2019-07-17T17:09:50Z">
+        <test-method status="PASS" signature="scriptTabValidation()[pri:9, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="scriptTabValidation" duration-ms="69020" started-at="2019-07-17T17:27:54Z" finished-at="2019-07-17T17:29:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scriptTabValidation -->
-        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="applicationClose" is-config="true" duration-ms="1343" started-at="2019-07-17T17:09:50Z" finished-at="2019-07-17T17:09:51Z">
+        <test-method status="PASS" signature="applicationClose()[pri:0, instance:VW_TC.TC0000_Debug_Testing@55141def]" name="applicationClose" is-config="true" duration-ms="716" started-at="2019-07-17T17:29:03Z" finished-at="2019-07-17T17:29:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationClose -->
