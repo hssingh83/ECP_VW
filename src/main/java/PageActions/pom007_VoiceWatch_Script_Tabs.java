@@ -250,14 +250,15 @@ public class pom007_VoiceWatch_Script_Tabs {
 
 		}
 	}
-/*public void createGSBbyLink() throws InterruptedException {
+public void createGSBbyLink() throws InterruptedException {
 		
-		driver.findElement(scriptsTab).click();
-		Thread.sleep(1000000);
+	driver.findElement(tagTab).click();
+	driver.findElement(scriptsTab).click();
+		Thread.sleep(100);
 
 		
 		
-          if (driver.findElements(createNewGSBlink).isEmpty()) {
+          if (driver.findElements(createNewGSBlinks).isEmpty()) {
 			
 			log.debug("Verified that create a new script by link is not appeared under Go Script Builder tab");	
 			
@@ -267,10 +268,10 @@ public class pom007_VoiceWatch_Script_Tabs {
 		{
 			log.debug("Verified that create a new script by link is appeared under Go Script Builder tab");	
 			
-			driver.findElement(createNewGSBlink).click();*/
+			driver.findElement(createNewGSBlinks).click();
 	
 	
- public void createGSBbyLink() throws InterruptedException {
+ /*public void createGSBbyLink() throws InterruptedException {
 		
 		driver.findElement(tagTab).click();
 		driver.findElement(scriptsTab).click();
@@ -294,7 +295,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 			
 			
 			 
-		log.debug("Validated the element while click Script Creation using button (+)");
+		log.debug("Validated the element while click Script Creation using button (+)");*/
 	
 	
 		
