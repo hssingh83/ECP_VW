@@ -1,5 +1,7 @@
 package PageActions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -23,12 +25,18 @@ public class pom007_VoiceWatch_Script_Tabs {
 	By goScriptBuilderScriptslabel=By.xpath("//div[@class='panel-heading ng-binding']");
 	By goScriptBuilderScriptsCount=By.xpath("//span[@class='badge pull-right ng-binding']");
 	
-//	By goScriptBuilderScriptsCount1=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[1]/div/div[3]/div/div[1]/span");
+
 	
 	By filterByNameGSB=By.xpath("//input[@placeholder='Filter by name']");
+	
 	By createNewGSBPlusButton=By.xpath("//div[@class='panel-body']//span[@class='glyphicon glyphicon-plus-sign pull-right']");
+	
 	By pleaseSelectlabelGSB=By.xpath("//span[contains(text(),'Please select a script or')]");
-	By createNewGSBlink=By.xpath("//u[contains(text(),'create a new script')]");
+	
+//	By createNewGSBlinks=By.xpath("//div[@id='loading']//a");
+	
+	By createNewGSBlinks=By.linkText("create a new script"); 
+//	By createNewGSBlink=By.xpath("//u[contains(text(),'create a new script')]");
 	By scriptUploadTab=By.xpath("//span[contains(text(),'Script Upload')]");
 	By callMasterScriptslabel=By.xpath("//div[@class='panel-heading ng-binding']");
 	By callMasterScriptscount=By.xpath("//span[@class='badge pull-right ng-binding']");
@@ -156,7 +164,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 		
 		driver.findElement(scriptsTab).click();
 		Thread.sleep(10000);
-		driver.findElement(createNewGSBPlusButton).click();
+		
 		
 		
           if (driver.findElements(createNewGSBPlusButton).isEmpty()) {
@@ -168,9 +176,9 @@ public class pom007_VoiceWatch_Script_Tabs {
 		
 		{
 			log.debug("Verified that create a new script plus (+) icon appeared on top left side under Script tab");	
-			
-			
 		
+			
+			driver.findElement(createNewGSBPlusButton).click();
 		log.debug("Validated the element while click Script Creation using button (+)");
 		
 				
@@ -242,11 +250,11 @@ public class pom007_VoiceWatch_Script_Tabs {
 
 		}
 	}
-public void createGSBbyLink() throws InterruptedException {
+/*public void createGSBbyLink() throws InterruptedException {
 		
 		driver.findElement(scriptsTab).click();
-		Thread.sleep(10000);
-		driver.findElement(createNewGSBlink).click();
+		Thread.sleep(1000000);
+
 		
 		
           if (driver.findElements(createNewGSBlink).isEmpty()) {
@@ -257,7 +265,39 @@ public void createGSBbyLink() throws InterruptedException {
 		}else
 		
 		{
-			log.debug("Verified that create a new script by link is appeared under Go Script Builder tab");				
+			log.debug("Verified that create a new script by link is appeared under Go Script Builder tab");	
+			
+			driver.findElement(createNewGSBlink).click();*/
+	
+	
+ public void createGSBbyLink() throws InterruptedException {
+		
+		driver.findElement(tagTab).click();
+		driver.findElement(scriptsTab).click();
+		
+		
+		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		
+          if (driver.findElements(createNewGSBlinks).isEmpty()) {
+			
+			log.debug("Verified that create a new script plus (+) icon not appeared on top left side under Script tab");	
+			
+						
+		}else
+		
+		{
+			log.debug("Verified that create a new script plus (+) icon appeared on top left side under Script tab");	
+			
+			
+			driver.findElement(createNewGSBlinks).click();
+			
+			
+			 
+		log.debug("Validated the element while click Script Creation using button (+)");
+	
+	
+		
 		
 		log.debug("Validated the element while click create a new script by link");
 		

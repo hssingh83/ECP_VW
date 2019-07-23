@@ -1,0 +1,5 @@
+[DEBUG] 2019-07-18 21:27:28,636 baseProperties.intializeDriver() - Chrome Driver intilized successfully
+[DEBUG] 2019-07-18 21:27:28,652 baseProperties.intializeDriver() - Chrome Browser selected & Launching in few second
+[DEBUG] 2019-07-18 21:27:49,840 baseProperties.intializeDriver() - URL provided
+[DEBUG] 2019-07-18 21:27:50,962 baseProperties.intializeDriver() - Screen maximized successfully
+[DEBUG] 2019-07-18 21:27:50,962 baseProperties.intializeDriver() - Waiting to access above URL

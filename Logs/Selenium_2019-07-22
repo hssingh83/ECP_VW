@@ -1,0 +1,276 @@
+[DEBUG] 2019-07-22 16:47:12,384 baseProperties.intializeDriver() - Chrome Driver intilized successfully
+[DEBUG] 2019-07-22 16:47:12,388 baseProperties.intializeDriver() - Chrome Browser selected & Launching in few second
+[DEBUG] 2019-07-22 16:47:21,345 baseProperties.intializeDriver() - URL provided
+[DEBUG] 2019-07-22 16:47:22,467 baseProperties.intializeDriver() - Screen maximized successfully
+[DEBUG] 2019-07-22 16:47:22,467 baseProperties.intializeDriver() - Waiting to access above URL
+[DEBUG] 2019-07-22 16:47:27,011 baseProperties.intializeDriver() -  Verified that VoiceWatch login screen appeared successfully
+[DEBUG] 2019-07-22 16:47:27,355 pom001_VoiceWatch_logIn_Page.getUsername() - Start inserting User Credetials
+[DEBUG] 2019-07-22 16:47:27,357 pom001_VoiceWatch_logIn_Page.getUsername() - UserName inserted Successfully
+[DEBUG] 2019-07-22 16:47:27,432 pom001_VoiceWatch_logIn_Page.getPassword() - Password inserted Successfully
+[DEBUG] 2019-07-22 16:47:27,488 pom001_VoiceWatch_logIn_Page.getSignButton() - Sigin button Clicked Successfully
+[DEBUG] 2019-07-22 16:47:27,552 TC0003_login_With_Empirix_Business_Analyst.logInWithExpirixBusinessAnalyst() - Waiting for launch VoiceWatch application using above creadetails
+[INFO ] 2019-07-22 16:47:38,609 TC0003_login_With_Empirix_Business_Analyst.logInWithExpirixBusinessAnalyst() - Verified that VoiceWatch Application login successfully with Empirix Business Analyst creadetial
+[DEBUG] 2019-07-22 16:47:38,610 TC0003_login_With_Empirix_Business_Analyst.logInWithExpirixBusinessAnalyst() - Validate the requiment as Aceess Level= Empirix & Role=Business Analyst
+[DEBUG] 2019-07-22 16:47:38,646 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,665 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,698 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Lebel' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,721 pom002_VoiceWatch_Home_Page.header() - Verified that 'EMPIRIX' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,737 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix label' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,768 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,787 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,809 pom002_VoiceWatch_Home_Page.header() - Verified that 'VoiceWatch' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,838 pom002_VoiceWatch_Home_Page.header() - Verified that dropdown appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,858 pom002_VoiceWatch_Home_Page.header() - Verified that dropdwon enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,884 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,900 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,921 pom002_VoiceWatch_Home_Page.header() - Verified that 'Contact Us' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,952 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,973 pom002_VoiceWatch_Home_Page.header() - Verified that 'help' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:38,995 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,023 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' appeared on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,039 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' enabled on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,059 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Back to top' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,087 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,103 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' test enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,122 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,149 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,169 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,190 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version contain 26.0' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,216 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,232 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,254 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,255 pom002_VoiceWatch_Home_Page.home_screen() - VoiceWatch Dashboard Page verification Started
+[DEBUG] 2019-07-22 16:47:39,285 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Dashboard Tab' appeared on the VoiceWatch dashoboard
+[DEBUG] 2019-07-22 16:47:39,306 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Dashboard Tab' enabled on the VoiceWatch dashoboard
+[DEBUG] 2019-07-22 16:47:39,340 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Alerts Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,361 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Alerts Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,366 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Alerts Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,401 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Tests Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,430 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Tests Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,435 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Tests Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,457 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Tags Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,476 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Scripts Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,508 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Variables Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,529 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Variables Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,534 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Variable Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,552 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Hammers Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,557 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Admin Tab' selected on the VoiceWatch application
+[DEBUG] 2019-07-22 16:47:39,590 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Notifications Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,613 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Notifications Tab' enabled on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,618 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Notifications Tab' not selected on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,636 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Users Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,655 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Clients Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,673 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Audit Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,693 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Admin Tab' appeared on the VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:39,700 pom002_VoiceWatch_Home_Page.home_screen() - Verified that 'Admin Tab' selected on the VoiceWatch application
+[DEBUG] 2019-07-22 16:47:40,450 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Overall Performance' displayed under dashoboard tab
+[DEBUG] 2019-07-22 16:47:40,472 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Overall Performance' Text appeared under dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,503 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Failed Calls' dislayed under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,524 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Failed Calls' comtain under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,552 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Passed Calls' dislayed under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,567 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Passed Calls' comtain under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,594 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Alerts' dislayed under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,614 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Alerts' comtain under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,640 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Download CSV' button dislayed under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,657 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Download CSV' button enabled under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,682 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that 'Download CSV' test appeared on the button under Overall Performance section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:40,682 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that count of the dropdown values are: 5
+[DEBUG] 2019-07-22 16:47:40,756 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Verified that following values available in the dropdown
+[DEBUG] 2019-07-22 16:47:40,783 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Last 4 hours
+[DEBUG] 2019-07-22 16:47:40,867 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Last 6 hours
+[DEBUG] 2019-07-22 16:47:40,938 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Last 12 hours
+[DEBUG] 2019-07-22 16:47:41,015 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Last 24 hours
+[DEBUG] 2019-07-22 16:47:41,098 pom003_VoiceWatch_Dashboard_Tab.OverallPerfomance_section_dashboard() - Day
+[DEBUG] 2019-07-22 16:47:41,141 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Overall Performance' displayed under dashoboard tab
+[DEBUG] 2019-07-22 16:47:41,166 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Tests' Text appeared under activetest section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,198 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'filter' appeared under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,231 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Passed Calls' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,257 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Last Call' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,285 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Name' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,310 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Name' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,342 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Failed' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,367 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Failed' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,396 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Passed ' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,418 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Passed' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,508 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Alerts' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,544 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Alerts' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,577 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Graph Results' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,602 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Graph Results' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,632 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Notification Present' dislayed under activetest section section in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,652 pom003_VoiceWatch_Dashboard_Tab.activetest_section_dashboard() - Verified that 'Notification Present' coloumn under Tests table in dashboard Tab
+[DEBUG] 2019-07-22 16:47:41,678 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,697 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,722 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Lebel' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,741 pom002_VoiceWatch_Home_Page.header() - Verified that 'EMPIRIX' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,757 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix label' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,781 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,799 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,817 pom002_VoiceWatch_Home_Page.header() - Verified that 'VoiceWatch' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,848 pom002_VoiceWatch_Home_Page.header() - Verified that dropdown appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,868 pom002_VoiceWatch_Home_Page.header() - Verified that dropdwon enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,898 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,915 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,942 pom002_VoiceWatch_Home_Page.header() - Verified that 'Contact Us' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,976 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:41,997 pom002_VoiceWatch_Home_Page.header() - Verified that 'help' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,018 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,048 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' appeared on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,065 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' enabled on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,087 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Back to top' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,116 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,135 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' test enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,157 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,187 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,211 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,233 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version contain 26.0' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,260 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,279 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,322 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:42,770 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Show All Errors' checkbox appeared under Alert tab
+[DEBUG] 2019-07-22 16:47:42,795 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Show All Errors' checkbox enabled under Alert tab
+[DEBUG] 2019-07-22 16:47:42,817 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Show All Errors' checkbox selectable under Alert tab
+[DEBUG] 2019-07-22 16:47:42,849 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Filter by test name or tag filter'appeared under Alert tab
+[DEBUG] 2019-07-22 16:47:42,870 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Filter by test name or tag filter'enabled under Alert tab
+[DEBUG] 2019-07-22 16:47:42,887 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Filter by test name' is blank while select Alert tab
+[DEBUG] 2019-07-22 16:47:42,916 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Test Time' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:42,944 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Test Time' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:42,975 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Test' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,000 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Test' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,031 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Error Step' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,056 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Error Step' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,088 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Error Message' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,111 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Error Message' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,140 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Threshold' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,162 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Threshold' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,191 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Severity' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,217 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Severity' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,252 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Alert Status' dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,275 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Alert Status' coloumn under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,306 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that count of total alert dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,330 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Toal' text contain under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,362 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that count of critical alert dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,386 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'critical' text contain under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,414 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that count of Warning alerts dislayed under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,436 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that 'Warning' text contain under Alerts Tab
+[DEBUG] 2019-07-22 16:47:43,437 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that count of the dropdown values are: 5
+[DEBUG] 2019-07-22 16:47:43,486 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Verified that following values available in the dropdown
+[DEBUG] 2019-07-22 16:47:43,509 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Last 4 hours
+[DEBUG] 2019-07-22 16:47:43,592 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Last 6 hours
+[DEBUG] 2019-07-22 16:47:43,666 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Last 12 hours
+[DEBUG] 2019-07-22 16:47:43,739 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Last 24 hours
+[DEBUG] 2019-07-22 16:47:43,813 pom004_VoiceWatch_Alerts_Tab.alertsValidations() - Day
+[DEBUG] 2019-07-22 16:47:43,850 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,866 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,888 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Lebel' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,906 pom002_VoiceWatch_Home_Page.header() - Verified that 'EMPIRIX' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,921 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix label' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,945 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,960 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:43,978 pom002_VoiceWatch_Home_Page.header() - Verified that 'VoiceWatch' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,000 pom002_VoiceWatch_Home_Page.header() - Verified that dropdown appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,016 pom002_VoiceWatch_Home_Page.header() - Verified that dropdwon enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,038 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,056 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,071 pom002_VoiceWatch_Home_Page.header() - Verified that 'Contact Us' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,092 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,111 pom002_VoiceWatch_Home_Page.header() - Verified that 'help' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,129 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,150 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' appeared on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,163 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' enabled on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,178 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Back to top' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,200 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,218 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' test enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,234 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,257 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,272 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,289 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version contain 26.0' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,309 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,325 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,342 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,367 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,383 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,405 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Lebel' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,423 pom002_VoiceWatch_Home_Page.header() - Verified that 'EMPIRIX' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,439 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix label' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,459 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,473 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,489 pom002_VoiceWatch_Home_Page.header() - Verified that 'VoiceWatch' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,511 pom002_VoiceWatch_Home_Page.header() - Verified that dropdown appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,525 pom002_VoiceWatch_Home_Page.header() - Verified that dropdwon enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,546 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,562 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,579 pom002_VoiceWatch_Home_Page.header() - Verified that 'Contact Us' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,601 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,615 pom002_VoiceWatch_Home_Page.header() - Verified that 'help' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,631 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,653 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' appeared on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,668 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' enabled on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,684 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Back to top' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,707 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,722 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' test enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,737 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,759 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,774 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,789 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version contain 26.0' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,812 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,830 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:44,846 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:46,655 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Tests' label appeared on left side under Tests tab
+[DEBUG] 2019-07-22 16:47:46,676 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Tests' Text validated on left side under Test Tab
+[DEBUG] 2019-07-22 16:47:46,705 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Filter by test name' box appeared on n left side under Tests tab
+[DEBUG] 2019-07-22 16:47:46,721 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Filter by test name or tag filter'enabled under Alert tab
+[DEBUG] 2019-07-22 16:47:46,738 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Filter by test name' is blank while access test tab
+[DEBUG] 2019-07-22 16:47:46,933 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Test' label appeared on under Tests tab
+[DEBUG] 2019-07-22 16:47:46,951 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Test' Text validated under Test Tab
+[DEBUG] 2019-07-22 16:47:46,980 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Please select a test' label appeared on under Tests tab
+[DEBUG] 2019-07-22 16:47:46,999 pom005_VoiceWatch_Tests_Tab.testsValidations() - Verified that 'Please select a test ' Text validated under Test Tab
+[DEBUG] 2019-07-22 16:47:47,020 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,035 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Logo' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,055 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix Lebel' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,074 pom002_VoiceWatch_Home_Page.header() - Verified that 'EMPIRIX' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,089 pom002_VoiceWatch_Home_Page.header() - Verified that 'Empirix label' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,106 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,122 pom002_VoiceWatch_Home_Page.header() - Verified that 'Application Name' enabled on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,136 pom002_VoiceWatch_Home_Page.header() - Verified that 'VoiceWatch' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,153 pom002_VoiceWatch_Home_Page.header() - Verified that dropdown appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,168 pom002_VoiceWatch_Home_Page.header() - Verified that dropdwon enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,186 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,201 pom002_VoiceWatch_Home_Page.header() - Verified that 'ContacUs' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,216 pom002_VoiceWatch_Home_Page.header() - Verified that 'Contact Us' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,234 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' appeared on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,248 pom002_VoiceWatch_Home_Page.header() - Verified that 'help' enabled on top right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,265 pom002_VoiceWatch_Home_Page.header() - Verified that 'Help' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,284 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' appeared on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,301 pom002_VoiceWatch_Home_Page.footer() - Verified that 'BackToTop link' enabled on bottom right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,316 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Back to top' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,341 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,355 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' test enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,369 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,393 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,413 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version Number' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,435 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Version contain 26.0' appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,460 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' appeared on bottom left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,480 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix Label' enabled on right corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:47,501 pom002_VoiceWatch_Home_Page.footer() - Verified that 'Empirix' Text appeared on top left corner VoiceWatch dashboard
+[DEBUG] 2019-07-22 16:47:57,596 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Tags' label appeared on left side under Tag tab
+[DEBUG] 2019-07-22 16:47:57,614 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Tags' Text validated on left side under Tag Tab
+[DEBUG] 2019-07-22 16:47:57,644 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Filter by tag name' box appeared on n left side under Tag tab
+[DEBUG] 2019-07-22 16:47:57,663 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Filter by tag name or tag filter'enabled under Tag tab
+[DEBUG] 2019-07-22 16:47:57,678 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Filter by tag name' is blank while access tag tab
+[DEBUG] 2019-07-22 16:47:57,704 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Tag' label appeared on under Tags tab
+[DEBUG] 2019-07-22 16:47:57,724 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Tag' Text validated under Tag Tab
+[DEBUG] 2019-07-22 16:47:57,748 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Please select a tag' label appeared on under Tag tab
+[DEBUG] 2019-07-22 16:47:57,767 pom006_VoiceWatch_Tags_Tab.tagsValidations() - Verified that 'Please select a tag ' Text validated under Test tag
+[DEBUG] 2019-07-22 16:48:07,894 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Go Script Builder Scripts' label appeared on left side of under Script tab
+[DEBUG] 2019-07-22 16:48:07,909 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Go Script Builder Scripts' label enabled on left side of under Script tab
+[DEBUG] 2019-07-22 16:48:07,928 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Go Script Builder Scripts' Text validated on left side under Script Tab
+[DEBUG] 2019-07-22 16:48:07,955 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Script count' dispalyed left side under Script tab
+[DEBUG] 2019-07-22 16:48:07,969 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Script count' enabled left side under Script tab
+[DEBUG] 2019-07-22 16:48:07,995 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Filter by name' filed appeared on left side of under Script tab
+[DEBUG] 2019-07-22 16:48:08,010 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Filter by name' filed enabled on left side of under Script tab
+[DEBUG] 2019-07-22 16:48:08,019 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Please select a script ' label appeared on  under Go Script builder tab
+[DEBUG] 2019-07-22 16:48:08,019 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Please select a script ' label enabled under Go Script builder tab
+[DEBUG] 2019-07-22 16:48:08,019 pom007_VoiceWatch_Script_Tabs.goScriptBuilderTabValidation() - Verified that 'Please select a script or' Text validated under Go Script Builder
+[DEBUG] 2019-07-22 16:49:58,138 pom007_VoiceWatch_Script_Tabs.createGSBbybutton() - Verified that create a new script plus (+) icon not appeared on top left side under Script tab
+[DEBUG] 2019-07-22 16:50:08,352 pom007_VoiceWatch_Script_Tabs.createGSBbyLink() - Verified that create a new script plus (+) icon appeared on top left side under Script tab
+[INFO ] 2019-07-22 16:51:48,480 TC0003_login_With_Empirix_Business_Analyst.applicationClose() - Application closed successfully
