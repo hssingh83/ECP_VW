@@ -1,7 +1,5 @@
 package PageActions;
 
-import java.util.concurrent.TimeUnit;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -163,7 +161,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 	public void createGSBbybutton() throws InterruptedException {
 		
 		driver.findElement(scriptsTab).click();
-		Thread.sleep(10000);
+		
 		
 		
 		
@@ -177,6 +175,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 		{
 			log.debug("Verified that create a new script plus (+) icon appeared on top left side under Script tab");	
 		
+			Thread.sleep(10000);
 			
 			driver.findElement(createNewGSBPlusButton).click();
 		log.debug("Validated the element while click Script Creation using button (+)");
@@ -254,7 +253,7 @@ public void createGSBbyLink() throws InterruptedException {
 		
 	driver.findElement(tagTab).click();
 	driver.findElement(scriptsTab).click();
-		Thread.sleep(100);
+	
 
 		
 		
@@ -268,39 +267,11 @@ public void createGSBbyLink() throws InterruptedException {
 		{
 			log.debug("Verified that create a new script by link is appeared under Go Script Builder tab");	
 			
+			Thread.sleep(10000);
 			driver.findElement(createNewGSBlinks).click();
 	
 	
- /*public void createGSBbyLink() throws InterruptedException {
-		
-		driver.findElement(tagTab).click();
-		driver.findElement(scriptsTab).click();
-		
-		
-		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
-		
-          if (driver.findElements(createNewGSBlinks).isEmpty()) {
-			
-			log.debug("Verified that create a new script plus (+) icon not appeared on top left side under Script tab");	
-			
-						
-		}else
-		
-		{
-			log.debug("Verified that create a new script plus (+) icon appeared on top left side under Script tab");	
-			
-			
-			driver.findElement(createNewGSBlinks).click();
-			
-			
-			 
-		log.debug("Validated the element while click Script Creation using button (+)");*/
-	
-	
-		
-		
-		log.debug("Validated the element while click create a new script by link");
+ 		log.debug("Validated the element while click create a new script by link");
 		
 		Assert.assertTrue(driver.findElement(goScriptBuilderScriptslabel).isDisplayed());
 		log.debug("Verified that 'Go Script Builder Scripts' label appeared on left side of under Script tab");	
