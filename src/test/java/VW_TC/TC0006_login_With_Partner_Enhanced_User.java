@@ -139,9 +139,8 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
-		sc.scriptUploadTabValidation();
-		d.header();
-		d.footer();
+//		sc.scriptUploadTabValidation();
+	
 		
 	}
 		

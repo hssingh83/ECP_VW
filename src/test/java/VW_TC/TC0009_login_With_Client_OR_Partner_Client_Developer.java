@@ -143,9 +143,8 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
-		sc.scriptUploadTabValidation();
-		d.header();
-		d.footer();
+	//	sc.scriptUploadTabValidation();
+
 		
 	}
 	

@@ -136,9 +136,8 @@ public class TC0010_login_With_Client_OR_Partner_Client_Enhanced_User extends ba
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
-		sc.scriptUploadTabValidation();
-		d.header();
-		d.footer();
+	//	sc.scriptUploadTabValidation();
+	
 		
 	}
 		

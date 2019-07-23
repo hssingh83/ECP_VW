@@ -10,12 +10,12 @@
     
      
 
-     
-    <test  name="Test Case: 003 - Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity">
+ 
+          <test  name="Test Case: 0000- Debugging Verification ">
     <classes>
      
-      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst"/>
-      
+      <class name="VW_TC.TC0000_Debug_Testing"/>
+         
      </classes> 
      </test>
      

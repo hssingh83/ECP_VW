@@ -146,9 +146,8 @@ public class TC0008_login_With_Client_OR_Partner_Client_Custmer_Admin extends ba
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
-		sc.scriptUploadTabValidation();
-		d.header();
-		d.footer();
+	//	sc.scriptUploadTabValidation();
+		
 		
 	}
 	
