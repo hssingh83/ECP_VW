@@ -2,7 +2,6 @@ package VW_TC;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -21,9 +20,15 @@ import PageActions.pom007_VoiceWatch_Script_Tabs;
 import resources.baseProperties;
 import resources.dataDriven;
 
-public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
+
+public class TC0000_Debug_Testing1 extends baseProperties{
+
 	
-	private static Logger log =LogManager.getLogger(TC0004_login_With_Partner_Customer_Admin.class.getName());
+	
+	
+	private static Logger log =LogManager.getLogger(TC0000_Debug_Testing1.class.getName());
+	
+
 	
 	@BeforeTest
 	
@@ -33,11 +38,11 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	}
 
 	@Test(priority=1)
-	public void logInWithPartnerCustomerAdmin () throws IOException, InterruptedException {
+	public void logInWithExpirixBusinessAnalyst () throws IOException, InterruptedException {
 		
 		pom001_VoiceWatch_logIn_Page l=new pom001_VoiceWatch_logIn_Page(driver);
-		dataDriven d=new dataDriven();
-		  ArrayList<String> data=d.getData("login","PARTNER/CUSTOMER_ADMIN");
+		dataDriven d1=new dataDriven();
+		  ArrayList<String> data=d1.getData("login","Empirix/Empirix Admin");
 			
 		l.getUsername().sendKeys(data.get(1));
 	    l.getPassword().sendKeys(data.get(2));
@@ -45,17 +50,17 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	    Thread.sleep(10);
 	    log.debug("Waiting for launch VoiceWatch application using above creadetails");
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
-	    log.debug("Verified that VoiceWatch Application login successfully with Partner_Customer Admin creadetial");
-	    log.debug("Validate the requiment as Aceess Level= Partner & Role=Customer Admin");
-       }	
+	    log.info("Verified that VoiceWatch Application login successfully with Empirix Business Analyst creadetial");
+	    log.debug("Validate the requiment as Aceess Level= Empirix & Role=Business Analyst");
+
+	}	
 	
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-	    d.header();
-	
+	    d.header();	
 	}
 	
 	@Test(priority=3)
@@ -65,14 +70,16 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	    d.footer();
 	
 	}
-	/*@Test(priority=4)
-	public void TabValidation () throws IOException, InterruptedException {
-		
-		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		 d.home_screen();
-		
-	}*/
 	
+	
+	@Test(priority=4)
+	public void TabValidation() {
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);
+		 d.home_screen();
+	
+	}
+	
+
 	@Test(priority=5)
 	public void dashBoardTabValidation () throws IOException, InterruptedException {
 		
@@ -86,35 +93,27 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 	}
 	
 	@Test(priority=6)
-	public void alertTabValidation () throws Exception {
+	public void alertTabValidation () throws IOException, InterruptedException {
 		
 		pom004_VoiceWatch_Alerts_Tab at=new pom004_VoiceWatch_Alerts_Tab (driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
-		at.alertsValidations();
-		at.hammerColumn();
+		at.alertsValidations();		
 		d.header();
 		d.footer();
 		
 	}
-	
-/*	@Test(priority=7)
+	@Test(priority=7)
 	public void testTabValidation () throws IOException, InterruptedException {
 		
 		pom005_VoiceWatch_Tests_Tab ts=new pom005_VoiceWatch_Tests_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	
+		d.header();
+		d.footer();
 		ts.testsValidations();
-		d.header();
-		d.footer();
-		ts.createTestbybutton();
-		d.header();
-		d.footer();
-		ts.createTestbyLink();
-		d.header();
-		d.footer();
-		
+				
 	}
-	*/
+	
 	
 	@Test(priority=8)
 	public void tagTabValidation () throws IOException, InterruptedException {
@@ -122,24 +121,19 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		pom006_VoiceWatch_Tags_Tab tg=new pom006_VoiceWatch_Tags_Tab(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	
-		tg.tagsValidations();
 		d.header();
 		d.footer();
-		tg.createTagbybutton();
-		d.header();
-		d.footer();
-		tg.createNewTag();
-		d.header();
-		d.footer();
-		
-	}
+		tg.tagsValidations();		
 	
+	}
+	*/
 	@Test(priority=9)
 	public void scriptTabValidation () throws Exception {
 		
 		
 		pom007_VoiceWatch_Script_Tabs sc=new pom007_VoiceWatch_Script_Tabs(driver);
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
+	
 		
 		
 		sc.goScriptBuilderTabValidation();
@@ -147,14 +141,20 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
-	//	sc.scriptUploadTabValidation();
-		sc.csvTabValidation();
+		sc.scriptUploadTabValidation();
 		d.header();
 		d.footer();
+		sc.createSUbybutton();
+		d.header();
+		d.footer();
+		sc.createSUbyLink();
+		d.header();
+		d.footer();
+		sc.csvTabValidation();
 	}
 	
 	
-	
+		
 	@AfterTest
 	public void applicationClose() {
 	
@@ -162,4 +162,4 @@ public class TC0004_login_With_Partner_Customer_Admin extends baseProperties{
 		log.info("Application closed successfully");
 		
 	}
-	}	
+	}

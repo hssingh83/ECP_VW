@@ -139,7 +139,13 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		sc.scriptUploadTabValidation();
 		d.header();
 		d.footer();
-		
+		sc.createSUbybutton();
+		d.header();
+		d.footer();
+		sc.createSUbyLink();
+		d.header();
+		d.footer();
+		sc.csvTabValidation();
 	}
 	
 	

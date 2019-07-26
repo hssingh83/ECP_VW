@@ -145,6 +145,9 @@ public class TC0005_login_With_Partner_Developer extends baseProperties{
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
+		sc.csvTabValidation();
+		d.header();
+		d.footer();
 				
 	}
 	

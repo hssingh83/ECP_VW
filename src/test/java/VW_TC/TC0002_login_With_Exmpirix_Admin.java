@@ -163,7 +163,13 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		sc.scriptUploadTabValidation();
 		d.header();
 		d.footer();
-		
+		sc.createSUbybutton();
+		d.header();
+		d.footer();
+		sc.createSUbyLink();
+		d.header();
+		d.footer();
+		sc.csvTabValidation();
 	}
 
 	

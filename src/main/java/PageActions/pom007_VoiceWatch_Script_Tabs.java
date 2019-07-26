@@ -27,14 +27,10 @@ public class pom007_VoiceWatch_Script_Tabs {
 	
 	By filterByNameGSB=By.xpath("//input[@placeholder='Filter by name']");
 	
-	By createNewGSBPlusButton=By.xpath("//div[@class='panel-body']//span[@class='glyphicon glyphicon-plus-sign pull-right']");
+	By createNewScriptByButton=By.xpath("//div[@class='panel-body']//span[@class='glyphicon glyphicon-plus-sign pull-right']");
 	
 	By pleaseSelectlabelGSB=By.xpath("//span[contains(text(),'Please select a script or')]");
-	
-//	By createNewGSBlinks=By.xpath("//div[@id='loading']//a");
-	
-	By createNewGSBlinks=By.linkText("create a new script"); 
-//	By createNewGSBlink=By.xpath("//u[contains(text(),'create a new script')]");
+	By createNewScriptBylink=By.linkText("create a new script"); 
 	By scriptUploadTab=By.xpath("//span[contains(text(),'Script Upload')]");
 	By callMasterScriptslabel=By.xpath("//div[@class='panel-heading ng-binding']");
 	By callMasterScriptscount=By.xpath("//span[@class='badge pull-right ng-binding']");
@@ -48,13 +44,17 @@ public class pom007_VoiceWatch_Script_Tabs {
 	By samplecsvDownoad=By.xpath("//span[contains(text(),'Sample CSV download')]");
 	By scriptNamelabel=By.xpath("//div[contains(text(),'Script name')]");
 	By scriptNamefield=By.xpath("//input[@placeholder='Enter script name']");
-	By scriptDesclabel=By.xpath("//form[@name='wbs_form']//div[@class='small-width'][contains(text(),'Description')]");
+//	By scriptDesclabel=By.xpath("//form[@name='wbs_form']//div[@class='small-width'][contains(text(),'Description')]");	
+	By scriptDesclabel=By.xpath("//*[@id=\"LAB-R\"]/div[1]/div[2]/div/div[2]/div/div/div[4]/form[1]/div[3]/div/div");	
 	By scriptDescfield=By.xpath("//form[@name='wbs_form']//input[@placeholder='Enter description']");
-	By saveButtonGSB=By.xpath("//button[@class='btn btn-info btn-sm btn-float-right']");
+	By saveButton=By.xpath("//button[@class='btn btn-info btn-sm btn-float-right']");
 	By scriptBuilderlabel=By.xpath("//a[contains(text(),'Script Builder')]");
 	By resultslabel=By.xpath("//a[contains(text(),'Results')]");
 	By callLogsNamelabel=By.xpath("//a[contains(text(),'Call Logs')]");
 	By associatedTestslabel=By.xpath("//a[contains(text(),'Associated Tests')]");
+//	By uploadScriptXMLFile=By.className("files_upload ng-pristine ng-untouched ng-valid ng-empty");
+	
+	By uploadScriptFile=By.xpath("//div[@class='files_upload ng-pristine ng-untouched ng-valid ng-empty']");
 		
 	
 	
@@ -67,7 +67,8 @@ public class pom007_VoiceWatch_Script_Tabs {
 	
 	
 	// Method for Verified Lables under Client Tab
-	
+
+//==================================================================================	
 	public void goScriptBuilderTabValidation() throws InterruptedException {	
 
 		driver.findElement(scriptsTab).click();		
@@ -111,7 +112,8 @@ public class pom007_VoiceWatch_Script_Tabs {
 		
 				
 	}
-	
+
+//=====================================================================================	
 	public void scriptUploadTabValidation() throws InterruptedException {	
 
 			
@@ -153,11 +155,21 @@ public class pom007_VoiceWatch_Script_Tabs {
 				
 			}  
 		
+		  if (driver.findElements(createNewScriptBylink).isEmpty()) {
 				
+				log.debug("Verified that create a new script by link is not appeared under Script Upload");	
+				
+							
+			}else
+			
+			{
+				log.debug("Verified that create a new script by link is appeared under under Script Upload");			
 	}
 	
+	}
 	
-	  
+//=================================================================================================	
+	
 	public void createGSBbybutton() throws InterruptedException {
 		
 		driver.findElement(scriptsTab).click();
@@ -165,7 +177,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 		
 		
 		
-          if (driver.findElements(createNewGSBPlusButton).isEmpty()) {
+          if (driver.findElements(createNewScriptByButton).isEmpty()) {
 			
 			log.debug("Verified that create a new script plus (+) icon not appeared on top left side under Script tab");	
 			
@@ -177,7 +189,7 @@ public class pom007_VoiceWatch_Script_Tabs {
 		
 			Thread.sleep(10000);
 			
-			driver.findElement(createNewGSBPlusButton).click();
+			driver.findElement(createNewScriptByButton).click();
 		log.debug("Validated the element while click Script Creation using button (+)");
 		
 				
@@ -219,11 +231,11 @@ public class pom007_VoiceWatch_Script_Tabs {
 		log.debug("Verified that 'Description' field enabled on under Go Script Builder");	
 		
 				
-		Assert.assertTrue(driver.findElement(saveButtonGSB).isDisplayed());
+		Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
 		log.debug("Verified that 'Save button' displayed under Go Script Upload tab");	
-		Assert.assertFalse(driver.findElement(saveButtonGSB).isEnabled());
+		Assert.assertFalse(driver.findElement(saveButton).isEnabled());
 		log.debug("Verified that 'Save button' is disbaled under Go Script Upload tab");	
-		Assert.assertEquals(driver.findElement(saveButtonGSB).getText(), "Save");		
+		Assert.assertEquals(driver.findElement(saveButton).getText(), "Save");		
 		log.debug("Verified that 'Save' Text appeared on save button under Go Script Upload tab");	
 		
 		Assert.assertTrue(driver.findElement(scriptBuilderlabel).isDisplayed());
@@ -249,6 +261,9 @@ public class pom007_VoiceWatch_Script_Tabs {
 
 		}
 	}
+
+	//=================================================================================================		
+	
 public void createGSBbyLink() throws InterruptedException {
 		
 	driver.findElement(tagTab).click();
@@ -257,7 +272,7 @@ public void createGSBbyLink() throws InterruptedException {
 
 		
 		
-          if (driver.findElements(createNewGSBlinks).isEmpty()) {
+          if (driver.findElements(createNewScriptBylink).isEmpty()) {
 			
 			log.debug("Verified that create a new script by link is not appeared under Go Script Builder tab");	
 			
@@ -268,7 +283,7 @@ public void createGSBbyLink() throws InterruptedException {
 			log.debug("Verified that create a new script by link is appeared under Go Script Builder tab");	
 			
 			Thread.sleep(10000);
-			driver.findElement(createNewGSBlinks).click();
+			driver.findElement(createNewScriptBylink).click();
 	
 	
  		log.debug("Validated the element while click create a new script by link");
@@ -311,11 +326,11 @@ public void createGSBbyLink() throws InterruptedException {
 		log.debug("Verified that 'Description' field enabled on under Go Script Builder");	
 		
 				
-		Assert.assertTrue(driver.findElement(saveButtonGSB).isDisplayed());
+		Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
 		log.debug("Verified that 'Save button' displayed under Go Script Upload tab");	
-		Assert.assertFalse(driver.findElement(saveButtonGSB).isEnabled());
+		Assert.assertFalse(driver.findElement(saveButton).isEnabled());
 		log.debug("Verified that 'Save button' is disbaled under Go Script Upload tab");	
-		Assert.assertEquals(driver.findElement(saveButtonGSB).getText(), "Save");		
+		Assert.assertEquals(driver.findElement(saveButton).getText(), "Save");		
 		log.debug("Verified that 'Save' Text appeared on save button under Go Script Upload tab");	
 		
 		Assert.assertTrue(driver.findElement(scriptBuilderlabel).isDisplayed());
@@ -340,5 +355,174 @@ public void createGSBbyLink() throws InterruptedException {
 		
 
 		}
-	}		
+	}	
+
+//==============================================================================
+
+public void createSUbyLink() throws InterruptedException {
+	
+	driver.findElement(tagTab).click();
+	driver.findElement(scriptsTab).click();
+	Thread.sleep(10000);
+	driver.findElement(scriptUploadTab).click();
+		
+      if (driver.findElements(createNewScriptBylink).isEmpty()) {
+		
+		log.debug("Verified that create a new script plus (+) icon not appeared on top left side under Script Upload tab");	
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that create a new script plus (+) icon appeared on top left side under Script Upload tab");	
+		
+		driver.findElement(createNewScriptByButton).click();
+	log.debug("Validated the element while click Script Creation using button (+)");
+	
+			
+	Assert.assertTrue(driver.findElement(callMasterScriptslabel).isDisplayed());
+	log.debug("Verified that 'Call Master Scripts' label appeared on left side of Script Upload tab under Script tab");	
+	Assert.assertTrue(driver.findElement(callMasterScriptslabel).isEnabled());
+	log.debug("Verified that 'Call Master Scripts' label enabled on left side of Script Upload tab under Script tab");	
+	Assert.assertEquals(driver.findElement(callMasterScriptslabel).getText().contains("Call Master Scripts"), true);	
+	log.debug("Verified that 'Call Master Scripts' Text validated on left side under Script Upload Tab");		
+	
+	Assert.assertTrue(driver.findElement(callMasterScriptscount).isDisplayed());
+	log.debug("Verified that 'Call master Script count' dispalyed on left side of Script Upload tab under Script tab");	
+	Assert.assertTrue(driver.findElement(callMasterScriptscount).isEnabled());		
+	log.debug("Verified that 'Call master Script count' enabled on left side of Script Upload tab under Script tab");	
+	
+	Assert.assertTrue(driver.findElement(filterByNameSU).isDisplayed());
+	log.debug("Verified that 'Filter by name' filed appeared on left side of under Script tab");	
+	Assert.assertTrue(driver.findElement(filterByNameSU).isEnabled());
+	log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");		
+	Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
+	log.debug("Verified that 'Script name' label appeared on under Script Upload");		
+	Assert.assertEquals(driver.findElement(scriptNamelabel).getText(), "Script name");		
+	log.debug("Verified that 'Script name' Text validated on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+	log.debug("Verified that 'Script name' filed appeared on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+	log.debug("Verified that 'Script name' field enabled on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
+	log.debug("Verified that 'Description' label appeared on under Script Upload");		
+	Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
+	log.debug("Verified that 'Description' Text validated on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+	log.debug("Verified that 'Description' label appeared on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+	log.debug("Verified that 'Description' field enabled on under Script Upload");				
+	Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
+	log.debug("Verified that 'Save button' displayed under Go Script Upload tab");	
+	Assert.assertFalse(driver.findElement(saveButton).isEnabled());
+	log.debug("Verified that 'Save button' is disbaled under Go Script Upload tab");	
+	Assert.assertEquals(driver.findElement(saveButton).getText(), "Save");		
+	log.debug("Verified that 'Save' Text appeared on save button under Go Script Upload tab");	
+	
+	Assert.assertTrue(driver.findElement(uploadScriptFile).isDisplayed());
+	log.debug("Verified that 'Click to select a script, or drop file below (.xml)' button appeared under Script Upload tab");	
+	Assert.assertTrue(driver.findElement(uploadScriptFile).isEnabled());
+	log.debug("Verified that 'Click to select a script, or drop file below (.xml)' button enabled under Script Upload tab");
+	
+	
+
+	}
+}
+//========================================================================================================================
+public void createSUbybutton() throws InterruptedException {
+	
+	driver.findElement(tagTab).click();
+	driver.findElement(scriptsTab).click();
+	Thread.sleep(10000);
+	driver.findElement(scriptUploadTab).click();
+		
+      if (driver.findElements(createNewScriptBylink).isEmpty()) {
+		
+    	  log.debug("Verified that create a new script by link is not appeared under Script Upload tab");	
+		
+					
+	}else
+	
+	{
+		log.debug("Verified that create a new script by link is appeared under Script Upload tab");	
+		
+		driver.findElement(createNewScriptBylink).click();
+	log.debug("Validated the element while click Script Creation using Link");
+	
+			
+	Assert.assertTrue(driver.findElement(callMasterScriptslabel).isDisplayed());
+	log.debug("Verified that 'Call Master Scripts' label appeared on left side of Script Upload tab under Script tab");	
+	Assert.assertTrue(driver.findElement(callMasterScriptslabel).isEnabled());
+	log.debug("Verified that 'Call Master Scripts' label enabled on left side of Script Upload tab under Script tab");	
+	Assert.assertEquals(driver.findElement(callMasterScriptslabel).getText().contains("Call Master Scripts"), true);	
+	log.debug("Verified that 'Call Master Scripts' Text validated on left side under Script Upload Tab");		
+	
+	Assert.assertTrue(driver.findElement(callMasterScriptscount).isDisplayed());
+	log.debug("Verified that 'Call master Script count' dispalyed on left side of Script Upload tab under Script tab");	
+	Assert.assertTrue(driver.findElement(callMasterScriptscount).isEnabled());		
+	log.debug("Verified that 'Call master Script count' enabled on left side of Script Upload tab under Script tab");	
+	
+	Assert.assertTrue(driver.findElement(filterByNameSU).isDisplayed());
+	log.debug("Verified that 'Filter by name' filed appeared on left side of under Script tab");	
+	Assert.assertTrue(driver.findElement(filterByNameSU).isEnabled());
+	log.debug("Verified that 'Filter by name' filed enabled on left side of under Script tab");		
+	Assert.assertTrue(driver.findElement(scriptNamelabel).isDisplayed());
+	log.debug("Verified that 'Script name' label appeared on under Script Upload");		
+	Assert.assertEquals(driver.findElement(scriptNamelabel).getText(), "Script name");		
+	log.debug("Verified that 'Script name' Text validated on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+	log.debug("Verified that 'Script name' filed appeared on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+	log.debug("Verified that 'Script name' field enabled on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
+	log.debug("Verified that 'Description' label appeared on under Script Upload");		
+	Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
+	log.debug("Verified that 'Description' Text validated on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isDisplayed());
+	log.debug("Verified that 'Description' label appeared on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
+	log.debug("Verified that 'Description' field enabled on under Script Upload");				
+	Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
+	log.debug("Verified that 'Save button' displayed under Script Upload tab");	
+	Assert.assertFalse(driver.findElement(saveButton).isEnabled());
+	log.debug("Verified that 'Save button' is disbaled under Script Upload tab");	
+	Assert.assertEquals(driver.findElement(saveButton).getText(), "Save");		
+	log.debug("Verified that 'Save' Text appeared on save button under Script Upload tab");		
+	
+	Assert.assertTrue(driver.findElement(uploadScriptFile).isDisplayed());
+	log.debug("Verified that 'Click to select a script, or drop file below (.xml)' button appeared under Script Upload tab");	
+	Assert.assertTrue(driver.findElement(uploadScriptFile).isEnabled());
+	log.debug("Verified that 'Click to select a script, or drop file below (.xml)' button enabled under Script Upload tab");	
+	
+	}
+}
+//===================================================================================================
+public void csvTabValidation() throws InterruptedException {	
+
+	driver.findElement(csvTranformerTab).click();
+	Thread.sleep(10000);
+	
+	
+	Assert.assertTrue(driver.findElement(uploadScriptFile).isDisplayed());
+	log.debug("Verified that 'Click to select CSV files, or drop them below (.csv,.zip)' button appeared under CSV Upload tab");	
+	Assert.assertTrue(driver.findElement(uploadScriptFile).isEnabled());
+	log.debug("Verified that 'Click to select CSV files, or drop them below (.csv,.zip)' button enabled under CSV Upload tab");	
+	
+	Assert.assertTrue(driver.findElement(samplecsvDownoad).isDisplayed());
+	log.debug("Verified that 'Sample CSV download' label appeared on left side of under CSV Upload tab");	
+	Assert.assertTrue(driver.findElement(transformedCSVlabel).isEnabled());
+	log.debug("Verified that 'Sample CSV download' label enabled on left side of under CSV Upload tab");		
+	
+	Assert.assertTrue(driver.findElement(transformedCSVlabel).isDisplayed());
+	log.debug("Verified that 'Transformed CSV(s)' label appeared on left side of under CSV Upload tab");	
+	Assert.assertTrue(driver.findElement(transformedCSVlabel).isEnabled());
+	log.debug("Verified that 'Transformed CSV(s)' label enabled on left side of under CSV Upload tab");	
+	
+	Assert.assertTrue(driver.findElement(filterByCSV).isDisplayed());
+	log.debug("Verified that 'Filter by csv file name' filed appeared under CSV Upload tab");	
+	Assert.assertTrue(driver.findElement(filterByCSV).isEnabled());
+	log.debug("Verified that 'Filter by csv file name' filed enabled under CSV Upload tab");		
+	
+	
+}
 }

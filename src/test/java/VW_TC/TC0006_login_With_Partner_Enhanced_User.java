@@ -140,6 +140,9 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 		d.header();
 		d.footer();
 //		sc.scriptUploadTabValidation();
+		sc.csvTabValidation();
+		d.header();
+		d.footer();
 	
 		
 	}
