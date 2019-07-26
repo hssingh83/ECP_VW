@@ -9,11 +9,64 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">126,362</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">1</td><td class="num">165,175</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">VW_TC.TC0002_login_With_Exmpirix_Admin</td><td><a href="#m0">logInWithExpirixAdmin</a></td><td rowspan="1">1564145615929</td><td rowspan="1">25879</td></tr><tr class="passedeven"><td><a href="#m1">scriptTabValidation</a></td><td rowspan="1">1564145641810</td><td rowspan="1">79490</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">VW_TC.TC0002_login_With_Exmpirix_Admin</td><td><a href="#m0">scriptTabValidation</a></td><td rowspan="1">1564147137836</td><td rowspan="1">47749</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">VW_TC.TC0002_login_With_Exmpirix_Admin</td><td><a href="#m1">TabAvailabilityValidation</a></td><td rowspan="1">1564147057693</td><td rowspan="1">664</td></tr><tr class="passedeven"><td><a href="#m2">alertTabValidation</a></td><td rowspan="1">1564147063207</td><td rowspan="1">2366</td></tr><tr class="passedeven"><td><a href="#m3">dashBoardTabValidation</a></td><td rowspan="1">1564147058358</td><td rowspan="1">4848</td></tr><tr class="passedeven"><td><a href="#m4">footerMandatoryDetails</a></td><td rowspan="1">1564147057345</td><td rowspan="1">347</td></tr><tr class="passedeven"><td><a href="#m5">headerMandatoryDetails</a></td><td rowspan="1">1564147056819</td><td rowspan="1">525</td></tr><tr class="passedeven"><td><a href="#m6">logInWithExpirixAdmin</a></td><td rowspan="1">1564147042339</td><td rowspan="1">14476</td></tr><tr class="passedeven"><td><a href="#m7">tagTabValidation</a></td><td rowspan="1">1564147124452</td><td rowspan="1">13383</td></tr><tr class="passedeven"><td><a href="#m8">testTabValidation</a></td><td rowspan="1">1564147065574</td><td rowspan="1">58877</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">VW_TC.TC0002_login_With_Exmpirix_Admin#logInWithExpirixAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">VW_TC.TC0002_login_With_Exmpirix_Admin#scriptTabValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">VW_TC.TC0002_login_With_Exmpirix_Admin#scriptTabValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-i18n=&quot;_scriptUpload_&quot;&gt;...&lt;/span&gt; is not clickable at point (857, 136). Other element would receive the click: &lt;div ng-show=&quot;sharedData.inProcess || sharedData.inLoadingScriptsProcess&quot; class=&quot;progress fullpage&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.142)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;REM-L-SINGHH&apos;, ip: &apos;10.12.60.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\hsingh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 690f2d0380d56449ebe186f25b5860c7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at PageActions.pom007_VoiceWatch_Script_Tabs.createSUbybutton(pom007_VoiceWatch_Script_Tabs.java:438)
+	at VW_TC.TC0002_login_With_Exmpirix_Admin.scriptTabValidation(TC0002_login_With_Exmpirix_Admin.java:159)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">VW_TC.TC0002_login_With_Exmpirix_Admin#TabAvailabilityValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">VW_TC.TC0002_login_With_Exmpirix_Admin#alertTabValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">VW_TC.TC0002_login_With_Exmpirix_Admin#dashBoardTabValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">VW_TC.TC0002_login_With_Exmpirix_Admin#footerMandatoryDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">VW_TC.TC0002_login_With_Exmpirix_Admin#headerMandatoryDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">VW_TC.TC0002_login_With_Exmpirix_Admin#logInWithExpirixAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">VW_TC.TC0002_login_With_Exmpirix_Admin#tagTabValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">VW_TC.TC0002_login_With_Exmpirix_Admin#testTabValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

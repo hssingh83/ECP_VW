@@ -44,9 +44,10 @@ public class pom007_VoiceWatch_Script_Tabs {
 	By samplecsvDownoad=By.xpath("//span[contains(text(),'Sample CSV download')]");
 	By scriptNamelabel=By.xpath("//div[contains(text(),'Script name')]");
 	By scriptNamefield=By.xpath("//input[@placeholder='Enter script name']");
-	By scriptDesclabel=By.xpath("//form[@name='wbs_form']//div[@class='small-width'][contains(text(),'Description')]");	
-//	By scriptDesclabel=By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[4]/form[1]/div[3]/div[1]/div[1]");	
-	By scriptDescfield=By.xpath("//form[@name='wbs_form']//input[@placeholder='Enter description']");
+	By scriptDescGSBlabel=By.xpath("//form[@name='wbs_form']//div[@class='small-width'][contains(text(),'Description')]");	
+	By scriptDescSUlabel=By.xpath("//form[@name='cms_form']//div[@class='small-width'][contains(text(),'Description')]");	
+	By scriptDescGSBfield=By.xpath("//form[@name='wbs_form']//input[@placeholder='Enter description']");
+	By scriptDescSUfield=By.xpath("//form[@name='cms_form']//input[@placeholder='Enter description']");
 	By saveButton=By.xpath("//button[@class='btn btn-info btn-sm btn-float-right']");
 	By scriptBuilderlabel=By.xpath("//a[contains(text(),'Script Builder')]");
 	By resultslabel=By.xpath("//a[contains(text(),'Results')]");
@@ -220,14 +221,14 @@ public class pom007_VoiceWatch_Script_Tabs {
 		Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
 		log.debug("Verified that 'Script name' field enabled on under Go Script Builder");	
 
-		Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
+		Assert.assertTrue(driver.findElement(scriptDescGSBlabel).isDisplayed());
 		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
-		Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
+		Assert.assertEquals(driver.findElement(scriptDescGSBlabel).getText(), "Description");		
 		log.debug("Verified that 'Description' Text validated on under Go Script Builder");	
 		
-		Assert.assertTrue(driver.findElement(scriptDescfield).isDisplayed());
+		Assert.assertTrue(driver.findElement(scriptDescGSBfield).isDisplayed());
 		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
-		Assert.assertTrue(driver.findElement(scriptDescfield).isEnabled());		
+		Assert.assertTrue(driver.findElement(scriptDescGSBfield).isEnabled());		
 		log.debug("Verified that 'Description' field enabled on under Go Script Builder");	
 		
 				
@@ -315,14 +316,14 @@ public void createGSBbyLink() throws InterruptedException {
 		Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
 		log.debug("Verified that 'Script name' field enabled on under Go Script Builder");	
 		
-		Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
+		Assert.assertTrue(driver.findElement(scriptDescGSBlabel).isDisplayed());
 		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
-		Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
+		Assert.assertEquals(driver.findElement(scriptDescGSBlabel).getText(), "Description");		
 		log.debug("Verified that 'Description' Text validated on under Go Script Builder");	
 		
-		Assert.assertTrue(driver.findElement(scriptDescfield).isDisplayed());
+		Assert.assertTrue(driver.findElement(scriptDescGSBfield).isDisplayed());
 		log.debug("Verified that 'Description' label appeared on under Go Script Builder");		
-		Assert.assertTrue(driver.findElement(scriptDescfield).isEnabled());		
+		Assert.assertTrue(driver.findElement(scriptDescGSBfield).isEnabled());		
 		log.debug("Verified that 'Description' field enabled on under Go Script Builder");	
 		
 				
@@ -404,15 +405,15 @@ public void createSUbyLink() throws InterruptedException {
 	log.debug("Verified that 'Script name' filed appeared on under Script Upload");		
 	Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
 	log.debug("Verified that 'Script name' field enabled on under Script Upload");		
-/*//	Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
-//	log.debug("Verified that 'Description' label appeared on under Script Upload");		
-//	Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
-//	log.debug("Verified that 'Description' Text validated on under Script Upload");		
-	Assert.assertTrue(driver.findElement(scriptDescfield).isDisplayed());
+	Assert.assertTrue(driver.findElement(scriptDescSUlabel).isDisplayed());
 	log.debug("Verified that 'Description' label appeared on under Script Upload");		
-	Assert.assertTrue(driver.findElement(scriptDescfield).isEnabled());		
+	Assert.assertEquals(driver.findElement(scriptDescSUlabel).getText(), "Description");		
+	log.debug("Verified that 'Description' Text validated on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptDescSUfield).isDisplayed());
+	log.debug("Verified that 'Description' label appeared on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptDescSUfield).isEnabled());		
 	log.debug("Verified that 'Description' field enabled on under Script Upload");				
-	Assert.assertTrue(driver.findElement(saveButton).isDisplayed());*/
+	Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
 	log.debug("Verified that 'Save button' displayed under Go Script Upload tab");	
 	Assert.assertFalse(driver.findElement(saveButton).isEnabled());
 	log.debug("Verified that 'Save button' is disbaled under Go Script Upload tab");	
@@ -474,14 +475,14 @@ public void createSUbybutton() throws InterruptedException {
 	log.debug("Verified that 'Script name' filed appeared on under Script Upload");		
 	Assert.assertTrue(driver.findElement(scriptNamefield).isEnabled());		
 	log.debug("Verified that 'Script name' field enabled on under Script Upload");		
-/*//	Assert.assertTrue(driver.findElement(scriptDesclabel).isDisplayed());
-//	log.debug("Verified that 'Description' label appeared on under Script Upload");		
-//	Assert.assertEquals(driver.findElement(scriptDesclabel).getText(), "Description");		
-//	log.debug("Verified that 'Description' Text validated on under Script Upload");		
-	Assert.assertTrue(driver.findElement(scriptDescfield).isDisplayed());
+	Assert.assertTrue(driver.findElement(scriptDescSUlabel).isDisplayed());
 	log.debug("Verified that 'Description' label appeared on under Script Upload");		
-	Assert.assertTrue(driver.findElement(scriptDescfield).isEnabled());		
-	log.debug("Verified that 'Description' field enabled on under Script Upload");	*/			
+	Assert.assertEquals(driver.findElement(scriptDescSUlabel).getText(), "Description");		
+	log.debug("Verified that 'Description' Text validated on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptDescSUfield).isDisplayed());
+	log.debug("Verified that 'Description' label appeared on under Script Upload");		
+	Assert.assertTrue(driver.findElement(scriptDescSUfield).isEnabled());		
+	log.debug("Verified that 'Description' field enabled on under Script Upload");				
 	Assert.assertTrue(driver.findElement(saveButton).isDisplayed());
 	log.debug("Verified that 'Save button' displayed under Script Upload tab");	
 	Assert.assertFalse(driver.findElement(saveButton).isEnabled());
