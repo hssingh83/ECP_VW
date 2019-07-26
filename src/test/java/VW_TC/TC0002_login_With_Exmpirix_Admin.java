@@ -27,7 +27,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
 	@BeforeTest
 	
-	public void applicationLaunch() throws IOException, InterruptedException {
+public void applicationLaunch() throws IOException, InterruptedException {
 		
 		driver=intializeDriver();
 	}
@@ -75,14 +75,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 	    d.home_screen();
-	//    d.tagTab();
-	//    d.scriptsTab();
-	//    d.hammersTab();
-	//    d.usersTab();
-	//    d.clientsTab();	    
-	//    d.auditTab();
-	//    d.adminTab();
-	//    d.selectedTab();
+
 	
 	}
 
@@ -155,8 +148,8 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
 		
 		
-		sc.goScriptBuilderTabValidation();
-		sc.createGSBbybutton();
+	  sc.goScriptBuilderTabValidation();
+	   sc.createGSBbybutton();
 		sc.createGSBbyLink();
 		d.header();
 		d.footer();
@@ -164,11 +157,7 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 		d.header();
 		d.footer();
 		sc.createSUbybutton();
-		d.header();
-		d.footer();
 		sc.createSUbyLink();
-		d.header();
-		d.footer();
 		sc.csvTabValidation();
 	}
 
@@ -178,10 +167,5 @@ public class TC0002_login_With_Exmpirix_Admin extends baseProperties{
 	
 		driver.close();
 		log.debug("Application closed successfully");
-		
 	
-	
-	}
-}
-	
-	
+    }}
