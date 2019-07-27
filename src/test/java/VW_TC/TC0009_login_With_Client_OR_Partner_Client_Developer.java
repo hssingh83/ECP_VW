@@ -50,7 +50,7 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 	    
 	}	
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -129,7 +129,7 @@ public class TC0009_login_With_Client_OR_Partner_Client_Developer extends basePr
 		d.header();
 		d.footer();
 		
-	}
+	}*/
 	
 	@Test(priority=9)
 	public void scriptTabValidation () throws Exception {

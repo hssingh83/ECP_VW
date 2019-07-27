@@ -49,7 +49,7 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 	    log.debug("Validate the requiment as Aceess Level= Partner & Role=Enhanced User");
 	  	}	
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -125,7 +125,7 @@ public class TC0006_login_With_Partner_Enhanced_User extends baseProperties{
 		d.header();
 		d.footer();
 		
-	}
+	}*/
 	
 	@Test(priority=9)
 	public void scriptTabValidation () throws Exception {
