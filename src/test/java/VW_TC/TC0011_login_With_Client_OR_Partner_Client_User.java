@@ -54,7 +54,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 	}	
 	
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -69,12 +69,12 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 	    d.footer();
 	
 	}
-	/*@Test(priority=4)
+	@Test(priority=4)
 	public void TabValidation () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
 		 d.home_screen();
-	}*/
+	}
 	@Test(priority=5)
 	public void dashBoardTabValidation () throws IOException, InterruptedException {
 		
@@ -98,7 +98,7 @@ public class TC0011_login_With_Client_OR_Partner_Client_User extends basePropert
 		d.header();
 		d.footer();
 		
-	}
+	}*/
 	
 	@Test(priority=7)
 	public void testTabValidation () throws IOException, InterruptedException {

@@ -49,7 +49,7 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 	  	}	
 	
 
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -93,7 +93,7 @@ public class TC0007_login_With_Partner_User extends baseProperties{
 		d.header();
 		d.footer();
 		
-	}
+	}*/
 	
 	@Test(priority=7)
 	public void testTabValidation () throws IOException, InterruptedException {
