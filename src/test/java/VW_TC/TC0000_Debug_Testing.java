@@ -17,6 +17,7 @@ import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
 import PageActions.pom006_VoiceWatch_Tags_Tab;
 import PageActions.pom007_VoiceWatch_Script_Tabs;
+import PageActions.pom008_VoiceWatch_Variable_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -144,7 +145,7 @@ public void applicationLaunch() throws IOException, InterruptedException {
 		d.footer();	
 	}*/
 	
-	@Test(priority=9)
+/*	@Test(priority=9)
 	public void scriptTabValidation () throws Exception {
 		
 		
@@ -154,8 +155,8 @@ public void applicationLaunch() throws IOException, InterruptedException {
 		
 		
 		sc.goScriptBuilderTabValidation();
-		/*sc.createGSBbybutton();
-		sc.createGSBbyLink();*/
+		sc.createGSBbybutton();
+		sc.createGSBbyLink();
 //		d.header();
 //		d.footer();
 		sc.scriptUploadTabValidation();
@@ -164,8 +165,24 @@ public void applicationLaunch() throws IOException, InterruptedException {
 		sc.createSUbybutton();
 		sc.createSUbyLink();
 		sc.csvTabValidation();
+	}*/
+
+	@Test(priority=10)
+	public void variableTabValidation () throws Exception {
+		
+		
+		pom008_VoiceWatch_Variable_Tab vr=new pom008_VoiceWatch_Variable_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);
+		
+		vr.variableTabValidation();
+		vr.createVariableByButton();
+		vr.createVariableByLink();
+	
+
 	}
 
+	
+	
 	
     @AfterTest
 	public void applicationClose() {
