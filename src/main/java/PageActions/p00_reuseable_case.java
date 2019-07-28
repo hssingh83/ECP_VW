@@ -4,14 +4,13 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import PageActions.pom001_VoiceWatch_logIn_Page;
 import resources.baseProperties;
 
 public class p00_reuseable_case extends baseProperties{ 
 
-	private static Logger log =LogManager.getLogger(pom001_VoiceWatch_logIn_Page.class.getName());
+//	private static Logger log =LogManager.getLogger(p00_reuseable_case.class.getName());
 	
-	
+	private static Logger log =LogManager.getLogger(p00_reuseable_case.class.getName());
 	
 	/*@BeforeTest
 	public void BrowserInitializer() throws IOException

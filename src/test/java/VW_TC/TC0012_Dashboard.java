@@ -68,7 +68,7 @@ public class TC0012_Dashboard extends baseProperties{
 		pom002_VoiceWatch_Home_Page dS=new pom002_VoiceWatch_Home_Page(driver);
 		
 	//**LogIn Page Label verification Started//
-		dS.dashboard_screen();
+//		 ds.home_screen();
 	
 
 		

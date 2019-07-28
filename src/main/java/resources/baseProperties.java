@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -45,7 +45,7 @@ prop.load(fis);
 String browserName=prop.getProperty("browser");
 if(browserName.equals("chrome"))
 {
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
     driver=new ChromeDriver();
     log.debug("Chrome Driver intilized successfully");
     log.debug("Chrome Browser selected & Launching in few second");
@@ -56,7 +56,7 @@ if(browserName.equals("chrome"))
 else if (browserName.equals("firefox"))
 	
 {
-	System.setProperty("webdriver.gecko.driver","C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\drivers\\geckodriver.exe");
+	System.setProperty("webdriver.gecko.driver","C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\drivers\\geckodriver.exe");
 	driver = new FirefoxDriver();
 	
 	log.info("Firefox Driver intilized successfully");
@@ -66,7 +66,7 @@ else if (browserName.equals("firefox"))
 //IE
 else if (browserName.equals("ie"))
 {
-	System.setProperty("webdriver.ie.driver","C:\\Users\\hsingh\\.jenkins\\${JENKIN_HOME}\\ECP_VW\\src\\main\\java\\resources\\drivers\\IEDriverServer.exe");
+	System.setProperty("webdriver.ie.driver","C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\drivers\\IEDriverServer.exe");
 	driver = new InternetExplorerDriver();
 	
 	log.info("IE Driver intilized successfully");
@@ -75,7 +75,7 @@ else if (browserName.equals("ie"))
 
 //Timeout
 
-driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(100,TimeUnit.SECONDS);
 driver.get(prop.getProperty("url"));
 log.debug("URL provided");
 driver.manage().window().maximize();
@@ -89,18 +89,18 @@ return driver;
 	}
 	
 	
-	
 
+		
+	public void getScreenshot(String result) throws IOException
+//	public void getScreenshot() throws IOException
 	
-public void getScreenshot(String result) throws IOException
 	{
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-	FileHandler.copy(src, new File("C:\\Users\\Administrator\\TVoiceWatch\\src\\main\\java\\Screenshot"+result+"screenshot.png"));
-		//FileUtils.copyFile(src, new File("C://test//"+result+"screenshot.png"));
-		
-	         }	 
-
+	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(src, new File("C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\screenshot"+result+"screenshot.png"));
+//	FileUtils.copyFile(src, new File("C:\\Users\\hsingh\\git_project\\ECP_VW\\src\\main\\java\\resources\\screenshot\\screenshot.png"));
+	
+	}
 
 
 	

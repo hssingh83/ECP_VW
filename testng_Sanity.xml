@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <listeners>
+<listener class-name="resources.ExtentReporterNG"/>
+<listener class-name="resources.listeners"></listener>
+</listeners>
+
+  
+    
+     
+      <test  name="Test Case: 001- Login Page Verification ">
+    <classes>
+     
+      <class name="VW_TC.TC0001_login_Page_Verification"/>
+         
+     </classes> 
+     </test>
+     
+     <test  name="Test Case: 002 - Login with 'Empirix Admin' Credetials'and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0002_login_With_Exmpirix_Admin"/>
+      
+     </classes> 
+     </test>
+     
+    <test  name="Test Case: 003 - Login with 'Empirix Business Analyst' Credetials'and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0003_login_With_Empirix_Business_Analyst"/>
+      
+     </classes> 
+     </test>
+          <test  name="Test Case: 007 - Login with 'Partner Use' Credetials and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0007_login_With_Partner_User"/>
+      
+     </classes> 
+     </test>
+     
+       
+      <test  name="Test Case: 011 'Login with 'Client or Partner Client User'and verify TabAvailablity">
+    <classes>
+     
+      <class name="VW_TC.TC0011_login_With_Client_OR_Partner_Client_User"/>
+      
+     </classes> 
+     </test>
+     
+</suite> <!-- Suite -->

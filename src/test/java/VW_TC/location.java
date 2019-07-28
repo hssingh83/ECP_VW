@@ -2,6 +2,7 @@ package VW_TC;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -13,8 +14,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import PageActions.pom001_VoiceWatch_logIn_Page;
-import PageActions.pom002_VoiceWatch_Home_Page;
-import PageActions.pom004_VoiceWatch_Home_Page_location;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -49,7 +48,6 @@ public class location extends baseProperties {
 	    Assert.assertTrue(driver.findElement(By.linkText("Back to top")).isDisplayed());
 	    log.debug("Verified that VoiceWatch Application login successfully with Empirix Admin creadetial");
 	    log.debug("Validate the requiment as Aceess Level= Empirix & Role=Empirix Admin");	
-	
 	}
 	
 	/*@Test(priority=2)
@@ -61,14 +59,34 @@ public class location extends baseProperties {
 		
 	@Test(priority=2)	
 	public void linktest() {
-	
-		List<WebElement> linksize = driver.findElements(By.tagName("a"));
+		
+		
+		 List<WebElement> links = driver.findElements(By.tagName("a"));
+	        
+	        Iterator<WebElement> it = links.iterator();
+	        
+	        while(it.hasNext()){
+	            
+	           String url = it.next().getAttribute("href");
+	            
+	            System.out.println(url);
+	        
+	            if(url == null || url.isEmpty()){
+	System.out.println("URL is either not configured for anchor tag or it is empty");
+	                continue;
+	            }
+		
+	        }
+	}
+}
+	/*	List<WebElement> linksize = driver.findElements(By.tagName("a"));
 		int linksCount = linksize.size();
 		System.out.println("Total no of link: " + linksCount);
+		*/
 		
-		
+	/*	@SuppressWarnings("unused")
 		String[] links = new String[linksCount];
-		System.out.println("List of links avaiablity: ");
+		System.out.println("List of links avaiablity: ");*/
 		
 		/*if (driver.findElements(arg0))*/
 		
@@ -76,7 +94,7 @@ public class location extends baseProperties {
 	/*	links[i] = linksize.get(i).getAttribute("href");
 		System.out.println(linksize.get(i).getAttribute("href"));*/
 	
-	}
-}
+	
+
 
 

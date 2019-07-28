@@ -1,0 +1,5 @@
+[INFO ] 2019-07-05 13:34:24,665 baseProperties.intializeDriver() - Firefox Driver intilized successfully
+[INFO ] 2019-07-05 13:34:24,673 baseProperties.intializeDriver() - Firefox Browser selected & Launch
+[DEBUG] 2019-07-05 13:34:27,706 baseProperties.intializeDriver() - URL provided
+[DEBUG] 2019-07-05 13:34:28,000 baseProperties.intializeDriver() - Screen maximized successfully
+[DEBUG] 2019-07-05 13:34:28,000 baseProperties.intializeDriver() - Waiting to access above URL

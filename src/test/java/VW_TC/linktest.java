@@ -17,6 +17,7 @@ import PageActions.pom001_VoiceWatch_logIn_Page;
 import resources.baseProperties;
 import resources.dataDriven;
 
+
 public class linktest extends baseProperties {
 	
 	private static Logger log =LogManager.getLogger(linktest.class.getName());
@@ -31,9 +32,13 @@ public class linktest extends baseProperties {
 		@Test(priority=1)
 		public void logInWithExpirixAdmin () throws IOException, InterruptedException {
 			
+	//		pom001_VoiceWatch_logIn_Page l=new pom001_VoiceWatch_logIn_Page(driver);
+			
 			pom001_VoiceWatch_logIn_Page l=new pom001_VoiceWatch_logIn_Page(driver);
 			
 			dataDriven d=new dataDriven();
+			
+			
 		    ArrayList<String> data=d.getData("login","Clinet/Partner_user");
 			
 			
