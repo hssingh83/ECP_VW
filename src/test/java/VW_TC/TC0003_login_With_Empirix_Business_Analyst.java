@@ -18,6 +18,7 @@ import PageActions.pom004_VoiceWatch_Alerts_Tab;
 import PageActions.pom005_VoiceWatch_Tests_Tab;
 import PageActions.pom006_VoiceWatch_Tags_Tab;
 import PageActions.pom007_VoiceWatch_Script_Tabs;
+import PageActions.pom008_VoiceWatch_Variable_Tab;
 import resources.baseProperties;
 import resources.dataDriven;
 
@@ -51,7 +52,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 	}	
 	
 
-	@Test(priority=2)
+/*	@Test(priority=2)
 	public void headerMandatoryDetails () throws IOException, InterruptedException {
 		
 		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);	
@@ -120,7 +121,7 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		d.footer();
 		tg.tagsValidations();		
 	
-	}
+	}*/
 	
 	@Test(priority=9)
 	public void scriptTabValidation () throws Exception {
@@ -146,6 +147,25 @@ public class TC0003_login_With_Empirix_Business_Analyst extends baseProperties{
 		d.header();
 		d.footer();
 		sc.csvTabValidation();
+	}
+	
+	@Test(priority=10)
+	public void variableTabValidation () throws Exception {
+		
+		
+		pom008_VoiceWatch_Variable_Tab vr=new pom008_VoiceWatch_Variable_Tab(driver);
+		pom002_VoiceWatch_Home_Page d=new pom002_VoiceWatch_Home_Page(driver);
+		
+		vr.variableTabValidation();
+		d.header();
+		d.footer();
+		vr.createVariableByButton();
+		d.header();
+		d.footer();
+		vr.createVariableByLink();
+		d.header();
+		d.footer();	
+
 	}
 	
 	
